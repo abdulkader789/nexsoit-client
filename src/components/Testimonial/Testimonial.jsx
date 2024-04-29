@@ -14,13 +14,13 @@ const Testimonial = () => {
   return (
     <div>
       <div className="py-6">
-        <h2 className="text-3xl font-bold mb-8 text-center">Testimonial</h2>
+        <h2 className="text-3xl font-bold mb-8 text-center">Testimonials</h2>
         <Swiper
           slidesPerView={1}
           spaceBetween={30}
           loop={true}
           autoplay={{
-            delay: 3000,
+            delay: 5000,
             disableOnInteraction: false,
           }}
           pagination={{
@@ -32,8 +32,8 @@ const Testimonial = () => {
         >
           <SwiperSlide className="text-center flex items-center justify-center">
             <img
-              src="./js.png"
-              className="object-cover w-[128px] block mx-auto rounded-full mb-8"
+              src="./testimonial-01.jpg"
+              className="object-cover w-[128px] block mx-auto rounded-full mb-6"
               alt="Profile Image"
             />
             <p className="uppercase text-lg font-light text-gray-500">Sammy</p>
@@ -41,7 +41,7 @@ const Testimonial = () => {
               Winchell
             </h3>
             <img
-              src="./quote.png"
+              src="./quote-mark.png"
               className="mb-3 mx-auto w-8"
               alt="Quote Symbol"
             />
@@ -54,8 +54,8 @@ const Testimonial = () => {
           </SwiperSlide>
           <SwiperSlide className="text-center flex items-center justify-center">
             <img
-              src="./js.png"
-              className="object-cover w-[128px] block mx-auto rounded-full mb-8"
+              src="./testimonial-02.jpg"
+              className="object-cover w-[128px] block mx-auto rounded-full mb-6"
               alt="Profile Image"
             />
             <p className="uppercase text-lg font-light text-gray-500">Sammy</p>
@@ -63,7 +63,7 @@ const Testimonial = () => {
               Winchell
             </h3>
             <img
-              src="./quote.png"
+              src="./quote-mark.png"
               className="mb-3 mx-auto w-8"
               alt="Quote Symbol"
             />
@@ -76,8 +76,8 @@ const Testimonial = () => {
           </SwiperSlide>
           <SwiperSlide className="text-center flex items-center justify-center">
             <img
-              src="./js.png"
-              className="object-cover w-[128px] block mx-auto rounded-full mb-8"
+              src="./testimonial-03.jpg"
+              className="object-cover w-[128px] block mx-auto rounded-full mb-6"
               alt="Profile Image"
             />
             <p className="uppercase text-lg font-light text-gray-500">Sammy</p>
@@ -85,7 +85,7 @@ const Testimonial = () => {
               Winchell
             </h3>
             <img
-              src="./quote.png"
+              src="./quote-mark.png"
               className="mb-3 mx-auto w-8"
               alt="Quote Symbol"
             />
