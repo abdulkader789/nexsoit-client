@@ -3,7 +3,7 @@ import Main from "./layout/Main";
 
 import HomePage from "./pages/HomePage";
 
-
+import "./index.css";
 const routes = [
     {
         path: "/",

@@ -1,9 +1,10 @@
 import React from 'react';
+import Testimonial from '../components/Testimonial/Testimonial';
 
 const HomePage = () => {
     return (
         <div>
-            Home page goes here
+            <Testimonial/>
         </div>
     );
 };
