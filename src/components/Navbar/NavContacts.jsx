@@ -8,11 +8,11 @@ const contactDetails = [
 
 const NavContacts = () => {
     return (
-        <main className="flex">
+        <main className="flex  flex-col md:flex-row justify-between">
             {contactDetails.map((contact, index) => (
-                <div key={index} className="flex items-center mr-4">
-                    <div className="mr-2 flex justify-center items-center"><FaPhone /></div>
-                    <div>
+                <div key={index} className="flex items-center mr-4  mb-3 lg:mb-0 ">
+                    <div className="mr-5 flex justify-center items-center"><FaPhone /></div>
+                    <div className=''>
                         <h2>{contact.phoneNumber}</h2>
                         <h2>{contact.email}</h2>
                     </div>

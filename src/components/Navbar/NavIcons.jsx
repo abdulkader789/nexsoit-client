@@ -9,11 +9,11 @@ const socialIcons = [
 
 const NavIcons = () => {
     return (
-        <div className='flex justify-center items-center'>
+        <div className='flex justify-between'>
             {socialIcons.map((socialIcon, index) => (
                 <div key={index} className='flex justify-center items-center mr-3'>
                     <socialIcon.Icon className="cursor-pointer mr-2" />
-                    <p>{socialIcon.text}</p>
+                    <p className='hidden'>{socialIcon.text}</p>
                 </div>
             ))}
         </div>

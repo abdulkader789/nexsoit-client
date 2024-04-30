@@ -13,8 +13,8 @@ const MenuIcon = () => {
     };
 
     return (
-        <div onClick={toggleMenu} className="cursor-pointer">
-            {isOpen ? <FaTimes /> : <FaBars />}
+        <div onClick={toggleMenu} className="cursor-pointer ">
+            {isOpen ? <FaTimes className='text-3xl' /> : <FaBars className='text-3xl' />}
         </div>
     );
 };
