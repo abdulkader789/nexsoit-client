@@ -13,11 +13,11 @@ const NavLinks = () => {
     const [activeIndex, setActiveIndex] = useState(null);
 
     return (
-        <ul className="nav-links flex flex-col lg:flex-row   w-full">
+        <ul className="nav-links flex flex-col lg:flex-row relative z-50  w-full">
             {navLinks.map((link, index) => (
                 <li
                     key={index}
-                    className="relative flex-1 py-4 border border-gray-200 lg:border-none  px-5"
+                    className="flex-1 py-4 border border-gray-200 lg:border-none  px-5"
                     onMouseEnter={() => setActiveIndex(index)}
                     onMouseLeave={() => setActiveIndex(null)}
                 >
@@ -25,7 +25,7 @@ const NavLinks = () => {
                         <div className="relative">
                             <span className="block uppercase cursor-pointer" onMouseEnter={() => setActiveIndex(index)}>{link.title}</span>
                             {activeIndex === index && (
-                                <ul className="lg:absolute lg:top-full lg:left-0 bg-white border border-gray-200 py-2 px-4 lg:w-48 lg:py-5">
+                                <ul className="lg:absolute  h-40 lg:left-0  bg-white border border-gray-200 py-2 px-4 lg:w-48 lg:py-5">
                                     {link.submenu.map((item, subIndex) => (
                                         <li key={subIndex} className="text-gray-800 mb-2  cursor-pointer py-1">
                                             <Link to={`${link.path}/${item.toLowerCase().replace(/\s+/g, '-')}`}>{item}</Link>

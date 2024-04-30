@@ -95,14 +95,14 @@ const Navbar = () => {
         //     </div>
         // </nav>
         
-        <nav className={`w-full montserrat-regular  flex flex-col xl:flex-row justify-between xl:justify-normal `}>
+        <nav className={`w-full montserrat-regular z-50  flex flex-col xl:flex-row justify-between xl:justify-normal `}>
             <header className='w-full lg:w-auto px-5 h-[5vh] lg:h-auto flex justify-between items-center'>
                 <NavLogo/>
                 <div className='flex justify-center items-center lg:hidden'>
                     <MenuIcon /> 
                 </div>
             </header>
-            <main className={`h-[95vh] lg:h-auto lg:-translate-x-0  w-full absolute lg:relative top-14 lg:top-0 z-20 lg:z-0 bg-white transition-all duration-500 ease-in-out ${isMenuClicked ? '-translate-x-0' : '-translate-x-full'}`}>
+            <main className={`h-[95vh] lg:h-auto lg:-translate-x-0  w-full absolute lg:relative top-14 lg:top-0 z-20  bg-white transition-all duration-500 ease-in-out ${isMenuClicked ? '-translate-x-0' : '-translate-x-full'}`}>
                 <div className='w-full flex flex-col-reverse lg:flex-col'>
                     <section className={`flex flex-col lg:flex-row justify-evenly xl:justify-between py-2 lg:py-0 w-full `}>
                         <div className='my-5  px-5 lg:px-0'>
