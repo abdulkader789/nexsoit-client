@@ -12,7 +12,7 @@ import { Autoplay, Pagination } from "swiper/modules";
 
 const Testimonial = () => {
   return (
-    <div>
+    <div className="h-[1600px]">
       <div className="py-6">
         <h2 className="text-3xl font-bold mb-8 text-center">Testimonial</h2>
         <Swiper
@@ -27,6 +27,7 @@ const Testimonial = () => {
             clickable: true,
           }}
           // navigation={true}
+          simulateTouch={false}
           modules={[Autoplay, Pagination]}
           className="mx-auto w-full h-full"
         >

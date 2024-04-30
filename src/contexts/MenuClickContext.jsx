@@ -15,7 +15,7 @@ export const MenuClickProvider = ({ children }) => {
 
     // Function to handle menu click
     const handleMenuClick = () => {
-        setIsMenuClicked(true);
+        setIsMenuClicked(prev=>!prev);
     };
 
     // Value provided by the context
