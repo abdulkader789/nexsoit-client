@@ -4,7 +4,7 @@ const NavLogo = () => {
 
     return (
         <div className="">
-            <h1 className="text-xl  michroma-regular  font-extrabold uppercase">
+            <h1 className="text-xl text-blue-500  michroma-regular  font-extrabold uppercase">
                 <Link to='/home'>ByteFolks</Link>
             </h1>
         </div>

@@ -1,20 +1,20 @@
-import { FaPhone } from 'react-icons/fa';
+import { FaPhone, FaMapMarkerAlt, FaClock } from 'react-icons/fa';
 
 const contactDetails = [
-    { phoneNumber: '34324323', email: 'abcd1@gmail.com' },
-    { phoneNumber: '34324324', email: 'abcd2@gmail.com' },
-    { phoneNumber: '34324325', email: 'abcd3@gmail.com' }
+    { icon: <FaPhone />, detail: '34324323', description: 'abcd1@gmail.com' },
+    { icon: <FaMapMarkerAlt />, detail: 'Address 123', description: 'City, Country' },
+    { icon: <FaClock />, detail: 'Mon - Fri: 9am - 5pm', description: 'Sunday Closed' }
 ];
 
 const NavContacts = () => {
     return (
-        <main className="flex  flex-col md:flex-row justify-between">
+        <main className="flex flex-col md:flex-row justify-between">
             {contactDetails.map((contact, index) => (
-                <div key={index} className="flex items-center mr-4  mb-3 lg:mb-0 ">
-                    <div className="mr-5 flex justify-center items-center"><FaPhone /></div>
-                    <div className=''>
-                        <h2>{contact.phoneNumber}</h2>
-                        <h2>{contact.email}</h2>
+                <div key={index} className="flex items-center mr-4 mb-3 lg:mb-0">
+                    <div className="mr-3 flex justify-center items-center text-blue-500">{contact.icon}</div>
+                    <div>
+                        <h2>{contact.detail}</h2>
+                        {contact.description && <p>{contact.description}</p>}
                     </div>
                 </div>
             ))}
