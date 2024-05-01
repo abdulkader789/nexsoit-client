@@ -130,12 +130,15 @@ const Footer = () => {
                   jobs posted, candidates, and other latest news stay update
                 </p>
               </li>
-              <li>
+              <li className="flex items-center">
                 <input
                   type="text"
                   placeholder="Email Address..."
                   className="pl-5 py-2 pr-2 rounded-sm bg-gray-100 max-w-60 md:max-w-48 lg:max-w-56"
                 />
+                <a href="" className="ml-[-35px]">
+                  <img src="./send-btn.png" className="w-6" alt="Send Button" />
+                </a>
               </li>
             </ul>
           </div>
