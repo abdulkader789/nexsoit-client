@@ -1,4 +1,19 @@
 import React from "react";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaLinkedinIn,
+  FaGooglePlusG,
+  FaPinterestP,
+} from "react-icons/fa";
+
+const SocialIcons = [
+  { Icon: FaFacebookF, text: "Facebook" },
+  { Icon: FaTwitter, text: "Twitter" },
+  { Icon: FaLinkedinIn, text: "LinkedinIn" },
+  { Icon: FaGooglePlusG, text: "GooglePlus" },
+  { Icon: FaPinterestP, text: "Pinterest" },
+];
 
 const Footer = () => {
   return (
@@ -126,9 +141,27 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="socials">
-          <p></p>
-          <div className="icons"></div>
+        <div className="mt-16 py-4 bg-gray-100">
+          <div className="max-w-6xl mx-auto px-4 flex gap-3 flex-col sm:flex-row justify-center sm:justify-between items-center sm:items-end">
+            <p className="order-2 sm:order-1 text-center sm:text-left text-gray-500">
+              &copy; Copyright 2019 <strong>kormosala</strong> - Powered By
+              ApusTheme
+            </p>
+            <div className="flex gap-3 order-1 sm:order-2">
+              {SocialIcons.map((socialIcon, index) => (
+                <div key={index} className="bg-blue-600 rounded-full">
+                  <socialIcon.Icon className="cursor-pointer px-1 py-2 text-white text-3xl" />
+                </div>
+              ))}
+              <a href="" className="w-[30px]">
+                <img
+                  src="./top-btn.png"
+                  className="w-full object-cover"
+                  alt="Button"
+                />
+              </a>
+            </div>
+          </div>
         </div>
       </footer>
     </div>
