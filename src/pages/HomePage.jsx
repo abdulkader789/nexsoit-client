@@ -5,6 +5,7 @@ import Subscribe from '../components/Subscribe/Subscribe';
 import Footer from '../components/Footer/Footer';
 import HeroSection from '../components/Hero/Hero';
 import OurServices from '../components/OurServices/OurServies';
+import BlogPost from './../components/BlogPost/BlogPost';
 
 const HomePage = () => {
     return (
@@ -13,6 +14,7 @@ const HomePage = () => {
             <BannerCarousel/>
             <HeroSection/>
             <OurServices/>
+            <BlogPost/>
             <Testimonial/>
             <Subscribe/>
             <Footer/>
