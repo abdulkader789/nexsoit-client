@@ -60,10 +60,10 @@ const BannerCarousel = () => {
              style={{ zIndex: 1 }}
                 spaceBetween={30}
                 effect={'fade'}
-                navigation={false}
-                pagination={{ clickable: true }}
+                navigation={true}
+                // pagination={{ clickable: true }}
                 autoplay={{ delay: 2000 }}
-                modules={[EffectFade, Navigation, Pagination, Autoplay]}
+                modules={[EffectFade, Navigation, Autoplay]}
                 className="mySwiper"
                 simulateTouch={false}
             >
