@@ -71,7 +71,7 @@ const BannerCarousel = () => {
                     <SwiperSlide key={index}>
                        <div className="relative w-full h-full lg:h-[88vh] flex justify-center items-center">
     <img src={item.url} alt={` ${index + 1}`} className="w-full h-full object-cover" />
-    <div className="absolute w-full h-full bg-cyan-200 opacity-50"></div> {/* Cyan overlay */}
+    <div className="absolute w-full h-full bg-blue-400 opacity-50"></div> {/* Cyan overlay */}
 
     <div className="absolute w-full text-white text-center">
         <h2 className="text-5xl outfit-bold">{item.model}</h2>

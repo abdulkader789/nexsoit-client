@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useContext, useState, useEffect } from 'react';
 
 // Create the context
 const MenuClickContext = createContext();
@@ -17,6 +17,20 @@ export const MenuClickProvider = ({ children }) => {
     const handleMenuClick = () => {
         setIsMenuClicked(prev=>!prev);
     };
+
+    // Effect to set the overflow style property of the body based on isMenuClicked state
+    useEffect(() => {
+        if (isMenuClicked) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'auto';
+        }
+
+        // Cleanup function to reset overflow property when component unmounts
+        return () => {
+            document.body.style.overflow = 'auto';
+        };
+    }, [isMenuClicked]);
 
     // Value provided by the context
     const contextValue = {

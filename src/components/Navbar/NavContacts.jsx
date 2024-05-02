@@ -12,7 +12,7 @@ const NavContacts = () => {
             {contactDetails.map((contact, index) => (
                 <div key={index} className="flex items-center mr-4 mb-3 lg:mb-0">
                     <div className="mr-3 flex justify-center items-center text-blue-500">{contact.icon}</div>
-                    <div>
+                    <div className=''>
                         <h2>{contact.detail}</h2>
                         {contact.description && <p>{contact.description}</p>}
                     </div>
