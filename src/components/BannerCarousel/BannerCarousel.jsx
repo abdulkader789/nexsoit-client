@@ -29,23 +29,22 @@ import { EffectFade, Navigation, Pagination, Autoplay } from 'swiper/modules';
 
 const BannerCarousel = () => {
 
-
     const items = [
         {
             url: 'https://www.myhrtoolkit.com/hubfs/strategicvstacticalhr.jpg',
-         
+            model: 'Lorem', // Add model for the h2 tag
             redirect: '/mercedes-gt63s',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
         },
         {
             url: 'https://ica.coop/sites/default/files/styles/full_image/public/news-item-fullimage/ballpen-blur-close-461077-2013101013.jpg?itok=F-Fwb7Lb',
-    
+            model: 'Lorem', // Add model for the h2 tag
             redirect: '/bentley-bacalar',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
         },
         {
             url: 'https://www.hsestudyguide.com/wp-content/uploads/2023/08/pexels-photo-7014337.jpeg',
-            
+            model: 'Lorem', // Add model for the h2 tag
             redirect: '/rolls-royce-phantom',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
         }
@@ -76,7 +75,10 @@ const BannerCarousel = () => {
     <div className="absolute w-full text-white text-center">
         <h2 className="text-5xl outfit-bold">{item.model}</h2>
         <p className="text-sm">{item.description}</p>
-        <button href={item.redirect} className=" text-white py-4  border-white border-2 block px-20 mx-auto mt-4 hover:bg-white hover:text-black transition duration-300">View Details</button>
+        <div className='flex w-full justify-center'>
+        <button href={item.redirect} className="  bg-white py-4  border-white border-2 block px-20 mt-4   transition duration-300 text-black">View Details</button>
+        <button href={item.redirect} className=" text-white py-4  border-white border-2 block px-20  mt-4 hover:bg-white hover:text-black transition duration-300">View Details</button>
+        </div>
     </div>
 </div>
 

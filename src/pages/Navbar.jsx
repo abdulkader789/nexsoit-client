@@ -8,7 +8,7 @@ import MenuIcon from '../components/Navbar/MenuIcon';
 import { useMenuClick } from '../contexts/MenuClickContext';
 
 const Navbar = () => {
-    const [scrolling, setScrolling] = useState(false);
+    const [scrolling, setScrolling] = useState(true); // Modify initial state to true
     const [prevScrollPos, setPrevScrollPos] = useState(0);
     const { isMenuClicked } = useMenuClick();
     const navRef = useRef(null);
@@ -45,10 +45,10 @@ const Navbar = () => {
             <main className={`h-[95vh] lg:h-auto lg:-translate-x-0  w-full absolute lg:relative top-12 lg:top-0 z-20  bg-white transition-all duration-500 ease-in-out ${isMenuClicked ? '-translate-x-0' : '-translate-x-full'}`}>
                 <div className='w-full flex flex-col-reverse lg:flex-col lg:px-14'>
                     <section className={`flex flex-col lg:flex-row items-center justify-evenly xl:justify-between lg:py-0 w-full ${scrolling ? '' : 'lg:hidden'}`}>
-                        <div className='my-5 lg:w-1/4  px-5 lg:px-0'>
+                        <div className='my-5   px-5 lg:px-0'>
                             <NavIcons/>
                         </div>
-                        <div className='mb-5 lg:w-auto lg:py-3 lg:mb-0 px-5'>
+                        <div className='mb-5  lg:py-3 lg:mb-0 px-5'>
                             <NavContacts/>
                         </div>
                         <div>
