@@ -61,7 +61,7 @@ const BannerCarousel = () => {
   ];
 
   return (
-    <section className="">
+    <section className="relative">
       <Swiper
         style={{ zIndex: 1 }}
         spaceBetween={30}
@@ -107,6 +107,15 @@ const BannerCarousel = () => {
           </SwiperSlide>
         ))}
       </Swiper>
+      {/* <div
+        className="absolute top-1/3 left-10 z-20"
+        style={{
+          clipPath: "polygon(0 4%, 0% 100%, 100% 49%)",
+          backgroundColor: "blue", // Add background color for visibility
+          width: "200px", // Set width to control the size of the div
+          height: "200px", // Set height to control the size of the div
+        }}
+      ></div> */}
     </section>
   );
 };
