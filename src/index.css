@@ -342,3 +342,15 @@
 
 
 
+/* styles.css */
+.bg-skyBlue {
+  background-color: #0e85ca;
+}
+
+.bg-darkBlue {
+  background-color: #07588a;
+}
+
+.bg-blackShade {
+  background-color: #283149;
+}

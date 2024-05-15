@@ -12,7 +12,7 @@ import { Autoplay, Pagination } from "swiper/modules";
 
 const Testimonial = () => {
   return (
-    <div className="h-[1600px]">
+    <div className="">
       <div className="py-6">
         <h2 className="text-3xl font-bold mb-8 text-center">Testimonials</h2>
         <Swiper

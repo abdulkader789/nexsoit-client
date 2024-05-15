@@ -1,89 +1,121 @@
-import React from 'react';
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
-const bottomData = [
-    {
-        icon: <FaFacebook />,
-        heading: 'Header 1',
-        text: 'Paragraph 1'
-    },
-    {
-        icon: <FaTwitter />,
-        heading: 'Header 2',
-        text: 'Paragraph 2'
-    },
-    {
-        icon: <FaInstagram />,
-        heading: 'Header 3',
-        text: 'Paragraph 3'
-    }
+import React from "react";
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
+import {
+  FaUserTie,
+  FaCode,
+  FaChartBar,
+  FaHeadset,
+  FaPaintBrush,
+  FaUsers,
+} from "react-icons/fa";
+import { FaChartLine, FaChartPie, FaMoneyBillWaveAlt } from "react-icons/fa";
+
+const servicesData = [
+  {
+    imageURL: <FaChartLine />,
+    heading: "Business and Financial Planning",
+    description:
+      "Create strategic business plans and financial forecasts to guide decision-making and achieve organizational objectives.",
+  },
+  {
+    imageURL: <FaChartPie />,
+    heading: "Analysis & Projections",
+    description:
+      "Conduct in-depth financial analysis and develop projections to identify trends, opportunities, and potential risks.",
+  },
+  {
+    imageURL: <FaMoneyBillWaveAlt />,
+    heading: "Investment Advice",
+    description:
+      "Provide expert investment advice and portfolio management services to optimize returns and minimize risks.",
+  },
 ];
-const heroData = [
-    {
-        heading: 'Heading 1',
-        icon: <FaFacebook />,
-        text: 'Text 1'
-    },
-    {
-        heading: 'Heading 2',
-        icon: <FaTwitter />,
-        text: 'Text 2'
-    },
-    {
-        heading: 'Heading 3',
-        icon: <FaInstagram />,
-        text: 'Text 3'
-    },
-    {
-        heading: 'Heading 4',
-        icon: <FaLinkedin />,
-        text: 'Text 4'
-    },
-    {
-        heading: 'Heading 5',
-        icon: <FaFacebook />,
-        text: 'Text 5'
-    },
-    {
-        heading: 'Heading 6',
-        icon: <FaTwitter />,
-        text: 'Text 6'
-    }
+const jobData = [
+  {
+    designation: "Accountant",
+    imageURL: <FaChartBar />,
+    vacancy: "5 Positions Available",
+    redirect: "/accountant-job",
+  },
+  {
+    designation: "Software Engineer",
+    imageURL: <FaCode />,
+    vacancy: "3 Positions Available",
+    redirect: "/software-engineer-job",
+  },
+  {
+    designation: "Marketing Manager",
+    imageURL: <FaUsers />,
+    vacancy: "7 Positions Available",
+    redirect: "/marketing-manager-job",
+  },
+  {
+    designation: "Customer Service Representative",
+    imageURL: <FaHeadset />,
+    vacancy: "2 Positions Available",
+    redirect: "/customer-service-job",
+  },
+  {
+    designation: "Graphic Designer",
+    imageURL: <FaPaintBrush />,
+    vacancy: "4 Positions Available",
+    redirect: "/graphic-designer-job",
+  },
+  {
+    designation: "Human Resources Specialist",
+    imageURL: <FaUserTie />,
+    vacancy: "6 Positions Available",
+    redirect: "/hr-specialist-job",
+  },
 ];
+const colors = ["bg-skyBlue", "bg-darkBlue", "bg-blackShade"];
 
 const HeroSection = () => {
-    return (
-        <main className='relative z-30 px-20  w-full h-[50vh]'>
-            <div className=' h-full w-full relative  -top-36 shadow-sm    bg-gray-100'>
-            <section className="flex w-full h-1/2 p-5">
-            {heroData.map((item, index) => (
-                <div key={index} className={`flex-1 border border-1 border-gray-300   p-4`}>
-                    <h2 className="mb-2">{item.heading}</h2>
-                    <span className="block mb-2">{item.icon}</span>
-                    <p>{item.text}</p>
+  return (
+    <main className="relative z-30 px-20  w-full h-[60vh] ">
+      <div className=" h-full w-full relative  -top-36 shadow-md    bg-gray-100 rounded-md">
+        <section className="flex justify-center items-center    h-1/2 ">
+          {jobData.map((item, index) => (
+            <div
+              key={index}
+              className={`flex-1  h-full  border-gray-300 pt-10 ${
+                index !== jobData.length - 1 ? "border-r-2" : ""
+              }`}
+            >
+              <div className=" h-full">
+                <h2 className="mb-5 h-14 text-xl font-bold text-center">
+                  {item.designation}
+                </h2>
+                <div className=" mb-2 flex  justify-center items-center  text-center text-3xl ">
+                  {item.imageURL}
                 </div>
-            ))}
+                <p className="text-lg text-center">{item.vacancy}</p>
+              </div>
+            </div>
+          ))}
         </section>
 
-        <section className='flex h-1/2'>
-    {bottomData.map((item, index) => (
-        <div key={index} className="flex-1 mb-4">
-            {/* First Div - Icon */}
-            <div className="mr-2">
-                {item.icon}
+        <section className="flex h-1/2 ">
+          {servicesData.map((item, index) => (
+            <div
+              key={index}
+              className={`flex flex-1 justify-center  mb-4 ${colors[index]} h-full text-white `}
+            >
+              <div className="flex   h-full p-10 ">
+                {/* First Div - Icon */}
+                <div className="mr-2 text-5xl">{item.imageURL}</div>
+                {/* Second Div - Header and Paragraph */}
+                <div className="">
+                  <h2 className="mb-2 text-2xl font-bold">{item.heading}</h2>
+                  <p className="mb-2 text-xl">{item.description}</p>
+                </div>
+              </div>
             </div>
-            {/* Second Div - Header and Paragraph */}
-            <div className="flex flex-col">
-                <h2 className="mb-2">{item.heading}</h2>
-                <p className="mb-2">{item.text}</p>
-            </div>
-        </div>
-    ))}
-</section>
-
-        
-        </div>
-        </main>
-    );
+          ))}
+        </section>
+      </div>
+    </main>
+  );
 };
 
 export default HeroSection;

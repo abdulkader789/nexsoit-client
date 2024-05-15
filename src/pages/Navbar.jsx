@@ -35,7 +35,7 @@ const Navbar = () => {
 
 
     return (
-        <nav className={`w-full montserrat-regular bg-white z-50 fixed top-0 flex flex-col xl:flex-row justify-between xl:justify-normal ${scrolling ? 'shadow-lg' : ''}`} ref={navRef}>
+        <nav className={`w-full montserrat-regular bg-white z-50 fixed top-0 flex flex-col xl:flex-row justify-between xl:justify-normal ${scrolling ? 'shadow-lg' : 'shadow-lg'}`} ref={navRef}>
             <header className='w-full lg:w-auto px-5 h-[5vh] lg:h-auto flex justify-between items-center'>
                 <NavLogo/>
                 <div className='flex justify-center items-center lg:hidden'>
