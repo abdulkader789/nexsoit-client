@@ -75,7 +75,7 @@ const BannerCarousel = () => {
       >
         {bannerSlides.map((item, index) => (
           <SwiperSlide key={index}>
-            <div className="relative w-full h-full lg:h-[88vh] flex justify-center items-center">
+            <div className="relative w-full h-[50vh] lg:h-[88vh]  flex justify-center items-center">
               <img
                 src={item.imageURL}
                 alt={` ${index + 1}`}
@@ -85,19 +85,21 @@ const BannerCarousel = () => {
               {/* Cyan overlay */}
               <div className="absolute w-full text-white text-center">
                 <div className="lg:w-1/2 mx-auto">
-                  <h2 className="text-5xl outfit-bold mb-3">{item.heading}</h2>
-                  <p className="text-xl mb-3">{item.paragraph}</p>
+                  <h2 className="text-2xl lg:text-5xl outfit-bold mb-3">
+                    {item.heading}
+                  </h2>
+                  <p className="text-md lg:text-xl mb-3">{item.paragraph}</p>
                 </div>
                 <div className="flex w-full justify-center">
                   <button
                     href={item.redirect}
-                    className="  bg-blue-400 py-4  border-white border-2 block px-20 mt-4   transition duration-300 text-black"
+                    className="  bg-blue-400 px-5 py-2 lg:py-4  border-white border-2 block lg:px-20 mt-4   transition duration-300 text-black"
                   >
                     View Details
                   </button>
                   <button
                     href={item.redirect}
-                    className=" text-white py-4  border-white border-2 block px-20  mt-4 hover:bg-white hover:text-black transition duration-300"
+                    className=" text-white px-5 py-2 lg:py-4 lg:px-20 mt-4    border-white border-2 block  hover:bg-white hover:text-black transition duration-300"
                   >
                     Contact Us
                   </button>
@@ -107,15 +109,6 @@ const BannerCarousel = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-      {/* <div
-        className="absolute top-1/3 left-10 z-20"
-        style={{
-          clipPath: "polygon(0 4%, 0% 100%, 100% 49%)",
-          backgroundColor: "blue", // Add background color for visibility
-          width: "200px", // Set width to control the size of the div
-          height: "200px", // Set height to control the size of the div
-        }}
-      ></div> */}
     </section>
   );
 };

@@ -72,14 +72,14 @@ const colors = ["bg-skyBlue", "bg-darkBlue", "bg-blackShade"];
 
 const HeroSection = () => {
   return (
-    <main className="relative z-30 px-20  w-full h-[60vh] ">
-      <div className=" h-full w-full relative  -top-36 shadow-md    bg-gray-100 rounded-md">
-        <section className="flex justify-center items-center    h-1/2 ">
+    <main className="relative z-30 lg:px-20  w-full lg:h-[60vh]  ">
+      <div className=" h-full w-full relative  lg:-top-36 shadow-md    bg-gray-100 rounded-md">
+        <section className="flex flex-col lg:flex-row justify-center items-center    h-1/2 ">
           {jobData.map((item, index) => (
             <div
               key={index}
-              className={`flex-1  h-full  border-gray-300 pt-10 ${
-                index !== jobData.length - 1 ? "border-r-2" : ""
+              className={`lg:flex-1  h-full  border-gray-300 pt-10 ${
+                index !== jobData.length - 1 ? "lg:border-r-2" : ""
               }`}
             >
               <div className=" h-full">
@@ -95,7 +95,7 @@ const HeroSection = () => {
           ))}
         </section>
 
-        <section className="flex h-1/2 ">
+        <section className="flex h-1/2 flex-col lg:flex-row ">
           {servicesData.map((item, index) => (
             <div
               key={index}

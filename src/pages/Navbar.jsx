@@ -56,7 +56,7 @@ const Navbar = () => {
       >
         <div className="w-full flex flex-col-reverse lg:flex-col lg:px-14">
           <section
-            className={`flex flex-col lg:flex-row items-center justify-evenly xl:justify-between lg:py-0 w-full ${
+            className={`flex flex-col lg:flex-row items-center  xl:justify-between lg:py-0 w-full ${
               scrolling ? "" : "lg:hidden"
             }`}
           >
@@ -70,7 +70,7 @@ const Navbar = () => {
               <BookButton />
             </div>
           </section>
-          <section className="border-t-[1px]  montserrat-bold">
+          <section className="  montserrat-bold">
             <NavLinks />
           </section>
         </div>

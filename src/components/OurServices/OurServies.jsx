@@ -59,10 +59,10 @@ const OurServices = () => {
         </p>
       </section>
 
-      <section className="flex flex-wrap justify-center py-16 bg-gray-100">
+      <section className="grid grid-cols-1 lg:px-20 md:grid-cols-2 lg:grid-cols-3 gap-x-8 py-16 bg-gray-100">
         {servicesData.map((service, index) => (
-          <div key={index} className="w-1/3 flex justify-center">
-            <div className="w-full max-w-md bg-white shadow-sm p-4 border mb-20">
+          <div key={index} className="mx-auto mb-8">
+            <div className="bg-white shadow-sm p-4 border">
               <div className="flex flex-col items-center mb-2">
                 <div className="rounded-full flex text-2xl justify-center items-center relative -top-14 bg-white h-20 w-20 border">
                   {service.imageURL}
