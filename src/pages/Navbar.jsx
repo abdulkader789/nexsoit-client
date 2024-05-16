@@ -8,38 +8,36 @@ import MenuIcon from "../components/Navbar/MenuIcon";
 import { useMenuClick } from "../contexts/MenuClickContext";
 
 const Navbar = () => {
-  const [scrolling, setScrolling] = useState(true); // Modify initial state to true
+  const [scrolling, setScrolling] = useState(false); // Modify initial state to false
   const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [scrollThreshold, setScrollThreshold] = useState(100); // Set your scroll threshold here
   const { isMenuClicked } = useMenuClick();
   const navRef = useRef(null);
+
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.scrollY;
-      setScrolling(currentScrollPos > 0);
-      if (currentScrollPos < prevScrollPos) {
-        // Scrolling up
-        setScrolling(true);
-      } else {
-        // Scrolling down
-        setScrolling(false);
+      const scrolledDistance = Math.abs(currentScrollPos - prevScrollPos);
+
+      if (scrolledDistance > scrollThreshold) {
+        // Scrolled past the threshold distance
+        setScrolling(currentScrollPos > prevScrollPos);
+        setPrevScrollPos(currentScrollPos);
       }
-      setPrevScrollPos(currentScrollPos);
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [prevScrollPos]);
+  }, [prevScrollPos, scrollThreshold]);
 
   return (
     <nav
-      className={`w-full montserrat-regular bg-transparent z-50 fixed top-0 flex flex-col xl:flex-row justify-between xl:justify-normal text-white ${
-        scrolling ? "" : ""
-      }`}
+      className={`w-full montserrat-regular bg-transparent z-50 sticky top-0 flex flex-col xl:flex-row justify-between xl:justify-normal text-white `}
       ref={navRef}
       style={{
-        backgroundColor: "rgba(0, 0, 0, 0.2)", // Black with 50% opacity
+        backgroundColor: "#007cb9", // Black with 50% opacity
         backdropFilter: "blur(10px)", // Glassy effect
       }}
     >
@@ -57,7 +55,7 @@ const Navbar = () => {
         <div className="w-full flex flex-col-reverse lg:flex-col lg:px-14">
           <section
             className={`flex flex-col lg:flex-row items-center  xl:justify-between lg:py-0 w-full ${
-              scrolling ? "" : "lg:hidden"
+              scrolling ? "lg:hidden" : ""
             }`}
           >
             <div className="my-5   px-5 lg:px-0">
