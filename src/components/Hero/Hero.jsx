@@ -1,13 +1,7 @@
 import React from "react";
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
-import {
-  FaUserTie,
-  FaCode,
-  FaChartBar,
-  FaHeadset,
-  FaPaintBrush,
-  FaUsers,
-} from "react-icons/fa";
+import { FaPaintBrush, FaUsers } from "react-icons/fa";
+import { FaChartBar, FaCode } from "react-icons/fa";
+
 import { FaChartLine, FaChartPie, FaMoneyBillWaveAlt } from "react-icons/fa";
 
 const servicesData = [
@@ -30,44 +24,52 @@ const servicesData = [
       "Provide expert investment advice and portfolio management services to optimize returns and minimize risks.",
   },
 ];
+
 const jobData = [
   {
-    designation: "Accountant",
-    imageURL: <FaChartBar />,
-    vacancy: "5 Positions Available",
-    redirect: "/accountant-job",
-  },
-  {
-    designation: "Software Engineer",
+    title: "Web Development",
     imageURL: <FaCode />,
-    vacancy: "3 Positions Available",
-    redirect: "/software-engineer-job",
+    projectsCompleted: 100,
+    clientsWorkedWith: 50,
+    redirect: "/web-development-jobs",
   },
   {
-    designation: "Marketing Manager",
-    imageURL: <FaUsers />,
-    vacancy: "7 Positions Available",
-    redirect: "/marketing-manager-job",
-  },
-  {
-    designation: "Customer Service Representative",
-    imageURL: <FaHeadset />,
-    vacancy: "2 Positions Available",
-    redirect: "/customer-service-job",
-  },
-  {
-    designation: "Graphic Designer",
+    title: "Web Design",
     imageURL: <FaPaintBrush />,
-    vacancy: "4 Positions Available",
-    redirect: "/graphic-designer-job",
+    projectsCompleted: 80,
+    clientsWorkedWith: 40,
+    redirect: "/web-design-jobs",
   },
   {
-    designation: "Human Resources Specialist",
-    imageURL: <FaUserTie />,
-    vacancy: "6 Positions Available",
-    redirect: "/hr-specialist-job",
+    title: "UI/UX Design",
+    imageURL: <FaPaintBrush />,
+    projectsCompleted: 60,
+    clientsWorkedWith: 30,
+    redirect: "/ui-ux-design-jobs",
+  },
+  {
+    title: "SEO",
+    imageURL: <FaChartBar />,
+    projectsCompleted: 120,
+    clientsWorkedWith: 60,
+    redirect: "/seo-jobs",
+  },
+  {
+    title: "Marketing",
+    imageURL: <FaUsers />,
+    projectsCompleted: 150,
+    clientsWorkedWith: 75,
+    redirect: "/marketing-jobs",
+  },
+  {
+    title: "Photo & Video Editing",
+    imageURL: <FaPaintBrush />,
+    projectsCompleted: 70,
+    clientsWorkedWith: 35,
+    redirect: "/photo-video-editing-jobs",
   },
 ];
+
 const colors = ["bg-skyBlue", "bg-darkBlue", "bg-blackShade"];
 
 const HeroSection = () => {
@@ -84,12 +86,19 @@ const HeroSection = () => {
             >
               <div className=" h-full">
                 <h2 className="mb-5 h-14 text-xl font-bold text-center">
-                  {item.designation}
+                  {item.title}
                 </h2>
                 <div className=" mb-2 flex  justify-center items-center  text-center text-3xl ">
                   {item.imageURL}
                 </div>
-                <p className="text-lg text-center">{item.vacancy}</p>
+                {/* <div className="">
+                  <p className="text-lg text-center">
+                    Projects completed {item.projectsCompleted}
+                  </p>
+                  <p className="text-lg text-center">
+                    Number of our clients {item.clientsWorkedWith}
+                  </p>
+                </div> */}
               </div>
             </div>
           ))}
