@@ -27,8 +27,8 @@ const Team = () => {
   ];
   return (
     <div className="py-10">
-      <p className="uppercase text-center text-blue-700 text-sm">
-        professional team
+      <p className="uppercase text-center text-blue-700">
+        <small>professional team</small>
       </p>
       <h2 className="text-center text-3xl font-bold text-gray-900">
         Meet Our Experienced <br /> People Now
