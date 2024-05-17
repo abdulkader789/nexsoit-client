@@ -34,14 +34,14 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`w-full montserrat-regular bg-transparent z-50 sticky top-0 flex flex-col xl:flex-row justify-between xl:justify-normal text-white `}
+      className={`w-full montserrat-regular bg-transparent z-50 sticky top-0 flex flex-col xl:flex-row justify-between xl:justify-normal text-white lg:items-center`}
       ref={navRef}
       style={{
         backgroundColor: "#007cb9", // Black with 50% opacity
         backdropFilter: "blur(10px)", // Glassy effect
       }}
     >
-      <header className="w-full lg:w-auto px-5 h-[5vh] lg:h-auto flex justify-between items-center">
+      <header className="w-full py-6 lg:py-auto lg:w-auto px-5 h-[5vh] lg:h-auto flex justify-between items-center">
         <NavLogo />
         <div className="flex justify-center items-center lg:hidden">
           <MenuIcon />
@@ -52,7 +52,7 @@ const Navbar = () => {
           isMenuClicked ? "-translate-x-0" : "-translate-x-full"
         }`}
       >
-        <div className="w-full flex flex-col-reverse lg:flex-col lg:px-14">
+        <div className="w-full  flex flex-col-reverse lg:flex-col lg:px-14">
           <section
             className={`flex flex-col lg:flex-row items-center  xl:justify-between lg:py-0 w-full ${
               scrolling ? "lg:hidden" : ""
@@ -68,7 +68,7 @@ const Navbar = () => {
               <BookButton />
             </div>
           </section>
-          <section className="  montserrat-bold">
+          <section className="h-full justify-center items-center montserrat-bold">
             <NavLinks />
           </section>
         </div>
