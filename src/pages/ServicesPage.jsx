@@ -1,9 +1,10 @@
 import React from "react";
+import CoSolutions from "../components/CoSolutions/CoSolutions";
 
 const ServicesPage = () => {
   return (
     <div>
-      <h1>This is Services Page</h1>
+      <CoSolutions />
     </div>
   );
 };
