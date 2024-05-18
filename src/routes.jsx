@@ -2,6 +2,7 @@ import Main from "./layout/Main";
 
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
+import ServicesPage from "./pages/ServicesPage";
 
 import "./index.css";
 const routes = [
@@ -13,6 +14,7 @@ const routes = [
       { path: "/", element: <HomePage /> },
       { path: "/home", element: <HomePage /> },
       { path: "/about", element: <AboutPage /> },
+      { path: "/services", element: <ServicesPage /> },
     ],
   },
   // {
