@@ -1,8 +1,4 @@
 import React from "react";
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
-
-// Import your background image
-import backgroundImage from "../../../public/services-bg.png";
 import {
   FaUserTie,
   FaClipboardCheck,
@@ -48,7 +44,7 @@ const servicesData = [
 const OurServices = () => {
   return (
     <div>
-      <section className="bg-white p-8 shadow-md  text-center">
+      <section className="bg-white p-8 shadow-md text-center">
         <h2 className="text-blue-600 italic text-2xl mb-4">What We Do</h2>
         <h3 className="font-bold text-black text-2xl mb-4">Our Services</h3>
         <p className="text-gray-800 w-1/2 mx-auto">
@@ -59,15 +55,17 @@ const OurServices = () => {
         </p>
       </section>
 
-      <section className="grid grid-cols-1 lg:px-20 md:grid-cols-2 lg:grid-cols-3 gap-x-8 py-16 bg-gray-100">
+      <section className="grid grid-cols-1 lg:px-20 md:grid-cols-2 lg:grid-cols-3 gap-x-10 py-16 bg-gray-100">
         {servicesData.map((service, index) => (
-          <div key={index} className="mx-auto mb-8">
+          <div key={index} className="w-auto mb-8 py-4">
+            {" "}
+            {/* Added padding on y-axis */}
             <div className="bg-white shadow-sm p-4 border">
               <div className="flex flex-col items-center mb-2">
                 <div className="rounded-full flex text-2xl justify-center items-center relative -top-14 bg-white h-20 w-20 border">
                   {service.imageURL}
                 </div>
-                <div className="text-center relative -top-5 h-full">
+                <div className="text-center relative -top-5 h-full py-16">
                   <h4 className="font-bold text-2xl mb-2">{service.heading}</h4>
                   <p>{service.text}</p>
                 </div>

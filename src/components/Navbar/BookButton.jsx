@@ -1,9 +1,14 @@
 const BookButton = () => {
-    return (
-        <button className="border w-full uppercase border-gray-300 px-4 py-2 text-gray-800 hover:bg-gray-200 focus:outline-none">
-            Book an appointment
-        </button>
-    );
+  return (
+    <div className="border px-4 py-2 uppercase border-gray-300 hover:bg-white">
+      <a
+        href="mailto:contactnexsoit@gmail.com"
+        className=" michroma-regular  hover:text-black focus:outline-none text-white inline-block text-center"
+      >
+        Book an appointment
+      </a>
+    </div>
+  );
 };
 
 export default BookButton;

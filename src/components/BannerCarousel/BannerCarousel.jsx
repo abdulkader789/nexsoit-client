@@ -90,16 +90,16 @@ const BannerCarousel = () => {
                   </h2>
                   <p className="text-md lg:text-xl mb-3">{item.paragraph}</p>
                 </div>
-                <div className="flex w-full justify-center">
+                <div className="flex w-full space-x-5 justify-center ">
                   <button
                     href={item.redirect}
-                    className="  bg-blue-400 px-5 py-2 lg:py-4  border-white border-2 block lg:px-20 mt-4   transition duration-300 text-black"
+                    className="uppercase outfit-medium bg-blue-400 px-5 py-2 lg:py-4 text-white  border-white border-2 block lg:px-20 mt-4   transition duration-300 "
                   >
                     View Details
                   </button>
                   <button
                     href={item.redirect}
-                    className=" text-white px-5 py-2 lg:py-4 lg:px-20 mt-4    border-white border-2 block  hover:bg-white hover:text-black transition duration-300"
+                    className="uppercase outfit-medium  text-white px-5 py-2 lg:py-4 lg:px-20 mt-4    border-white border-2 block  hover:bg-white hover:text-black transition duration-300"
                   >
                     Contact Us
                   </button>

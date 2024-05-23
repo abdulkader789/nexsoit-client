@@ -1,0 +1,47 @@
+import React, { createContext, useContext, useState, useEffect } from "react";
+
+// Create a context object
+const MobileNavContext = createContext();
+
+// Create a custom hook to use the MobileNavContext
+export const useMobileNav = () => {
+  return useContext(MobileNavContext);
+};
+
+// Create a provider component
+export const MobileNavProvider = ({ children }) => {
+  const [isActive, setIsActive] = useState(false);
+
+  const handleClick = () => {
+    setIsActive((prev) => !prev);
+  };
+
+  // Effect to set the overflow style property of the body based on isActive state
+  //   useEffect(() => {
+  //     if (isActive) {
+  //       document.body.style.overflow = "hidden";
+  //     } else {
+  //       document.body.style.overflow = "auto";
+  //     }
+
+  //     // Cleanup function to reset overflow property when component unmounts
+  //     return () => {
+  //       document.body.style.overflow = "auto";
+  //     };
+  //   }, [isActive]);
+
+  // Value provided by the context
+  const contextValue = {
+    isActive,
+    handleClick,
+  };
+
+  return (
+    <MobileNavContext.Provider value={contextValue}>
+      {children}
+    </MobileNavContext.Provider>
+  );
+};
+
+// Export MobileNavProvider as default export
+export default MobileNavProvider;

@@ -74,41 +74,13 @@ const colors = ["bg-skyBlue", "bg-darkBlue", "bg-blackShade"];
 
 const HeroSection = () => {
   return (
-    <main className="relative z-30 lg:px-20  w-full lg:h-[60vh]  ">
+    <main className="relative z-30 lg:px-20  w-full ">
       <div className=" h-full w-full relative  lg:-top-36 shadow-md    bg-gray-100 rounded-md">
-        <section className="flex flex-col lg:flex-row justify-center items-center    h-1/2 ">
-          {jobData.map((item, index) => (
-            <div
-              key={index}
-              className={`lg:flex-1  h-full  border-gray-300 pt-10 ${
-                index !== jobData.length - 1 ? "lg:border-r-2" : ""
-              }`}
-            >
-              <div className=" h-full">
-                <h2 className="mb-5 h-14 text-xl font-bold text-center">
-                  {item.title}
-                </h2>
-                <div className=" mb-2 flex  justify-center items-center  text-center text-3xl ">
-                  {item.imageURL}
-                </div>
-                {/* <div className="">
-                  <p className="text-lg text-center">
-                    Projects completed {item.projectsCompleted}
-                  </p>
-                  <p className="text-lg text-center">
-                    Number of our clients {item.clientsWorkedWith}
-                  </p>
-                </div> */}
-              </div>
-            </div>
-          ))}
-        </section>
-
-        <section className="flex h-1/2 flex-col lg:flex-row ">
+        <section className="flex flex-col lg:flex-row ">
           {servicesData.map((item, index) => (
             <div
               key={index}
-              className={`flex flex-1 justify-center  mb-4 ${colors[index]} h-full text-white `}
+              className={`flex flex-1 justify-center py-20   ${colors[index]} h-full text-white `}
             >
               <div className="flex   h-full p-10 ">
                 {/* First Div - Icon */}

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { FaAngleDown } from "react-icons/fa"; // Import the down arrow icon
+import { useMobileNav } from "../../contexts/MobileNavContext";
 
 const navLinks = [
   { title: "Home", path: "/" },
@@ -17,7 +18,7 @@ const navLinks = [
 
 const NavLinks = () => {
   const [activeIndex, setActiveIndex] = useState(null);
-
+  const { isActive, handleClick } = useMobileNav();
   const handleDropdownClick = (index) => {
     if (activeIndex === index) {
       setActiveIndex(null);
@@ -27,20 +28,20 @@ const NavLinks = () => {
   };
 
   return (
-    <ul className="nav-links flex flex-col lg:flex-row relative z-50 w-full">
+    <ul className="nav-links flex flex-col  lg:flex-row relative z-50 w-full lg:w-auto">
       {navLinks.map((link, index) => (
         <li
           key={index}
-          className="flex-1 py-4 border-b-[1px] border-gray-200 lg:border-none px-5"
+          className="flex-1 px-10 lg:px-5 michroma-regular text-[14px] py-4 border-b-[1px] border-gray-200 lg:border-none "
         >
           {link.dropdown ? (
-            <div className="relative">
+            <div className="relative ">
               <span
                 className="block uppercase cursor-pointer"
                 onClick={() => handleDropdownClick(index)}
               >
                 {link.title}
-                <FaAngleDown className="ml-1 relative -top-[1px] inline-block text-2xl" />
+                <FaAngleDown className="ml-1 relative -top-[1px] inline-block  text-2xl" />
               </span>
               {activeIndex === index && (
                 <ul className="lg:absolute lg:top-10 lg:bg-white  h-40 lg:left-0  py-2 px-4 lg:w-48 lg:py-5">
@@ -53,6 +54,7 @@ const NavLinks = () => {
                         to={`${link.path}/${item
                           .toLowerCase()
                           .replace(/\s+/g, "-")}`}
+                        onClick={handleClick}
                       >
                         {item}
                       </Link>
@@ -62,7 +64,11 @@ const NavLinks = () => {
               )}
             </div>
           ) : (
-            <Link to={link.path} className="block uppercase">
+            <Link
+              to={link.path}
+              className="block uppercase"
+              onClick={handleClick}
+            >
               {link.title}
             </Link>
           )}

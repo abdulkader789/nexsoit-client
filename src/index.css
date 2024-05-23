@@ -354,3 +354,20 @@
 .bg-blackShade {
   background-color: #283149;
 }
+
+.navbar-bg {
+  background-color: rgba(36, 114, 145, 0.90); /* Slightly transparent dark blue color */
+  backdrop-filter: blur(10px); /* Glassy effect */
+  
+}
+
+/* styles.css */
+@media (max-width: 1024px) {
+  .sidebar-bg {
+    background-color: rgba(36, 114, 145, 0.90); /* Slightly transparent dark blue color */
+    backdrop-filter: blur(10px); /* Glassy effect */
+  }
+}
+
+
+
