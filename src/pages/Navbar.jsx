@@ -38,7 +38,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`w-full montserrat-regular navbar-bg   z-50 sticky top-0 text-white `}
+      className={`w-full montserrat-regular navbar-bg   z-50 sticky top-0 text-white transition-all duration-400 ease-in-out`}
       ref={navRef}
       style={
         {
