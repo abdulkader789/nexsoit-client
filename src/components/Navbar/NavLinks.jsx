@@ -28,11 +28,11 @@ const NavLinks = () => {
   };
 
   return (
-    <ul className="nav-links flex flex-col  lg:flex-row relative z-50 w-full lg:w-auto">
+    <ul className=" flex flex-col  lg:flex-row relative z-50 w-full lg:w-auto">
       {navLinks.map((link, index) => (
         <li
           key={index}
-          className="flex-1 px-10 lg:px-5 michroma-regular text-[14px] py-4 border-b-[1px] border-gray-200 lg:border-none "
+          className="flex-1 px-10 lg:px-5 michroma-regular text-[10px] lg:text-[14px] py-4 border-b-[1px] border-gray-200 lg:border-none "
         >
           {link.dropdown ? (
             <div className="relative ">

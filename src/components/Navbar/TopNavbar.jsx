@@ -8,7 +8,7 @@ const TopNavbar = () => {
       <div>
         <WelcomeMessage />
       </div>
-      <section className="flex py-1">
+      <section className="flex ">
         <NavContacts />
         <NavIcons />
       </section>

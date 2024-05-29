@@ -1,36 +1,34 @@
 import React from "react";
 
 const OurApproach = () => {
-  const cardsData = [
+  const cardData = [
     {
-      title: "Card 1",
-      imageURL: "imageURL1.jpg",
-      description: "Description for card 1",
+      title: "Market Research",
+      description:
+        "Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      imageURL:
+        "https://miro.medium.com/v2/resize:fit:1400/1*liyNBfK4sAT8K9JP1rjAlQ.jpeg",
     },
     {
-      title: "Card 2",
-      imageURL: "imageURL2.jpg",
-      description: "Description for card 2",
+      title: "Data Analysis",
+      description:
+        "Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.",
+      imageURL:
+        "https://miro.medium.com/v2/resize:fit:1400/1*liyNBfK4sAT8K9JP1rjAlQ.jpeg",
     },
     {
-      title: "Card 3",
-      imageURL: "imageURL3.jpg",
-      description: "Description for card 3",
+      title: "Inventory Management",
+      description:
+        "Eorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      imageURL:
+        "https://miro.medium.com/v2/resize:fit:1400/1*liyNBfK4sAT8K9JP1rjAlQ.jpeg",
     },
     {
-      title: "Card 4",
-      imageURL: "imageURL4.jpg",
-      description: "Description for card 4",
-    },
-    {
-      title: "Card 5",
-      imageURL: "imageURL5.jpg",
-      description: "Description for card 5",
-    },
-    {
-      title: "Card 6",
-      imageURL: "imageURL6.jpg",
-      description: "Description for card 6",
+      title: "Legal Support",
+      description:
+        "Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.",
+      imageURL:
+        "https://miro.medium.com/v2/resize:fit:1400/1*liyNBfK4sAT8K9JP1rjAlQ.jpeg",
     },
   ];
 
@@ -52,24 +50,27 @@ const OurApproach = () => {
           </p>
         </div>
       </section>
-      <section>
-        <div className="flex flex-wrap justify-center">
-          {cardsData.map((card, index) => (
-            <div key={index} className="w-full sm:w-1/2 md:w-1/3 p-4">
-              <div className="bg-white rounded-lg overflow-hidden shadow-md">
-                <img
-                  src={card.imageURL}
-                  alt={card.title}
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-4">
-                  <h3 className="text-xl font-bold mb-2">{card.title}</h3>
-                  <p className="text-gray-700">{card.description}</p>
-                </div>
-              </div>
+      <section className="w-full p-20 bg-orange-100">
+        {cardData.map((card, index) => (
+          <div
+            key={index}
+            className={`w-full flex h-[500px] ${
+              index % 2 === 1 ? "flex-row-reverse" : "flex-row"
+            }`}
+          >
+            <div className="h-full w-[45%] shadow-sm  bg-white flex flex-col justify-center items-center px-20">
+              <h3 className="text-4xl font-semibold mb-2">{card.title}</h3>
+              <p className="text-gray-600">{card.description}</p>
             </div>
-          ))}
-        </div>
+            <div className="h-full w-[55%] border">
+              <img
+                className="h-full w-full object-cover"
+                src={card.imageURL}
+                alt={card.title}
+              />
+            </div>
+          </div>
+        ))}
       </section>
     </div>
   );

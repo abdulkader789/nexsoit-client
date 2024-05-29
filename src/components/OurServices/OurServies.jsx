@@ -55,12 +55,10 @@ const OurServices = () => {
         </p>
       </section>
 
-      <section className="grid grid-cols-1 lg:px-20 md:grid-cols-2 lg:grid-cols-3 gap-x-10 py-16 bg-gray-100">
+      <section className="flex w-full justify-center items-center px-32  h-full  flex-wrap py-16 bg-gray-100">
         {servicesData.map((service, index) => (
-          <div key={index} className="w-auto mb-8 py-4">
-            {" "}
-            {/* Added padding on y-axis */}
-            <div className="bg-white shadow-sm p-4 border">
+          <div key={index} className="w-96 mb-20 mx-5">
+            <div className="bg-white h-[400px] shadow-sm p-4 border transition duration-300 hover:border border-transparent hover:border-blue-500">
               <div className="flex flex-col items-center mb-2">
                 <div className="rounded-full flex text-2xl justify-center items-center relative -top-14 bg-white h-20 w-20 border">
                   {service.imageURL}

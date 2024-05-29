@@ -76,12 +76,26 @@ const BannerCarousel = () => {
         {bannerSlides.map((item, index) => (
           <SwiperSlide key={index}>
             <div className="relative w-full h-[50vh] lg:h-[88vh]  flex justify-center items-center">
+              <div className="area">
+                <ul className="circles">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </div>
               <img
                 src={item.imageURL}
                 alt={` ${index + 1}`}
                 className="w-full h-full object-cover"
               />
-              <div className="absolute w-full h-full bg-blue-400 opacity-50"></div>{" "}
+              <div className="absolute w-full h-full bg-blue-400 opacity-70"></div>{" "}
               {/* Cyan overlay */}
               <div className="absolute w-full text-white text-center">
                 <div className="lg:w-1/2 mx-auto">
@@ -93,13 +107,13 @@ const BannerCarousel = () => {
                 <div className="flex w-full space-x-5 justify-center ">
                   <button
                     href={item.redirect}
-                    className="uppercase outfit-medium bg-blue-400 px-5 py-2 lg:py-4 text-white  border-white border-2 block lg:px-20 mt-4   transition duration-300 "
+                    className="uppercase outfit-medium text-[12px] lg:text-sm bg-blue-500 px-5 py-2 lg:py-4 text-white  block lg:px-20 mt-4   transition duration-300 "
                   >
                     View Details
                   </button>
                   <button
                     href={item.redirect}
-                    className="uppercase outfit-medium  text-white px-5 py-2 lg:py-4 lg:px-20 mt-4    border-white border-2 block  hover:bg-white hover:text-black transition duration-300"
+                    className="uppercase outfit-medium text-[12px] lg:text-sm text-white px-5 py-2 lg:py-4 lg:px-20 mt-4    border border-1 block  hover:bg-white hover:text-black transition duration-300"
                   >
                     Contact Us
                   </button>

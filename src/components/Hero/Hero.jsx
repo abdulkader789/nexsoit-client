@@ -76,11 +76,11 @@ const HeroSection = () => {
   return (
     <main className="relative z-30 lg:px-20  w-full ">
       <div className=" h-full w-full relative  lg:-top-36 shadow-md    bg-gray-100 rounded-md">
-        <section className="flex flex-col lg:flex-row ">
+        <section className="flex flex-col lg:flex-row  ">
           {servicesData.map((item, index) => (
             <div
               key={index}
-              className={`flex flex-1 justify-center py-20   ${colors[index]} h-full text-white `}
+              className={`flex flex-1 h-96 justify-center py-20   ${colors[index]} h-full text-white `}
             >
               <div className="flex   h-full p-10 ">
                 {/* First Div - Icon */}
