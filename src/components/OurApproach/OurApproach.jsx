@@ -7,28 +7,28 @@ const OurApproach = () => {
       description:
         "Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       imageURL:
-        "https://miro.medium.com/v2/resize:fit:1400/1*liyNBfK4sAT8K9JP1rjAlQ.jpeg",
+        "https://media.sproutsocial.com/uploads/2023/04/How-to-do-market-research_Final.jpg",
     },
     {
       title: "Data Analysis",
       description:
         "Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.",
       imageURL:
-        "https://miro.medium.com/v2/resize:fit:1400/1*liyNBfK4sAT8K9JP1rjAlQ.jpeg",
+        "https://lpsonline.sas.upenn.edu/sites/default/files/2022-10/plpso-feratures-data-business.jpg",
     },
     {
       title: "Inventory Management",
       description:
         "Eorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       imageURL:
-        "https://miro.medium.com/v2/resize:fit:1400/1*liyNBfK4sAT8K9JP1rjAlQ.jpeg",
+        "https://www.countmetech.com/media/featured_image/2022/11/12/Inventory_pic3.png",
     },
     {
       title: "Legal Support",
       description:
         "Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.",
       imageURL:
-        "https://miro.medium.com/v2/resize:fit:1400/1*liyNBfK4sAT8K9JP1rjAlQ.jpeg",
+        "https://content.jdmagicbox.com/comp/bangalore/s5/080pxx80.xx80.121003092947.a1s5/catalogue/justitia-kothanur-bangalore-lawyers-for-accident-claims-mmw79n21nh.jpg",
     },
   ];
 

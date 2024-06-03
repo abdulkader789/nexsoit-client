@@ -1,94 +1,103 @@
 import React from "react";
-import { FaPaintBrush, FaUsers } from "react-icons/fa";
-import { FaChartBar, FaCode } from "react-icons/fa";
 
-import { FaChartLine, FaChartPie, FaMoneyBillWaveAlt } from "react-icons/fa";
+import {
+  FaChartLine,
+  FaChartPie,
+  FaMoneyBillWaveAlt,
+  FaLaptopCode,
+  FaMobileAlt,
+  FaCode,
+  FaDatabase,
+  FaCloud,
+  FaShieldAlt,
+} from "react-icons/fa";
+
+const colors = [
+  "bg-skyBlue",
+  "bg-darkBlue",
+  "bg-blackShade",
+  "bg-lightBlue",
+  "bg-navyBlue",
+  "bg-charcoalBlack",
+];
 
 const servicesData = [
   {
-    imageURL: <FaChartLine />,
-    heading: "Business and Financial Planning",
+    imageURL: <FaLaptopCode />,
+    heading: "Custom Software Development",
     description:
-      "Create strategic business plans and financial forecasts to guide decision-making and achieve organizational objectives.",
+      "Develop tailored software solutions to meet your unique business requirements, ensuring efficiency and scalability.",
+    bgClass: colors[0],
   },
   {
-    imageURL: <FaChartPie />,
-    heading: "Analysis & Projections",
+    imageURL: <FaMobileAlt />,
+    heading: "Mobile App Development",
     description:
-      "Conduct in-depth financial analysis and develop projections to identify trends, opportunities, and potential risks.",
+      "Create innovative mobile applications for both iOS and Android platforms, focusing on user engagement and functionality.",
+    bgClass: colors[1],
   },
   {
-    imageURL: <FaMoneyBillWaveAlt />,
-    heading: "Investment Advice",
-    description:
-      "Provide expert investment advice and portfolio management services to optimize returns and minimize risks.",
-  },
-];
-
-const jobData = [
-  {
-    title: "Web Development",
     imageURL: <FaCode />,
-    projectsCompleted: 100,
-    clientsWorkedWith: 50,
-    redirect: "/web-development-jobs",
+    heading: "Full-Stack Development",
+    description:
+      "Offer comprehensive full-stack development services, from front-end design to back-end integration, for scalable and secure applications.",
+    bgClass: colors[2],
   },
   {
-    title: "Web Design",
-    imageURL: <FaPaintBrush />,
-    projectsCompleted: 80,
-    clientsWorkedWith: 40,
-    redirect: "/web-design-jobs",
+    imageURL: <FaDatabase />,
+    heading: "Database Management",
+    description:
+      "Provide robust database management services, ensuring data integrity, security, and performance optimization.",
+    bgClass: colors[3],
   },
   {
-    title: "UI/UX Design",
-    imageURL: <FaPaintBrush />,
-    projectsCompleted: 60,
-    clientsWorkedWith: 30,
-    redirect: "/ui-ux-design-jobs",
+    imageURL: <FaCloud />,
+    heading: "Cloud Computing",
+    description:
+      "Leverage cloud computing technologies to enhance your business operations with scalable and flexible cloud solutions.",
+    bgClass: colors[4],
   },
   {
-    title: "SEO",
-    imageURL: <FaChartBar />,
-    projectsCompleted: 120,
-    clientsWorkedWith: 60,
-    redirect: "/seo-jobs",
-  },
-  {
-    title: "Marketing",
-    imageURL: <FaUsers />,
-    projectsCompleted: 150,
-    clientsWorkedWith: 75,
-    redirect: "/marketing-jobs",
-  },
-  {
-    title: "Photo & Video Editing",
-    imageURL: <FaPaintBrush />,
-    projectsCompleted: 70,
-    clientsWorkedWith: 35,
-    redirect: "/photo-video-editing-jobs",
+    imageURL: <FaShieldAlt />,
+    heading: "Cybersecurity Services",
+    description:
+      "Implement advanced cybersecurity measures to protect your business from cyber threats and ensure data confidentiality.",
+    bgClass: colors[5],
   },
 ];
 
-const colors = ["bg-skyBlue", "bg-darkBlue", "bg-blackShade"];
+const HeroCard = () => {
+  return <div></div>;
+};
 
 const HeroSection = () => {
   return (
-    <main className="relative z-30 lg:px-20  w-full ">
-      <div className=" h-full w-full relative  lg:-top-36 shadow-md    bg-gray-100 rounded-md">
-        <section className="flex flex-col lg:flex-row  ">
+    <main className="relative z-30 lg:px-20   bg-white w-full ">
+      <div className=" h-full w-full relative  lg:-top-40 shadow-md    bg-gray-100 px-2 lg:px-20 py-10 rounded-md">
+        <h1 className="poppins-extrabold text-4xl mb-5 text-center">
+          Our Servies
+        </h1>
+        <section className="grid grid-cols-1  sm:grid-cols-2  gap-3 w-full xl:grid-cols-3 xl:gap-5  py-5">
           {servicesData.map((item, index) => (
             <div
               key={index}
-              className={`flex flex-1 h-96 justify-center py-20   ${colors[index]} h-full text-white `}
+              className={`flex p-4 h-72 xl:mx-auto   justify-center items-center  border w-full  bg-white text-black `}
             >
-              <div className="flex   h-full p-10 ">
+              <div className="flex flex-col  lg:p-10 ">
                 {/* First Div - Icon */}
-                <div className="mr-2 text-5xl">{item.imageURL}</div>
+                <div
+                  className={` text-5xl mb-3 flex justify-center text-blue-500`}
+                >
+                  {item.imageURL}
+                </div>
                 {/* Second Div - Header and Paragraph */}
                 <div className="">
-                  <h2 className="mb-2 text-2xl font-bold">{item.heading}</h2>
-                  <p className="mb-2 text-xl">{item.description}</p>
+                  <h2 className="mb-2 text-sm lg:text-xl  text-center poppins-semibold">
+                    {item.heading}
+                  </h2>
+                  <p className=" text-sm work-sans text-center">
+                    {item.description}
+                  </p>
                 </div>
               </div>
             </div>

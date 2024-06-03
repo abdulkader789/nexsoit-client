@@ -13,7 +13,7 @@ const HomePage = () => {
     <div>
       <BannerCarousel />
       <HeroSection />
-      <OurServices />
+      {/* <OurServices /> */}
       <OurApproach />
       <BlogPost />
       <Testimonial />

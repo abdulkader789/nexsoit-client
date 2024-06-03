@@ -346,17 +346,32 @@ html {
 
 
 /* styles.css */
+/* styles.css */
+
 .bg-skyBlue {
-  background-color: #0e85ca;
+  background-color: #87CEEB; /* Sky Blue color */
 }
 
 .bg-darkBlue {
-  background-color: #07588a;
+  background-color: #00008B; /* Dark Blue color */
 }
 
 .bg-blackShade {
-  background-color: #283149;
+  background-color: #333333; /* Black Shade color */
 }
+
+.bg-lightBlue {
+  background-color: #ADD8E6; /* Light Blue color */
+}
+
+.bg-navyBlue {
+  background-color: #000080; /* Navy Blue color */
+}
+
+.bg-charcoalBlack {
+  background-color: #36454F; /* Charcoal Black color */
+}
+
 
 
 

@@ -22,7 +22,7 @@ const Footer = () => {
         <div className="max-w-6xl mx-auto flex flex-wrap">
           <div className="footer-col md:w-[30%] sm:w-1/2 w-full px-4 mb-8 md:mb-0">
             <h4 className="text-2xl font-medium mb-5 text-[#1768FE]">
-              Kormosala
+              Logo Here
             </h4>
             <ul className="list-none">
               <li className="mb-6">
