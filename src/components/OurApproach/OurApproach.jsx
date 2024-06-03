@@ -27,8 +27,7 @@ const OurApproach = () => {
       title: "Legal Support",
       description:
         "Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.",
-      imageURL:
-        "https://content.jdmagicbox.com/comp/bangalore/s5/080pxx80.xx80.121003092947.a1s5/catalogue/justitia-kothanur-bangalore-lawyers-for-accident-claims-mmw79n21nh.jpg",
+      imageURL: "https://qcdc.org.qa/wp-content/uploads/2022/10/law_7974.jpg",
     },
   ];
 
