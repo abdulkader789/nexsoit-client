@@ -3,14 +3,15 @@ import React from "react";
 const OurSpecialist = () => {
   return (
     <div className="mb-20">
-      <div className="bg-[url('./bg-specialist.jpg')] max-w-full bg-no-repeat bg-cover bg-center bg-blend-multiply bg-black/70">
+      <div className="bg-[url('./bg-specialist.jpg')] max-w-full py-2 bg-no-repeat bg-cover bg-center bg-blend-multiply bg-black/70">
         <div className="max-w-5xl mx-auto flex justify-center items-center lg:flex-row flex-col flex-wrap px-2 pt-14 lg:pb-20 pb-14">
           <div className="flex-1 text-white lg:basis-[40%] basis-[50%] text-center lg:text-left lg:mb-0 mb-10">
             <p className="uppercase">
               <small>our specialties</small>
             </p>
             <h2 className="text-4xl font-semibold max-w-md">
-              Get the best consult from <span className="text-[#A6D16E]">your expert</span> advisors
+              Get the best consult from{" "}
+              <span className="text-[#A6D16E]">your expert</span> advisors
             </h2>
             <button className="uppercase font-bold text-sm mt-6 px-5 py-2 border border-solid border-white rounded hover:bg-white hover:text-black">
               Book a consultation
@@ -44,7 +45,8 @@ const OurSpecialist = () => {
               <p className="font-semibold">
                 <span className="text-white font-bold">
                   We offer finance and consulting
-                </span> services for companies
+                </span>{" "}
+                services for companies
                 <span className="text-white font-bold"> & businesses</span>
               </p>
             </div>
