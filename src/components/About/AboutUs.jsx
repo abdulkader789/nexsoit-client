@@ -8,7 +8,7 @@ const AboutUs = () => {
         {/* Top Image */}
         <div className="">
           <img
-            src="https://yesyemindustries.com/images/whatwedo/ab1.jpg"
+            src="https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0yMThiYXRjaDQta2F0aWUtMTcuanBn.jpg"
             alt="Top Image"
             className="h-full w-full"
           />

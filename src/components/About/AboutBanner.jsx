@@ -5,7 +5,7 @@ const AboutBanner = () => {
     <section
       className="relative h-64 flex items-center justify-center text-white"
       style={{
-        backgroundImage: `url('https://consumptionsolution.com/wp-content/uploads/2023/03/About-us-Corporate-Profile.jpg')`,
+        backgroundImage: `url('https://img.freepik.com/free-vector/abstract-geometric-wireframe-background_52683-59421.jpg?size=626&ext=jpg&ga=GA1.1.553209589.1715040000&semt=ais')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}

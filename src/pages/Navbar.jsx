@@ -55,6 +55,10 @@ const Navbar = () => {
       <main
         className={`w-full px-10 py-2 lg:py-auto lg:w-auto h-[6vh] lg:h-auto flex justify-between items-center ${
           isScrolled ? "bg-glassy" : ""
+        }  ${
+          location.pathname !== "/" && location.pathname !== "/home"
+            ? " bg-glassy"
+            : " "
         }`}
       >
         <div className="">
