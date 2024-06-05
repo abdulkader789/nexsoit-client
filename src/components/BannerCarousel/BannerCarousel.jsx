@@ -97,25 +97,31 @@ const BannerCarousel = () => {
               />
               <div className="absolute w-full h-full bg-blue-400 opacity-70"></div>{" "}
               {/* Cyan overlay */}
-              <div className="absolute w-full text-white text-center">
+              <div className="absolute w-full text-center">
                 <div className="lg:w-1/2 mx-auto">
-                  <h2 className="text-2xl lg:text-5xl outfit-bold mb-3">
+                  <h2 className="text-2xl lg:text-5xl outfit-bold mb-3 text-white">
                     {item.heading}
                   </h2>
-                  <p className="text-md lg:text-xl mb-3">{item.paragraph}</p>
+                  <p className="text-md lg:text-xl mb-3 text-white ">
+                    {item.paragraph}
+                  </p>
                 </div>
-                <div className="flex w-full space-x-5 justify-center ">
+                <div className="flex w-full space-x-2 md:space-x-5 px-2 justify-center  pt-5 ">
                   <button
-                    href={item.redirect}
-                    className="uppercase outfit-medium text-[12px] lg:text-sm bg-blue-500 px-5 py-2 lg:py-4 text-white  block lg:px-20 mt-4   transition duration-300 "
+                    className="glow-btn glow-effect flex bg-green-400 items-center h-10 w-1/2 sm:w-auto sm:px-10 lg:h-auto lg:py-3 lg:px-14"
+                    // style={{
+                    //   backgroundImage: "linear-gradient(#447cf7, #3f7cee)",
+                    // }}
                   >
-                    View Details
+                    <span className="capitalize poppins-regular text-sm text-white">
+                      view details
+                    </span>
                   </button>
-                  <button
-                    href={item.redirect}
-                    className="uppercase outfit-medium text-[12px] lg:text-sm text-white px-5 py-2 lg:py-4 lg:px-20 mt-4    border border-1 block  hover:bg-white hover:text-black transition duration-300"
-                  >
-                    Contact Us
+
+                  <button className="glow-btn bg-white h-10 flex items-center w-1/2 sm:w-auto sm:px-10 lg:h-auto lg:py-3 lg:px-14">
+                    <span className="capitalize poppins-regular text-sm text-black ">
+                      contact us
+                    </span>
                   </button>
                 </div>
               </div>
