@@ -646,9 +646,9 @@ html {
 
 
 .btn-learn-more {
-  color: purple;
+  color: rgb(10, 57, 185);
   text-decoration: none;
-  border: 2px solid purple;
+  border: 2px solid rgb(25, 45, 219);
   background: transparent;
   position: relative;
   transition: all 1s;
@@ -667,9 +667,9 @@ html {
   top: 0;
   left: -40px;
   transform: skewX(45deg);
-  background-color: purple;
+  background-color: rgb(32, 82, 189);
   z-index: -1;
-  transition: all 1s;
+  transition: all 0.8s;
 }
 
 .btn-learn-more:hover::before {
@@ -680,12 +680,12 @@ html {
 .shadow__btn {
   border: none;
   transition: 0.5s;
-  background: rgb(0,140,255);
-  box-shadow: 0 0 15px rgb(0,140,255);
-  animation: shadow-glow 2s infinite;
+  background: rgb(253, 253, 253);
+  /* box-shadow: 0 0 15px rgb(0,140,255); */
+  /* animation: shadow-glow 2s infinite; */
 }
 
-@keyframes shadow-glow {
+/* @keyframes shadow-glow {
   0% {
     box-shadow: 0 0 3px rgb(0,140,255),
                 0 0 7px rgb(0,140,255),
@@ -705,4 +705,4 @@ html {
                 0 0 15px rgb(0,140,255),
                 0 0 30px rgb(0,140,255);
   }
-}
+} */

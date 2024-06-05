@@ -1,15 +1,12 @@
 import React from "react";
 
 import {
-  FaChartLine,
-  FaChartPie,
-  FaMoneyBillWaveAlt,
   FaLaptopCode,
   FaMobileAlt,
   FaCode,
-  FaDatabase,
-  FaCloud,
-  FaShieldAlt,
+  FaPencilRuler,
+  FaVideo,
+  FaSearch,
 } from "react-icons/fa";
 
 const colors = [
@@ -38,30 +35,31 @@ const servicesData = [
   },
   {
     imageURL: <FaCode />,
-    heading: "Full-Stack Web Development",
+    heading: "Web Development",
     description:
       "Offer comprehensive full-stack development services, from front-end design to back-end integration, for scalable and secure applications.",
     bgClass: colors[2],
   },
   {
-    imageURL: <FaDatabase />,
-    heading: "Database Management",
+    imageURL: <FaPencilRuler />,
+    heading: "User Experience Design",
     description:
-      "Provide robust database management services, ensuring data integrity, security, and performance optimization.",
+      "Design intuitive and engaging user experiences, focusing on usability, accessibility, and user satisfaction.",
     bgClass: colors[3],
   },
   {
-    imageURL: <FaCloud />,
-    heading: "Cloud Computing",
+    imageURL: <FaVideo />,
+    heading: "Video Editing",
     description:
-      "Leverage cloud computing technologies to enhance your business operations with scalable and flexible cloud solutions.",
+      "Provide professional video editing services, enhancing visual storytelling with creative and technical expertise.",
     bgClass: colors[4],
   },
   {
-    imageURL: <FaShieldAlt />,
-    heading: "Cybersecurity Services",
+    imageURL: <FaSearch />,
+    heading: "SEO Services",
     description:
-      "Implement advanced cybersecurity measures to protect your business from cyber threats and ensure data confidentiality.",
+      "Enhance your online visibility and drive organic traffic with expert SEO strategies, including keyword research, on-page optimization, and link building.",
+
     bgClass: colors[5],
   },
 ];
@@ -70,12 +68,12 @@ const HeroCard = () => {
   return <div></div>;
 };
 
-const HeroSection = () => {
+const HeroServices = () => {
   return (
     <main className="relative z-30 lg:px-20    w-full ">
       <div className=" h-full w-full relative  lg:-top-40 shadow-md    bg-gray-100 px-2 lg:px-20 py-10 rounded-md">
-        <h1 className="poppins-extrabold text-4xl mb-5 text-center">
-          Our Servies
+        <h1 className="poppins-medium text-2xl md:text-4xl mb-5 text-center">
+          Empowering Digital Solutions
         </h1>
         <section className="grid grid-cols-1  sm:grid-cols-2  gap-3 w-full xl:grid-cols-3 xl:gap-5  py-5">
           {servicesData.map((item, index) => (
@@ -113,4 +111,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default HeroServices;
