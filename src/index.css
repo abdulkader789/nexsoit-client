@@ -643,3 +643,66 @@ html {
   background: var(--color);
   color: #fff;
 }
+
+
+.btn-learn-more {
+  color: purple;
+  text-decoration: none;
+  border: 2px solid purple;
+  background: transparent;
+  position: relative;
+  transition: all 1s;
+  overflow: hidden;
+}
+
+.btn-learn-more:hover {
+  color: white;
+}
+
+.btn-learn-more::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  top: 0;
+  left: -40px;
+  transform: skewX(45deg);
+  background-color: purple;
+  z-index: -1;
+  transition: all 1s;
+}
+
+.btn-learn-more:hover::before {
+  width: 160%;
+}
+
+
+.shadow__btn {
+  border: none;
+  transition: 0.5s;
+  background: rgb(0,140,255);
+  box-shadow: 0 0 15px rgb(0,140,255);
+  animation: shadow-glow 2s infinite;
+}
+
+@keyframes shadow-glow {
+  0% {
+    box-shadow: 0 0 3px rgb(0,140,255),
+                0 0 7px rgb(0,140,255),
+                0 0 15px rgb(0,140,255),
+                0 0 30px rgb(0,140,255);
+  }
+  50% {
+    box-shadow: 0 0 7px rgb(0,140,255),
+                0 0 15px rgb(0,140,255),
+                0 0 30px rgb(0,140,255),
+                0 0 45px rgb(0,140,255),
+                0 0 60px rgb(0,140,255);
+  }
+  100% {
+    box-shadow: 0 0 3px rgb(0,140,255),
+                0 0 7px rgb(0,140,255),
+                0 0 15px rgb(0,140,255),
+                0 0 30px rgb(0,140,255);
+  }
+}

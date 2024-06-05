@@ -33,14 +33,14 @@ const OurApproach = () => {
   ];
 
   return (
-    <div className="bg-orange-50 pt-5 pb-10">
+    <div className="bg-[url('./bg-specialist.jpg')] max-w-full py-2 bg-no-repeat bg-cover bg-center bg-blend-multiply bg-black/70 text-white">
       <section className="py-6">
         <div className="text-center poppins-regular  mb-8">
-          <h4 className="text-lg text-gray-500">Our Approach</h4>
+          <h4 className="text-lg">Our Approach</h4>
           <h2 className="text-3xl font-bold">Why Choose Us</h2>
         </div>
         <div className="w-2/3 mx-auto">
-          <p className="text-center text-gray-600 poppins-regular">
+          <p className="text-center poppins-regular">
             At Our Company, we take pride in our customer-centric approach. Our
             team of experts is dedicated to understanding your unique needs and
             providing tailored solutions to help you achieve your goals. With a
@@ -66,13 +66,21 @@ const OurApproach = () => {
               />
             </div>
 
-            <div className="h-full relative md:w-[45%] shadow-sm  bg-white flex flex-col justify-center items-center p-5 lg:px-20">
+            <div
+              className="h-full relative md:w-[45%] shadow-sm flex  flex-col justify-center items-center p-5 lg:px-20"
+              style={{
+                backgroundColor: "rgba(50, 50, 50, 0.5)", // Semi-transparent grayish-black
+                backdropFilter: "blur(10px)", // Blur effect
+                WebkitBackdropFilter: "blur(10px)", // Blur effect for Safari
+              }}
+            >
               <h3 className="text-4xl font-semibold mb-2 montserrat-semibold">
                 {card.title}
               </h3>
-              <p className="text-gray-600 work-sans">{card.description}</p>
+              <p className="work-sans">{card.description}</p>
+
               <div
-                className={`absolute hidden md:flex top-[45%] h-20 w-20 text-2xl justify-center items-center text-white  rounded-full bg-black
+                className={`absolute hidden md:flex top-[45%] h-20 w-20 text-2xl justify-center items-center shadow__btn text-white rounded-full
               ${index % 2 === 1 ? "-right-10" : "-left-10"}`}
               >
                 {index + 1}

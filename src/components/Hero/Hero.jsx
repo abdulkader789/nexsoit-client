@@ -38,7 +38,7 @@ const servicesData = [
   },
   {
     imageURL: <FaCode />,
-    heading: "Full-Stack Development",
+    heading: "Full-Stack Web Development",
     description:
       "Offer comprehensive full-stack development services, from front-end design to back-end integration, for scalable and secure applications.",
     bgClass: colors[2],
@@ -72,7 +72,7 @@ const HeroCard = () => {
 
 const HeroSection = () => {
   return (
-    <main className="relative z-30 lg:px-20   bg-white w-full ">
+    <main className="relative z-30 lg:px-20    w-full ">
       <div className=" h-full w-full relative  lg:-top-40 shadow-md    bg-gray-100 px-2 lg:px-20 py-10 rounded-md">
         <h1 className="poppins-extrabold text-4xl mb-5 text-center">
           Our Servies
@@ -91,13 +91,18 @@ const HeroSection = () => {
                   {item.imageURL}
                 </div>
                 {/* Second Div - Header and Paragraph */}
-                <div className="">
+                <div className="flex flex-col justify-center">
                   <h2 className="mb-2 text-sm lg:text-xl  text-center poppins-semibold">
                     {item.heading}
                   </h2>
                   <p className=" text-sm work-sans text-center">
                     {item.description}
                   </p>
+                  <div className="flex justify-center py-6">
+                    <button className="btn-learn-more z-10 py-2 text-sm px-5 poppins-regular">
+                      Learn More
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
