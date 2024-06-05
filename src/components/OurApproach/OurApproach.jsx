@@ -3,36 +3,37 @@ import React from "react";
 const OurApproach = () => {
   const cardData = [
     {
-      title: "Market Research",
+      title: "Expert Team",
       description:
-        "Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Our team comprises experienced professionals in web development, mobile app development, and custom software solutions. We bring extensive industry knowledge and technical expertise to every project.",
       imageURL:
-        "https://media.sproutsocial.com/uploads/2023/04/How-to-do-market-research_Final.jpg",
+        "https://onix-systems.com/_next/image?url=https%3A%2F%2Fadmin.onix-systems.com%2Fuploads%2Fp_G_Yi_NH_Hh_KM_2v_Yjaxsk_Sg_T05kajm_IF_Ts_N_68f41f8139.jpg&w=3840&q=100",
     },
     {
-      title: "Data Analysis",
+      title: "Tailored Solutions",
       description:
-        "Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.",
+        "We understand that every business is unique. Our custom software solutions are designed to meet your specific needs, ensuring that you get the best results for your business goals.",
       imageURL:
-        "https://lpsonline.sas.upenn.edu/sites/default/files/2022-10/plpso-feratures-data-business.jpg",
+        "https://www.enfintechnologies.com/wp-content/uploads/mob-app-scaled.jpg",
     },
     {
-      title: "Inventory Management",
+      title: "Ongoing Support",
       description:
-        "Eorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "We provide continuous support and maintenance services to ensure your software remains up-to-date and bug-free. Our dedicated team is always ready to assist you with any issues.",
       imageURL:
-        "https://www.countmetech.com/media/featured_image/2022/11/12/Inventory_pic3.png",
+        "https://images.ctfassets.net/l6o0o2yu98mw/7hkvVbrEjgXG8HEySgHJFI/b97a10db2e1b43f98b1a3376c4e1f977/WMK_Oct_Blog_-2_2023_Website_Dev_Handoff.jpg?w=1500&h=844&fl=progressive&q=90&fm=jpg",
     },
     {
-      title: "Legal Support",
+      title: "Client-Centric Approach",
       description:
-        "Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.",
-      imageURL: "https://qcdc.org.qa/wp-content/uploads/2022/10/law_7974.jpg",
+        "We prioritize our clients' needs and satisfaction. Our innovative approach and commitment to delivering high-quality software solutions ensure that your business objectives are met effectively.",
+      imageURL:
+        "https://miro.medium.com/v2/resize:fit:1400/1*budTgAVH0jERpQRNp4LGpA.png",
     },
   ];
 
   return (
-    <div>
+    <div className="bg-orange-50 pt-5 pb-10">
       <section className="py-6">
         <div className="text-center poppins-regular  mb-8">
           <h4 className="text-lg text-gray-500">Our Approach</h4>
@@ -40,7 +41,7 @@ const OurApproach = () => {
         </div>
         <div className="w-2/3 mx-auto">
           <p className="text-center text-gray-600 poppins-regular">
-            At OurCompany, we take pride in our customer-centric approach. Our
+            At Our Company, we take pride in our customer-centric approach. Our
             team of experts is dedicated to understanding your unique needs and
             providing tailored solutions to help you achieve your goals. With a
             focus on innovation and quality, we strive to exceed expectations
@@ -49,7 +50,7 @@ const OurApproach = () => {
           </p>
         </div>
       </section>
-      <section className="w-full lg:px-40 px-2 lg:py-10 bg-orange-100">
+      <section className="w-full lg:px-40 px-2 lg:py-10 ">
         {cardData.map((card, index) => (
           <div
             key={index}

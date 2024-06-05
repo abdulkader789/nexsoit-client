@@ -10,7 +10,7 @@ import Footer from "./../components/Footer/Footer";
 const AboutPage = () => {
   return (
     <div>
-      <AboutHeader />
+      <AboutUs />
       <OurSpecialist />
       <Team />
       <Footer />

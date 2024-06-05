@@ -108,7 +108,7 @@ const BannerCarousel = () => {
                 </div>
                 <div className="flex w-full space-x-2 md:space-x-5 px-2 justify-center  pt-5 ">
                   <button
-                    className="glow-btn glow-effect flex bg-green-400 items-center h-10 w-1/2 sm:w-auto sm:px-10 lg:h-auto lg:py-3 lg:px-14"
+                    className="glow-btn glow-effect flex bg-green-400 items-center justify-center h-10 w-1/2 sm:w-auto sm:px-10 lg:h-auto lg:py-3 lg:px-14"
                     // style={{
                     //   backgroundImage: "linear-gradient(#447cf7, #3f7cee)",
                     // }}
@@ -118,7 +118,7 @@ const BannerCarousel = () => {
                     </span>
                   </button>
 
-                  <button className="glow-btn bg-white h-10 flex items-center w-1/2 sm:w-auto sm:px-10 lg:h-auto lg:py-3 lg:px-14">
+                  <button className="glow-btn bg-white h-10 flex justify-center items-center w-1/2 sm:w-auto sm:px-10 lg:h-auto lg:py-3 lg:px-14">
                     <span className="capitalize poppins-regular text-sm text-black ">
                       contact us
                     </span>
