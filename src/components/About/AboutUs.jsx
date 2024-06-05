@@ -20,10 +20,10 @@ const AboutUs = () => {
       </div>
       <div className="relative flex flex-col items-start w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:max-w-screen-xl ">
         <div className="mb-16 lg:my-40 lg:max-w-lg lg:pr-5 ">
-          <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+          <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight michroma-bold text-gray-900 sm:text-4xl sm:leading-none">
             About Us
           </h2>
-          <p className="pr-5 mb-5 text-base text-gray-700 md:text-lg">
+          <p className="pr-5 mb-5 text-base poppins-regular text-gray-700 md:text-lg">
             At Our Company, we are passionate about creating high-quality
             software solutions tailored to meet the unique needs of our clients.
             As a dedicated software agency, we specialize in web development,
@@ -32,19 +32,9 @@ const AboutUs = () => {
             technical expertise to every project, ensuring exceptional results.
           </p>
           <div className="flex items-center">
-            <a
-              href="/"
-              className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide bg-blue-600 text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-            >
-              Get started
-            </a>
-            <a
-              href="/"
-              aria-label=""
-              className="inline-flex items-center font-semibold text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-700"
-            >
-              Learn more
-            </a>
+            <button href="/" className="button-quote michroma-bold">
+              Get A Quote
+            </button>
           </div>
         </div>
       </div>
