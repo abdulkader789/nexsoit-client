@@ -48,57 +48,59 @@ const Contact = () => {
   };
 
   return (
-    <div className="flex flex-col bg-black work-sans">
+    <div
+      className="flex flex-col work-sans object-cover"
+      style={{
+        backgroundImage:
+          "url(https://png.pngtree.com/background/20210709/original/pngtree-technology-business-line-ppt-background-picture-image_931725.jpg)",
+      }}
+    >
       <div className="lg:min-h-screen flex flex-col justify-center items-center lg:flex-row px-2 py-10 xl:w-[70%] mx-auto">
         <section className="w-full lg:w-1/2 flex flex-col">
           <div className="mb-5">
             <span className="mb-4 block text-base font-semibold text-primary">
               Contact Us
             </span>
-            <h2 className="text-[32px] font-bold capitalize text-dark text-white sm:text-[40px] lg:text-[36px] xl:text-[40px]">
+            <h2 className="text-[32px] font-bold capitalize  lg:text-[36px] xl:text-[40px]">
               Let's work together?
             </h2>
-            <p className="text-base leading-relaxed text-body-color text-white md:w-2/3">
+            <p className="text-base leading-relaxed text-body-color md:w-2/3">
               We have world-class, flexible support via live chat, email, and
               phone. We guarantee that you’ll be able to have any issue resolved
               within 24 hours.
             </p>
           </div>
           <div className="mb-8 w-full max-w-[370px] flex justify-center items-center">
-            <div className="text-white text-4xl mr-5">
+            <div className=" text-4xl mr-5">
               <FaMapMarkerAlt />
             </div>
             <div className="w-full">
-              <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
+              <h4 className="mb-1 text-xl font-bold text-dark ">
                 Our Location
               </h4>
-              <p className="text-base text-white">
-                Natun Bazar, Gulshan-2, Dhaka
-              </p>
+              <p className="text-base ">Natun Bazar, Gulshan-2, Dhaka</p>
             </div>
           </div>
 
           <div className="mb-8 w-full max-w-[370px] flex justify-center items-center">
-            <div className="text-white text-4xl mr-5">
+            <div className=" text-4xl mr-5">
               <FaPhoneAlt />
             </div>
             <div className="w-full">
-              <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
+              <h4 className="mb-1 text-xl font-bold text-dark ">
                 Phone Number
               </h4>
-              <p className="text-base text-white">(+880) 1788838782</p>
+              <p className="text-base ">(+880) 1788838782</p>
             </div>
           </div>
 
           <div className="mb-8 w-full max-w-[370px] flex justify-center items-center">
-            <div className="text-white text-4xl mr-5">
+            <div className="text-4xl mr-5">
               <FaEnvelope />
             </div>
             <div className="w-full">
-              <h4 className="mb-1 text-xl font-bold text-white">
-                Email Address
-              </h4>
-              <p className="text-base text-white">nexsoitinfo@gmail.com</p>
+              <h4 className="mb-1 text-xl font-bold ">Email Address</h4>
+              <p className="text-base ">nexsoitinfo@gmail.com</p>
             </div>
           </div>
         </section>
