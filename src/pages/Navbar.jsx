@@ -53,8 +53,8 @@ const Navbar = () => {
         <TopNavbar />
       </header>
       <main
-        className={`w-full px-10 py-2 lg:py-auto lg:w-auto h-[6vh] lg:h-auto flex justify-between items-center ${
-          isScrolled ? "bg-glassy" : ""
+        className={`w-full px-10 py-2 lg:py-auto lg:w-auto h-[7vh] lg:h-auto flex justify-between items-center ${
+          isScrolled || isActive ? "bg-glassy" : ""
         }  ${
           location.pathname !== "/" && location.pathname !== "/home"
             ? " bg-glassy"
@@ -69,7 +69,7 @@ const Navbar = () => {
           <FaBars />
         </div>
         <section
-          className={`h-[94vh] sidebar-bg left-0 lg:h-auto lg:-translate-x-0 w-full absolute lg:relative top-[6vh] lg:top-0 z-20 transition-all duration-500 ease-in-out ${
+          className={`h-[94vh] sidebar-bg left-0 lg:h-auto lg:-translate-x-0 w-full absolute lg:relative top-[7vh] lg:top-0 z-20 transition-all duration-500 ease-in-out ${
             isActive ? "-translate-x-0" : "-translate-x-full"
           }`}
         >
