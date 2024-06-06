@@ -6,7 +6,7 @@ const OurVision = () => {
       <div className="relative flex flex-col items-end z-10 w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:max-w-screen-xl">
         <div className="mb-16 lg:my-40 lg:max-w-lg lg:pr-5">
           <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight michroma-bold text-gray-900 sm:text-4xl sm:leading-none">
-            Our Mission
+            Our Vision
           </h2>
           <p className="pr-5 mb-5 text-base poppins-regular text-gray-700 md:text-lg">
             At Our Company, we are passionate about creating high-quality
@@ -34,7 +34,7 @@ const OurVision = () => {
         </svg>
         <img
           className="object-cover w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full"
-          src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+          src="https://img.freepik.com/free-photo/successful-happy-business-team_53876-74892.jpg"
           alt=""
         />
       </div>

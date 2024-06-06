@@ -140,11 +140,12 @@ const BannerCarousel = () => {
                   </p>
                 </div>
                 <div className="flex w-full space-x-2 md:space-x-5 px-2 justify-center  pt-5 ">
-                  <Link to={`services/${item.redirect}`}>
-                    <button className="glow-btn glow-effect flex  bg-green-400 items-center justify-center h-12 w-1/2 sm:w-auto sm:px-10  lg:px-14">
-                      <span className="capitalize poppins-regular text-sm text-white">
-                        view details
-                      </span>
+                  <Link
+                    to={`services/${item.redirect}`}
+                    className="flex  bg-green-400 items-center justify-center h-12 w-1/2 sm:w-auto sm:px-10  lg:px-14 glow-btn glow-effect"
+                  >
+                    <button className="capitalize poppins-regular text-sm text-white ">
+                      view details
                     </button>
                   </Link>
 

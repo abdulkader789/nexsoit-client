@@ -14,7 +14,7 @@ const AboutUs = () => {
         </svg>
         <img
           className="object-cover w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full"
-          src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+          src="https://www.teambonding.com/wp-content/uploads/2019/11/corporate-team-building.jpg"
           alt=""
         />
       </div>

@@ -7,6 +7,7 @@ import ServicesPage from "./pages/ServicesPage";
 import "./index.css";
 import ErrorPage from "./error-page";
 import Contact from "./pages/ContactPage";
+import TeamPage from "./pages/TeamPage";
 const routes = [
   {
     path: "/",
@@ -18,6 +19,7 @@ const routes = [
       { path: "/home", element: <HomePage /> },
       { path: "/about", element: <AboutPage /> },
       { path: "/services", element: <ServicesPage /> },
+      { path: "/team", element: <TeamPage /> },
       { path: "/contact", element: <Contact /> },
     ],
   },
