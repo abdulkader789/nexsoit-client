@@ -12,7 +12,8 @@ const navLinks = [
     // dropdown: true,
     // submenu: ["Service 1", "Service 2", "Service 3"],
   },
-  { title: "Blogs", path: "/blogs" },
+  { title: "Team", path: "/team" },
+  // { title: "Blogs", path: "/blogs" },
   { title: "Contact", path: "/contact" },
 ];
 

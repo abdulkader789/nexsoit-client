@@ -5,16 +5,20 @@ import AboutPage from "./pages/AboutPage";
 import ServicesPage from "./pages/ServicesPage";
 
 import "./index.css";
+import ErrorPage from "./error-page";
+import Contact from "./pages/ContactPage";
 const routes = [
   {
     path: "/",
     element: <Main />,
+    errorElement: <ErrorPage />,
 
     children: [
       { path: "/", element: <HomePage /> },
       { path: "/home", element: <HomePage /> },
       { path: "/about", element: <AboutPage /> },
       { path: "/services", element: <ServicesPage /> },
+      { path: "/contact", element: <Contact /> },
     ],
   },
   // {

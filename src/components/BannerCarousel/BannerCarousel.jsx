@@ -9,54 +9,87 @@ import "swiper/css/pagination";
 
 // import required modules
 import { EffectFade, Navigation, Pagination, Autoplay } from "swiper/modules";
+import { Link, redirect } from "react-router-dom";
 
 const BannerCarousel = () => {
   const bannerSlides = [
     {
-      heading: "Join Our Team Today",
-      paragraph:
-        "Looking for a challenging and rewarding career opportunity? Join Our Company and become part of a dynamic team that values creativity, collaboration, and continuous growth. Explore our current job openings and take the next step in your career journey with us.",
+      title: "Innovative Software Solutions",
+      description:
+        "Discover cutting-edge software solutions tailored to meet the unique needs of your business. Our team of experts delivers innovative and efficient systems that drive productivity and growth",
       imageURL: "https://www.myhrtoolkit.com/hubfs/strategicvstacticalhr.jpg",
-      redirect: "/join-our-team",
+      redirect: "software-service",
     },
     {
-      heading: "Discover Our Latest Products",
-      paragraph:
-        "Explore Our Company's latest products and services designed to meet the evolving needs of our customers. From advanced technology solutions to innovative design concepts, we are dedicated to delivering quality products that enhance lives and drive success.",
+      title: "Digital Transformation Consulting",
+      description:
+        "Transform your business with our digital transformation consulting services. We guide you through the process of adopting new technologies and optimizing your operations for the digital age.",
       imageURL:
         "https://ica.coop/sites/default/files/styles/full_image/public/news-item-fullimage/ballpen-blur-close-461077-2013101013.jpg?itok=F-Fwb7Lb",
-      redirect: "/discover-our-products",
+      redirect: "consultation-service",
     },
     {
-      heading: "Explore Our Services",
-      paragraph:
-        "At Our Company, we offer a comprehensive range of services tailored to meet the diverse needs of our clients. From consulting and strategy development to implementation and support, our team is committed to delivering exceptional results at every stage of the project lifecycle.",
+      title: "IT Support and Maintenance",
+      description:
+        "Ensure your systems run smoothly with our IT support and maintenance services. Our team provides reliable and timely support to keep your operations uninterrupted.",
       imageURL:
         "https://www.hsestudyguide.com/wp-content/uploads/2023/08/pexels-photo-7014337.jpeg",
-      redirect: "/explore-our-services",
+      redirect: "support-maintenance-service",
     },
     {
-      heading: "Our Mission and Values",
-      paragraph:
-        "At Our Company, our mission is to empower individuals and organizations to achieve their full potential through innovative solutions and exceptional service. We are guided by a set of core values that define who we are and how we do business.",
+      title: "API Development and Integration",
+      description:
+        "Enhance your software capabilities with our API development and integration services. We create secure and efficient APIs that enable seamless communication between your applications.",
       imageURL: "https://www.myhrtoolkit.com/hubfs/strategicvstacticalhr.jpg",
-      redirect: "/our-mission-and-values",
+      redirect: "api-development-service",
     },
     {
-      heading: "Upcoming Events",
-      paragraph:
-        "Stay up-to-date with the latest news and events from Our Company. From industry conferences and networking events to product launches and webinars, there's always something exciting happening in our community. Join us and be part of the conversation.",
+      title: "Quality Assurance and Testing",
+      description:
+        "Ensure the reliability of your software with our quality assurance and testing services. We conduct thorough testing to identify and resolve issues, delivering high-quality products.",
       imageURL:
         "https://ica.coop/sites/default/files/styles/full_image/public/news-item-fullimage/ballpen-blur-close-461077-2013101013.jpg?itok=F-Fwb7Lb",
-      redirect: "/upcoming-events",
+      redirect: "quality-testing-service",
     },
     {
-      heading: "Stay Connected with Us",
-      paragraph:
-        "Connect with Our Company on social media and stay informed about our latest news, updates, and promotions. Follow us on Facebook, Twitter, LinkedIn, and Instagram to join the conversation and be part of our online community. We look forward to connecting with you!",
+      title: "Performance Optimization",
+      description:
+        "Boost the performance of your software with our optimization services. We analyze and enhance your applications to ensure they run smoothly and efficiently.",
       imageURL:
         "https://www.hsestudyguide.com/wp-content/uploads/2023/08/pexels-photo-7014337.jpeg",
-      redirect: "/stay-connected",
+      redirect: "performance-optimization-service",
+    },
+    {
+      title: "Payment Gateway Integration",
+      description:
+        "Facilitate secure online transactions with our payment gateway integration services. We provide solutions that enable seamless and secure payment processing for your e-commerce platforms.",
+      imageURL:
+        "https://www.hsestudyguide.com/wp-content/uploads/2023/08/pexels-photo-7014337.jpeg",
+      redirect: "payment-gateway-service",
+    },
+    {
+      title: "SEO and Digital Marketing",
+      description:
+        "Increase your online visibility with our SEO and digital marketing services. We offer comprehensive strategies to improve search engine rankings and drive traffic to your website.",
+      imageURL:
+        "https://www.hsestudyguide.com/wp-content/uploads/2023/08/pexels-photo-7014337.jpeg",
+      redirect: "seo-marketing-service",
+    },
+    {
+      title: "Interactive Dashboards",
+      description:
+        "Visualize your data with our interactive dashboard solutions. We create customizable dashboards that provide real-time insights and analytics.",
+      imageURL:
+        "https://www.hsestudyguide.com/wp-content/uploads/2023/08/pexels-photo-7014337.jpeg",
+      redirect: "dashboard-service",
+    },
+    {
+      title: "Ultimate Video Solutions",
+      description:
+        "Elevate your video content with our comprehensive suite of services, from basic editing to advanced techniques, ensuring seamless delivery across all platforms.",
+      imageURL:
+        "https://www.hsestudyguide.com/wp-content/uploads/2023/08/pexels-photo-7014337.jpeg",
+      redirect: "video-service",
     },
   ];
 
@@ -100,23 +133,20 @@ const BannerCarousel = () => {
               <div className="absolute w-full text-center">
                 <div className="lg:w-1/2 mx-auto">
                   <h2 className="text-2xl lg:text-5xl outfit-bold mb-3 text-white">
-                    {item.heading}
+                    {item.title}
                   </h2>
                   <p className="text-md lg:text-xl mb-3 text-white ">
-                    {item.paragraph}
+                    {item.description}
                   </p>
                 </div>
                 <div className="flex w-full space-x-2 md:space-x-5 px-2 justify-center  pt-5 ">
-                  <button
-                    className="glow-btn glow-effect flex  bg-green-400 items-center justify-center h-12 w-1/2 sm:w-auto sm:px-10  lg:px-14"
-                    // style={{
-                    //   backgroundImage: "linear-gradient(#447cf7, #3f7cee)",
-                    // }}
-                  >
-                    <span className="capitalize poppins-regular text-sm text-white">
-                      view details
-                    </span>
-                  </button>
+                  <Link to={`services/${item.redirect}`}>
+                    <button className="glow-btn glow-effect flex  bg-green-400 items-center justify-center h-12 w-1/2 sm:w-auto sm:px-10  lg:px-14">
+                      <span className="capitalize poppins-regular text-sm text-white">
+                        view details
+                      </span>
+                    </button>
+                  </Link>
 
                   <button className="glow-btn bg-white h-12  flex justify-center items-center w-1/2 sm:w-auto sm:px-10  lg:px-14">
                     <span className="capitalize poppins-regular text-sm text-black ">
