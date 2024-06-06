@@ -1,6 +1,6 @@
 const BookButton = () => {
   return (
-    <div className="border px-4 py-2 uppercase border-gray-300 hover:bg-white  text-white text-[10px] lg:text-[14px]  hover:text-black">
+    <div className="border px-4 py-2 uppercase border-gray-300 hover:bg-white  text-white text-[10px] lg:text-[12px]  hover:text-black">
       <a
         href="mailto:contactnexsoit@gmail.com"
         className=" michroma-regular   focus:outline-none inline-block text-center"

@@ -49,10 +49,10 @@ const Contact = () => {
 
   return (
     <div className="flex flex-col work-sans object-cover">
-      <div className="lg:min-h-screen flex flex-col justify-center items-center lg:flex-row px-2 py-10 xl:w-[70%] mx-auto">
-        <section className="w-full lg:w-1/2 flex flex-col">
-          <div className="mb-5">
-            <span className="mb-4 block text-base font-semibold text-primary">
+      <div className="lg:min-h-screen flex flex-col justify-center items-center lg:flex-row px-2 py-14 xl:w-[70%] mx-auto">
+        <section className="w-full lg:w-1/2 flex flex-col ">
+          <div className="my-5">
+            <span className=" block text-base font-semibold text-primary">
               Contact Us
             </span>
             <h2 className="text-[32px] font-bold capitalize  lg:text-[36px] xl:text-[40px]">

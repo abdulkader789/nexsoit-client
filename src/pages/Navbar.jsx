@@ -61,7 +61,7 @@ const Navbar = () => {
             : " "
         }`}
       >
-        <div className="">
+        <div className="w-40">
           <NavLogo />
         </div>
         <div className="flex justify-center h-full items-center lg:hidden">
