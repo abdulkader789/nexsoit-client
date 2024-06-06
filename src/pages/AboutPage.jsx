@@ -11,7 +11,7 @@ import Subscribe from "../components/Subscribe/Subscribe";
 
 const AboutPage = () => {
   return (
-    <div>
+    <div className="pt-8">
       <AboutUs />
       <OurVision />
       <OurSpecialist />

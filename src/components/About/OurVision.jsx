@@ -2,7 +2,7 @@ import React from "react";
 
 const OurVision = () => {
   return (
-    <div className="relative flex flex-col py-16 lg:pt-0 lg:flex-col lg:pb-0 ">
+    <div className="relative flex flex-col py-16 lg:pt-0 lg:flex-col lg:pb-0 lg:bg-violet-50">
       <div className="relative flex flex-col items-end z-10 w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:max-w-screen-xl">
         <div className="mb-16 lg:my-40 lg:max-w-lg lg:pr-5">
           <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight michroma-bold text-gray-900 sm:text-4xl sm:leading-none">

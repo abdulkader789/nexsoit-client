@@ -10,7 +10,7 @@ const OurApproach = () => {
         "https://onix-systems.com/_next/image?url=https%3A%2F%2Fadmin.onix-systems.com%2Fuploads%2Fp_G_Yi_NH_Hh_KM_2v_Yjaxsk_Sg_T05kajm_IF_Ts_N_68f41f8139.jpg&w=3840&q=100",
     },
     {
-      title: "Tailored Solutions",
+      title: "Customized solutions",
       description:
         "We understand that every business is unique. Our custom software solutions are designed to meet your specific needs, ensuring that you get the best results for your business goals.",
       imageURL:

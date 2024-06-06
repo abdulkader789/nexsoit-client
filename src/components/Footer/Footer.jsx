@@ -147,7 +147,9 @@ const Footer = () => {
         <div className="mt-16 py-4 bg-gray-100">
           <div className="max-w-6xl mx-auto px-4 flex gap-3 flex-col sm:flex-row justify-center sm:justify-between items-center sm:items-end">
             <p className="order-2 sm:order-1 text-center sm:text-left text-gray-500">
-              &copy; Copyright 2019 <strong>Logo</strong> - Powered By Logo
+              &copy; Copyright 2019{" "}
+              <strong className="michroma-regular">Nexsoit</strong> - Powered By{" "}
+              <span className="michroma-regular">Nexsoit</span>
             </p>
             <div className="flex gap-3 order-1 sm:order-2">
               {SocialIcons.map((socialIcon, index) => (
