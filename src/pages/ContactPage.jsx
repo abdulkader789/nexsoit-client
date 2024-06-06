@@ -48,13 +48,7 @@ const Contact = () => {
   };
 
   return (
-    <div
-      className="flex flex-col work-sans object-cover"
-      style={{
-        backgroundImage:
-          "url(https://png.pngtree.com/background/20210709/original/pngtree-technology-business-line-ppt-background-picture-image_931725.jpg)",
-      }}
-    >
+    <div className="flex flex-col work-sans object-cover">
       <div className="lg:min-h-screen flex flex-col justify-center items-center lg:flex-row px-2 py-10 xl:w-[70%] mx-auto">
         <section className="w-full lg:w-1/2 flex flex-col">
           <div className="mb-5">

@@ -30,6 +30,8 @@ const servicesData = [
       "Enterprise software development",
       "Cloud-native application development",
     ],
+    image:
+      "https://st4.depositphotos.com/12981370/24312/i/450/depositphotos_243120806-stock-photo-programmer-working-software-development-coding.jpg",
   },
   {
     icon: <FaMobileAlt />,
@@ -44,6 +46,8 @@ const servicesData = [
       "Progressive web apps",
       "Native app development",
     ],
+    image:
+      "https://media.istockphoto.com/id/1174690086/photo/software-developer-freelancer-working-at-home.jpg?s=612x612&w=0&k=20&c=loFqul06ggwtkwqSmzZnYfA72Vk7nFQOvDSzAN6YbtQ=",
   },
   {
     icon: <FaCode />,
@@ -58,6 +62,8 @@ const servicesData = [
       "CMS development",
       "Static website development",
     ],
+    image:
+      "https://media.istockphoto.com/id/1075599562/photo/programmer-working-with-program-code.jpg?s=612x612&w=0&k=20&c=n3Vw5SMbMCWW1YGG6lnTfrwndNQ8B_R4Vw-BN7LkqpA=",
   },
   {
     icon: <FaCloud />,
@@ -72,6 +78,8 @@ const servicesData = [
       "RESTful APIs",
       "GraphQL APIs",
     ],
+    image:
+      "https://cdn.create.vista.com/api/media/small/378111324/stock-photo-cloud-computing-technology-online-data-storage-business-network-concept-computer",
   },
 
   // Design
@@ -88,6 +96,7 @@ const servicesData = [
       "Wireframing",
       "User research",
     ],
+    image: "https://example.com/custom-software-development-image.jpg",
   },
   {
     icon: <FaVideo />,
@@ -102,6 +111,7 @@ const servicesData = [
       "Color grading",
       "Sound editing",
     ],
+    image: "https://example.com/custom-software-development-image.jpg",
   },
 
   // Marketing
@@ -118,6 +128,7 @@ const servicesData = [
       "Content marketing",
       "Social media marketing",
     ],
+    image: "https://example.com/custom-software-development-image.jpg",
   },
   {
     icon: <FaChartLine />,
@@ -132,6 +143,7 @@ const servicesData = [
       "Email marketing",
       "Influencer marketing",
     ],
+    image: "https://example.com/custom-software-development-image.jpg",
   },
 
   // Support
@@ -148,6 +160,7 @@ const servicesData = [
       "Server maintenance",
       "Backup and recovery",
     ],
+    image: "https://example.com/custom-software-development-image.jpg",
   },
   {
     icon: <FaCogs />,
@@ -162,6 +175,7 @@ const servicesData = [
       "Manual testing",
       "Performance testing",
     ],
+    image: "https://example.com/custom-software-development-image.jpg",
   },
   {
     icon: <FaTachometerAlt />,
@@ -176,6 +190,7 @@ const servicesData = [
       "Database optimization",
       "Caching strategies",
     ],
+    image: "https://example.com/custom-software-development-image.jpg",
   },
   {
     icon: <FaDollarSign />,
@@ -190,6 +205,7 @@ const servicesData = [
       "Payment APIs",
       "Fraud prevention",
     ],
+    image: "https://example.com/custom-software-development-image.jpg",
   },
   {
     icon: <FaTools />,
@@ -204,6 +220,7 @@ const servicesData = [
       "Change management",
       "Digital strategy development",
     ],
+    image: "https://example.com/custom-software-development-image.jpg",
   },
   {
     icon: <FaLaptopCode />,
@@ -218,18 +235,27 @@ const servicesData = [
       "AI and machine learning",
       "IoT solutions",
     ],
+    image: "https://example.com/custom-software-development-image.jpg",
   },
 ];
 
-const ServiceCard = ({ icon, title, description, list }) => {
+const ServiceCard = ({ icon, title, description, list, image }) => {
   return (
-    <div className="rounded overflow-hidden shadow-lg bg-gray-800">
-      <div className="px-6 py-4">
-        <div className="flex flex-col mb-4  relative">
+    <div className="relative rounded overflow-hidden shadow-lg bg-gray-700 group">
+      <div
+        className="absolute inset-0 bg-cover scale-125 bg-center opacity-0 group-hover:opacity-70  transform transition-transform duration-700 ease-in-out group-hover:scale-100"
+        style={{
+          backgroundImage: `url(${image})`,
+        }}
+      ></div>
+      <div className="absolute inset-0 bg-black bg-opacity-60 backdrop-blur-sm transition-opacity duration-500"></div>
+
+      <div className="relative px-6 py-4">
+        <div className="flex flex-col mb-4 relative">
           <div className="mr-4 text-6xl mb-5 text-green-300">{icon}</div>
-          <div className="text-xl  montserrat-semibold text-white">{title}</div>
-          <button className="absolute right-0 h-10 w-10 text-white hover:text-orange-300 rounded-full border  top-2 transition duration-200 ease-in-out transform hover:scale-105">
-            <span className="hover:translate-x-1  h-full flex justify-center items-center w-full transition duration-300 ease-in-out ">
+          <div className="text-xl montserrat-semibold text-white">{title}</div>
+          <button className="absolute right-0 h-10 w-10 text-white hover:text-orange-300 rounded-full border top-2 transition duration-200 ease-in-out transform hover:scale-105">
+            <span className="hover:translate-x-1 h-full flex justify-center items-center w-full transition duration-300 ease-in-out">
               <FaAngleDoubleRight />
             </span>
           </button>
@@ -313,6 +339,7 @@ const ServiceList = () => {
             title={service.title}
             description={service.description}
             list={service.list}
+            image={service.image}
           />
         ))}
       </div>
