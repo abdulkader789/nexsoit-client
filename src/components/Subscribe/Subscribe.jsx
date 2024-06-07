@@ -14,7 +14,7 @@ const Subscribe = () => {
             ad minim veniam, quis.
           </p>
         </div>
-        <button className="px-5 py-3 text-sm sm:text-base font-medium rounded-md text-white bg-[#FEAC36] hover:opacity-90">
+        <button className="px-5 py-3 text-sm sm:text-base font-medium rounded-md text-white bg-orange-300 hover:opacity-90">
           Create an Account
         </button>
       </div>

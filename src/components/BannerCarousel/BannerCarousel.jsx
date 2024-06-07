@@ -1,6 +1,6 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import "./BannerCarousel.css";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-fade";
@@ -101,7 +101,9 @@ const BannerCarousel = () => {
         effect={"fade"}
         navigation={true}
         // pagination={{ clickable: true }}
-        autoplay={{ delay: 2000 }}
+        autoplay={{ delay: 3000 }}
+        speed={3000}
+        fadeEffect={{ crossFade: true }}
         modules={[EffectFade, Navigation, Autoplay]}
         className="mySwiper"
         simulateTouch={false}
@@ -126,12 +128,12 @@ const BannerCarousel = () => {
               <img
                 src={item.imageURL}
                 alt={` ${index + 1}`}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover slide-zoom-effect"
               />
-              <div className="absolute w-full h-full bg-blue-400 opacity-70"></div>{" "}
+              <div className="absolute w-full h-full  bg-blue-400 opacity-70"></div>{" "}
               {/* Cyan overlay */}
               <div className="absolute w-full text-center">
-                <div className="lg:w-1/2 mx-auto">
+                <div className="lg:w-1/2 mx-auto slide-zoom-effect">
                   <h2 className="text-2xl lg:text-5xl outfit-bold mb-3 text-white">
                     {item.title}
                   </h2>
@@ -139,8 +141,8 @@ const BannerCarousel = () => {
                     {item.description}
                   </p>
                 </div>
-                <div className="flex w-full space-x-2 md:space-x-5 px-2 z-20 justify-center  pt-5 ">
-                  <button className="capitalize poppins-regular text-sm text-white   bg-green-400  h-12 w-1/2 sm:w-auto sm:px-10  lg:px-14 glow-btn glow-effect">
+                <div className="flex w-full space-x-2 md:space-x-5 px-2 justify-center  pt-5 ">
+                  <button className="capitalize poppins-regular text-sm text-white z-20   bg-green-400  h-12 w-1/2 sm:w-auto sm:px-10  lg:px-14 glow-btn glow-effect">
                     <Link
                       to={`/services`}
                       className="h-full w-full flex justify-center items-center"
@@ -149,7 +151,7 @@ const BannerCarousel = () => {
                     </Link>
                   </button>
 
-                  <button className="capitalize poppins-regular text-sm text-black   bg-white  h-12 w-1/2 sm:w-auto sm:px-10  lg:px-14 glow-btn">
+                  <button className="capitalize poppins-regular text-sm text-black z-20   bg-white  h-12 w-1/2 sm:w-auto sm:px-10  lg:px-14 glow-btn">
                     <Link
                       to={`/contact`}
                       className="h-full w-full flex justify-center items-center"

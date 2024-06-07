@@ -6,6 +6,7 @@ import {
   FaGooglePlusG,
   FaPinterestP,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const SocialIcons = [
   { Icon: FaFacebookF, text: "Facebook" },
@@ -15,14 +16,37 @@ const SocialIcons = [
   { Icon: FaPinterestP, text: "Pinterest" },
 ];
 
+const servicesData = [
+  {
+    title: "All",
+    slug: "all",
+  },
+  {
+    title: "Development",
+    slug: "development",
+  },
+  {
+    title: "Design",
+    slug: "design",
+  },
+  {
+    title: "Marketing",
+    slug: "marketing",
+  },
+  {
+    title: "Support",
+    slug: "support",
+  },
+];
+
 const Footer = () => {
   return (
     <div>
       <footer className="bg-white py-12">
-        <div className="max-w-6xl mx-auto flex flex-wrap">
-          <div className="footer-col md:w-[30%] sm:w-1/2 w-full px-4 mb-8 md:mb-0">
+        <div className="grid grid-cols-1 lg:grid-cols-4 px-10 xl:px-40">
+          <div className="px-4 mb-8 md:mb-0">
             <h4 className="text-2xl font-medium mb-5 text-[#1768FE]">
-              Logo Here
+              NEXSOIT
             </h4>
             <ul className="list-none">
               <li className="mb-6">
@@ -45,89 +69,61 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="footer-col md:w-1/5 sm:w-1/2 w-full px-4 mb-8 md:mb-0">
-            <h4 className="text-lg font-medium mb-5 text-gray-600">Employer</h4>
-            <ul className="list-none">
-              <li className="mb-2">
-                <a href="#" className="text-gray-500 no-underline">
-                  Browse Candidates
-                </a>
-              </li>
-              <li className="mb-2">
-                <a href="#" className="text-gray-500 no-underline">
-                  Post a Job
-                </a>
-              </li>
-              <li className="mb-2">
-                <a href="#" className="text-gray-500 no-underline">
-                  Employer Listing
-                </a>
-              </li>
-              <li className="mb-2">
-                <a href="#" className="text-gray-500 no-underline">
-                  Resume Page
-                </a>
-              </li>
-              <li className="mb-2">
-                <a href="#" className="text-gray-500 no-underline">
-                  DashBoard
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-500 no-underline">
-                  Job Packages
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div className="footer-col md:w-1/5 sm:w-1/2 w-full px-4 mb-8 sm:mb-0">
+          <div className="capitalize poppins-regular px-4 mb-8 md:mb-0">
             <h4 className="text-lg font-medium mb-5 text-gray-600">
-              Candidate
+              Quick Links
             </h4>
             <ul className="list-none">
               <li className="mb-2">
                 <a href="#" className="text-gray-500 no-underline">
-                  Browse Jobs
+                  home
                 </a>
               </li>
               <li className="mb-2">
                 <a href="#" className="text-gray-500 no-underline">
-                  Submit Resume
+                  about
                 </a>
               </li>
               <li className="mb-2">
                 <a href="#" className="text-gray-500 no-underline">
-                  DashBoard
+                  services
                 </a>
               </li>
               <li className="mb-2">
                 <a href="#" className="text-gray-500 no-underline">
-                  Browse Categories
+                  team
                 </a>
               </li>
               <li className="mb-2">
                 <a href="#" className="text-gray-500 no-underline">
-                  My Bookmarks
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-500 no-underline">
-                  Candidate Listing
+                  contact
                 </a>
               </li>
             </ul>
           </div>
 
-          <div className="footer-col md:w-[30%] sm:w-1/2 w-full px-4">
+          <div className=" px-4 mb-8 sm:mb-0">
+            <h4 className="text-lg font-medium mb-5 text-gray-600">Services</h4>
+            <ul className="list-none">
+              {servicesData.map((service, index) => (
+                <li key={index} className="mb-2">
+                  <Link to={`/services`} className="text-gray-500 no-underline">
+                    {service.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="px-4">
             <h4 className="text-lg font-medium mb-5 text-gray-600">
               Sign Up for Everyday Newsletter
             </h4>
             <ul className="list-none">
               <li className="mb-5">
                 <p className="text-gray-500">
-                  Subscribe to kormosala Pacific newsletter to get the latest
-                  jobs posted, candidates, and other latest news stay update
+                  Subscribe to newsletter to get the latest jobs posted,
+                  candidates, and other latest news stay update
                 </p>
               </li>
               <li className="flex items-center">

@@ -42,13 +42,13 @@ const NavIcons = () => {
       {socialIcons.map((socialIcon, index) => (
         <div
           key={index}
-          className={`flex p-2 rounded-full border justify-center items-center transition-colors duration-300 ${
+          className={`flex p-[6px] rounded-full border justify-center items-center transition-colors duration-300 ${
             index !== socialIcons.length - 1 ? "mr-5" : ""
           } ${socialIcon.textColor} ${
             socialIcon.hoverBgColor
           } hover:text-white`}
         >
-          <socialIcon.Icon className="cursor-pointer text-[14px]" />
+          <socialIcon.Icon className="cursor-pointer text-[12px]" />
           <p className="hidden">{socialIcon.text}</p>
         </div>
       ))}

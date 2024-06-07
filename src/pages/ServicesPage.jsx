@@ -3,6 +3,7 @@ import CoSolutions from "../components/CoSolutions/CoSolutions";
 import ServiceList from "../components/OurServices/ServiceList";
 import Subscribe from "../components/Subscribe/Subscribe";
 import Footer from "../components/Footer/Footer";
+import ServiceHeader from "../components/OurServices/ServiceHeader";
 
 const ServicesPage = () => {
   return (
@@ -14,6 +15,7 @@ const ServicesPage = () => {
             "url(https://storage.googleapis.com/moises-cms-music-ai/bg_music_ai_65815bc7f1/bg_music_ai_65815bc7f1.svg)",
         }}
       >
+        <ServiceHeader />
         <ServiceList />
       </div>
       <Subscribe />

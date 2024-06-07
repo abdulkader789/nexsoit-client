@@ -24,7 +24,7 @@ const NavContacts = () => {
       {contactDetails.map((contact, index) => (
         <div
           key={index}
-          className="flex text-[14px] items-center mr-4 mb-3 lg:mb-0"
+          className="flex text-[13px] poppins-regular items-center mr-4 mb-3 lg:mb-0"
         >
           <div className="mr-3 flex justify-center items-center ">
             {contact.icon}

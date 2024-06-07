@@ -1,9 +1,10 @@
 const WelcomeMessage = () => {
   return (
     <div className="">
-      <h1 className="text-sm roboto-regular font-extrabold uppercase">
-        Welcome to <span className="">Nexsoit</span>
-      </h1>
+      <p className="text-sm poppins-regular  capitalize">
+        Welcome to{" "}
+        <span className="text-blue-600 font-medium">Next Solution IT</span>
+      </p>
     </div>
   );
 };
