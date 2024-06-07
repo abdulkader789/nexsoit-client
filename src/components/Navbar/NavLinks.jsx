@@ -15,6 +15,7 @@ const navLinks = [
   { title: "Team", path: "/team" },
   // { title: "Blogs", path: "/blogs" },
   { title: "Contact", path: "/contact" },
+  // { title: "NewContact", path: "/newcontact" },
 ];
 
 const NavLinks = () => {
