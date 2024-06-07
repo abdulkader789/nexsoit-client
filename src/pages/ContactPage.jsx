@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 import Subscribe from "../components/Subscribe/Subscribe";
 import Footer from "../components/Footer/Footer";
 
@@ -10,6 +11,8 @@ const Contact = () => {
     email: "",
     message: "",
   });
+  const [successMessage, setSuccessMessage] = useState(""); // State for success message
+  const navigate = useNavigate(); // Initialize useNavigate
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -24,7 +27,7 @@ const Contact = () => {
 
     try {
       const response = await fetch(
-        `${import.meta.env.VITE_API_URL}/contact/contact-us`,
+        `${import.meta.env.VITE_API_URL}/contact/create-contact`,
         {
           method: "POST",
           headers: {
@@ -40,7 +43,11 @@ const Contact = () => {
 
       const data = await response.json();
       console.log("Success:", data);
-      // Handle success - you can show a success message or redirect the user
+      setSuccessMessage("Your message has been sent successfully!"); // Set success message
+
+      setTimeout(() => {
+        navigate("/"); // Redirect to home page after a delay
+      }, 3000);
     } catch (error) {
       console.error("Error:", error);
       // Handle error - you can show an error message to the user
@@ -49,6 +56,17 @@ const Contact = () => {
 
   return (
     <div className="flex flex-col work-sans object-cover">
+      {successMessage && (
+        <div className="bg-green-500 text-white p-4 text-center relative">
+          <span>{successMessage}</span>
+          <button
+            className="absolute top-1/2 right-4 transform -translate-y-1/2 text-lg"
+            onClick={() => setSuccessMessage("")}
+          >
+            &times;
+          </button>
+        </div>
+      )}
       <div className="lg:min-h-screen flex flex-col justify-center items-center lg:flex-row px-2 py-14 xl:w-[70%] mx-auto">
         <section className="w-full lg:w-1/2 flex flex-col ">
           <div className="my-5">
@@ -101,7 +119,7 @@ const Contact = () => {
 
         <section className="lg:w-1/2 w-full flex items-center">
           <div className="flex flex-col bg-slate-800 rounded-sm px-8 py-12 w-full border border-gray-600">
-            <form className="flex flex-col space-y-4">
+            <form className="flex flex-col space-y-4" onSubmit={handleSubmit}>
               <label className="font-bold text-lg text-white">Full Name</label>
               <input
                 type="text"
@@ -138,9 +156,8 @@ const Contact = () => {
                 className="border rounded-lg py-3 px-3 bg-black border-gray-700 placeholder-white-500 text-white"
               />
               <button
-                type="button"
+                type="submit"
                 className="border border-gray-700 bg-black text-white rounded-lg py-3 font-semibold"
-                onClick={handleSubmit}
               >
                 Submit
               </button>

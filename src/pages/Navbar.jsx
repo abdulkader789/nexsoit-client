@@ -9,6 +9,7 @@ import { useMobileNav } from "../contexts/MobileNavContext";
 import TopNavbar from "../components/Navbar/TopNavbar";
 import { defineDriver } from "localforage";
 import NavButton from "../components/Navbar/NavButton";
+import { useMenuClick } from "../contexts/MenuClickContext";
 
 const Navbar = () => {
   const location = useLocation(); // Use the useLocation hook
@@ -17,7 +18,6 @@ const Navbar = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [scrollThreshold, setScrollThreshold] = useState(100);
   const [isScrolled, setIsScrolled] = useState(false);
-
   const navRef = useRef(null);
 
   useEffect(() => {
@@ -52,8 +52,8 @@ const Navbar = () => {
         <TopNavbar />
       </header>
       <main
-        className={`w-full px-10 py-2 lg:py-auto lg:w-auto h-[6vh] lg:h-auto flex justify-between items-center ${
-          isScrolled || isActive ? "bg-glassy" : ""
+        className={`small-screen-bg w-full px-10 py-2 lg:py-auto lg:w-auto h-[6vh] lg:h-auto flex justify-between items-center ${
+          isScrolled ? "bg-glassy" : ""
         } ${
           location.pathname !== "/" && location.pathname !== "/home"
             ? "bg-glassy"

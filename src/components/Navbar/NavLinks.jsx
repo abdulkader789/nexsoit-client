@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
-import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
 import { FaAngleDown } from "react-icons/fa"; // Import the down arrow icon
 import { useMobileNav } from "../../contexts/MobileNavContext";
 
@@ -18,7 +18,8 @@ const navLinks = [
 ];
 
 const NavLinks = () => {
-  const { isActive, handleClick } = useMobileNav();
+  const { handleClick } = useMobileNav();
+  const location = useLocation();
 
   return (
     <ul className=" flex flex-col  lg:flex-row relative z-50 w-full lg:w-auto">
@@ -26,6 +27,7 @@ const NavLinks = () => {
         <li
           key={index}
           className="flex-1 px-10 lg:px-5 michroma-regular text-[10px] lg:text-[12px] py-4 border-b-[1px] border-gray-200 lg:border-none "
+          onClick={handleClick}
         >
           <Link to={link.path} className="block uppercase">
             {link.title}

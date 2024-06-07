@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
 import { FaAngleDoubleRight } from "react-icons/fa";
+
 const ServiceCard = ({ icon, title, description, list, image, slug }) => {
   return (
     <div className="relative rounded overflow-hidden shadow-lg bg-gray-700 group">
