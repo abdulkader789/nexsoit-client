@@ -4,6 +4,7 @@ import ServiceList from "../components/OurServices/ServiceList";
 import Subscribe from "../components/Subscribe/Subscribe";
 import Footer from "../components/Footer/Footer";
 import ServiceHeader from "../components/OurServices/ServiceHeader";
+import GetService from "../components/OurServices/GetService";
 
 const ServicesPage = () => {
   return (
@@ -18,6 +19,7 @@ const ServicesPage = () => {
         <ServiceHeader />
         <ServiceList />
       </div>
+      <GetService />
       <Subscribe />
       <Footer />
     </div>

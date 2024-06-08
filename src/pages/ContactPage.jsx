@@ -197,7 +197,7 @@ const ContactPage = () => {
         <div className="md:w-1/2 w-full">
           <ContactInfo />
         </div>
-        <div className="md:w-[30vw] w-full p-0 md:pt-10 ">
+        <div className="md:w-1/2 xl:w-[40vw] 2xl:w-[30vw] w-full p-0 md:pt-10 ">
           <ContactForm />
         </div>
       </div>

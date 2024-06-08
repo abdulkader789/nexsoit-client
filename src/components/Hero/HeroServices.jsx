@@ -72,7 +72,7 @@ const HeroServices = () => {
   return (
     <main className="relative z-30 lg:px-20    w-full ">
       <div className=" h-full w-full relative  lg:-top-40 shadow-md    bg-gray-100 px-2 lg:px-20 py-10 rounded-md">
-        <h1 className="noto-sans-medium uppercase text-2xl md:text-4xl mb-5 text-center">
+        <h1 className="marcellus-regular uppercase text-2xl md:text-4xl mb-5 text-center">
           Empowering Digital Solutions
         </h1>
         <section className="grid grid-cols-1  sm:grid-cols-2  gap-3 w-full xl:grid-cols-3 xl:gap-5  py-5">

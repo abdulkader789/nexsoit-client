@@ -193,7 +193,7 @@ const servicesData = [
     title: "Payment Gateway Integration",
     description:
       "Facilitate secure online transactions with our payment gateway integration services. We provide solutions that enable seamless and secure payment processing for your e-commerce platforms.",
-    category: "Support",
+    category: "Development",
     list: [
       "Game development",
       "Responsive web design",
@@ -220,36 +220,22 @@ const servicesData = [
     image: "https://example.com/custom-software-development-image.jpg",
     slug: "digital-transformation-consulting", // Added slug
   },
-  {
-    icon: <FaLaptopCode />,
-    title: "Innovative Software Solutions",
-    description:
-      "Discover cutting-edge software solutions tailored to meet the unique needs of your business. Our team of experts delivers innovative and efficient systems that drive productivity and growth.",
-    category: "Support",
-    list: [
-      "Game development",
-      "Responsive web design",
-      "Blockchain development",
-      "AI and machine learning",
-      "IoT solutions",
-    ],
-    image: "https://example.com/custom-software-development-image.jpg",
-    slug: "innovative-software-solutions", // Added slug
-  },
 ];
-
 const ServiceList = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [currentPage, setCurrentPage] = useState(1);
-  const servicesPerPage = 6; // Adjust as needed
+  const servicesPerPage = 6;
 
-  // Filter services based on selected category
+  const handleCategoryChange = (category) => {
+    setSelectedCategory(category);
+    setCurrentPage(1); // Reset current page to 1 when category changes
+  };
+
   const filteredServices =
     selectedCategory === "All"
       ? servicesData
       : servicesData.filter((service) => service.category === selectedCategory);
 
-  // Calculate the current services to display based on pagination
   const indexOfLastService = currentPage * servicesPerPage;
   const indexOfFirstService = indexOfLastService - servicesPerPage;
   const currentServices = filteredServices.slice(
@@ -257,7 +243,6 @@ const ServiceList = () => {
     indexOfLastService
   );
 
-  // Calculate total pages
   const totalPages = Math.ceil(filteredServices.length / servicesPerPage);
 
   return (
@@ -266,7 +251,7 @@ const ServiceList = () => {
         <ServiceCategorySelection
           categories={["All", "Development", "Design", "Marketing", "Support"]}
           selectedCategory={selectedCategory}
-          onSelectCategory={setSelectedCategory}
+          onSelectCategory={handleCategoryChange} // Update onSelectCategory
         />
 
         <ServicePagination
@@ -276,7 +261,6 @@ const ServiceList = () => {
         />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-3 lg:gap-10 ">
-          {/* Render each paginated service using ServiceCard component */}
           {currentServices.map((service, index) => (
             <ServiceCard
               key={index}

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Joti+One&family=Michroma&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,800;1,400;1,500;1,600;1,700&family=Roboto:wght@300;400&family=Poppins:wght@300;400;500&display=swap&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap&family=Outfit:wght@100..900&display=swap&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Joti+One&family=Michroma&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,800;1,400;1,500;1,600;1,700&family=Roboto:wght@300;400&family=Poppins:wght@300;400;500&display=swap&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap&family=Outfit:wght@100..900&display=swap&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&family=Marcellus&display=swap');
 
 
 
@@ -17,6 +17,11 @@ html {
   scroll-behavior: smooth;
 }
 
+.marcellus-regular {
+  font-family: "Marcellus", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
 .michroma-regular {
   font-family: "Michroma", sans-serif;
@@ -658,3 +663,16 @@ html {
                 0 0 30px rgb(0,140,255);
   }
 } */
+@keyframes scaleUpDown {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.96);
+  }
+}
+
+.scale-up-down {
+  animation: scaleUpDown 3s infinite;
+
+}
