@@ -9,7 +9,6 @@ import ErrorPage from "./error-page";
 import Contact from "./pages/ContactPage";
 import TeamPage from "./pages/TeamPage";
 import NewContact from "./pages/NewContact";
-// import NewContact from "./pages/NewContact";
 const routes = [
   {
     path: "/",
@@ -24,8 +23,6 @@ const routes = [
       { path: "/team", element: <TeamPage /> },
       { path: "/contact", element: <Contact /> },
       { path: "/newcontact", element: <NewContact /> },
-
-      // { path: "/newcontact", element: <NewContact /> },
     ],
   },
   // {

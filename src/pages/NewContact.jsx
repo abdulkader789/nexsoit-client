@@ -1,12 +1,11 @@
 import React from "react";
-// import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
-// import Subscribe from "./../components/Subscribe/Subscribe";
-// import Footer from "./../components/Footer/Footer";
+import Subscribe from "../components/Subscribe/Subscribe";
+import Footer from "../components/Footer/Footer";
 
 const ContactInfo = () => {
   return (
     <div className="text-white">
-      <h2 className="font-bold text-5xl w-3/4 mb-4">
+      <h2 className="font-bold md:text-5xl text-3xl w-3/4 mb-4">
         We are always ready to help you and answer your questions
       </h2>
       <p className="mb-8 w-3/4">
@@ -92,109 +91,19 @@ const ContactForm = () => {
 };
 
 const NewContact = () => {
-  // return (
-  //   <div className="flex flex-col object-cover bg-gray-900">
-  //     <div className="lg:min-h-screen flex flex-col justify-center items-center lg:flex-row px-2 py-14 xl:w-[70%] mx-auto">
-  //       <section className="w-full lg:w-1/2 flex flex-col ">
-  //         <div className="my-5">
-  //           <span className=" block text-base font-semibold text-primary">
-  //             Contact Us
-  //           </span>
-  //           <h2 className="text-[32px] font-bold capitalize  lg:text-[36px] xl:text-[40px]">
-  //             Let's work together?
-  //           </h2>
-  //           <p className="text-base leading-relaxed text-body-color md:w-2/3">
-  //             We have world-class, flexible support via live chat, email, and
-  //             phone. We guarantee that you’ll be able to have any issue resolved
-  //             within 24 hours.
-  //           </p>
-  //         </div>
-  //         <div className="mb-8 w-full max-w-[370px] flex justify-center items-center">
-  //           <div className=" text-4xl mr-5">
-  //             <FaMapMarkerAlt />
-  //           </div>
-  //           <div className="w-full">
-  //             <h4 className="mb-1 text-xl font-bold text-dark ">
-  //               Our Location
-  //             </h4>
-  //             <p className="text-base ">Natun Bazar, Gulshan-2, Dhaka</p>
-  //           </div>
-  //         </div>
-
-  //         <div className="mb-8 w-full max-w-[370px] flex justify-center items-center">
-  //           <div className=" text-4xl mr-5">
-  //             <FaPhoneAlt />
-  //           </div>
-  //           <div className="w-full">
-  //             <h4 className="mb-1 text-xl font-bold text-dark ">
-  //               Phone Number
-  //             </h4>
-  //             <p className="text-base ">(+880) 1788838782</p>
-  //           </div>
-  //         </div>
-
-  //         <div className="mb-8 w-full max-w-[370px] flex justify-center items-center">
-  //           <div className="text-4xl mr-5">
-  //             <FaEnvelope />
-  //           </div>
-  //           <div className="w-full">
-  //             <h4 className="mb-1 text-xl font-bold ">Email Address</h4>
-  //             <p className="text-base ">nexsoitinfo@gmail.com</p>
-  //           </div>
-  //         </div>
-  //       </section>
-
-  //       <section className="lg:w-1/2 w-full flex items-center">
-  //         <div className="flex flex-col bg-white rounded-sm p-12 w-full border border-gray-600">
-  //           <form className="flex flex-col space-y-2">
-  //             <input
-  //               type="text"
-  //               name="fullName"
-  //               placeholder="Full Name"
-  //               className="border rounded-lg py-3 px-3 bg-black border-gray-700 placeholder-white-500 text-white"
-  //             />
-  //             <input
-  //               type="text"
-  //               name="phone"
-  //               placeholder="Phone Number"
-  //               className="border rounded-lg py-3 px-3 bg-black border-gray-700 placeholder-white-500 text-white"
-  //             />
-  //             <input
-  //               type="email"
-  //               name="email"
-  //               placeholder="Email Address"
-  //               className="border rounded-lg py-3 px-3 bg-black border-gray-700 placeholder-white-500 text-white"
-  //             />
-  //             <textarea
-  //               name="message"
-  //               placeholder="Your Message"
-  //               className="border rounded-lg py-3 px-3 bg-black border-gray-700 placeholder-white-500 text-white"
-  //             />
-  //             <button
-  //               type="button"
-  //               className="border border-gray-700 bg-black text-white rounded-lg py-3 font-semibold"
-  //             >
-  //               Submit
-  //             </button>
-  //           </form>
-  //         </div>
-  //       </section>
-  //     </div>
-
-  //     <Subscribe />
-  //     <Footer />
-  //   </div>
-  // );
   return (
     <div>
-      <div className="flex justify-end items-end py-20 bg-black">
-        <div className="w-1/2">
+      <div className="flex md:justify-end md:items-end md:flex-row flex-col justify-center items-center px-3 py-20 bg-black">
+        <div className="md:w-1/2 w-full">
           <ContactInfo />
         </div>
-        <div className="w-1/2 pt-10 pr-10">
+        <div className="md:w-1/2 w-full p-0 md:pt-10 md:pr-10">
           <ContactForm />
         </div>
       </div>
+
+      <Subscribe />
+      <Footer />
     </div>
   );
 };
