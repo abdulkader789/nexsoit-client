@@ -3,15 +3,61 @@ import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
 import Subscribe from "../components/Subscribe/Subscribe";
 import Footer from "../components/Footer/Footer";
+const ContactInfo = () => {
+  return (
+    <div className="text-white">
+      <h2 className="font-bold md:text-5xl text-3xl w-3/4 mb-4 michroma-regular">
+        We are always ready to help you and answer your questions.
+      </h2>
+      <p className="mb-8 w-3/4 poppins-light">
+        Whether you need assistance, have a query, or just want to give us
+        feedback, we're here for you. Feel free to reach out through any of the
+        methods below, and our team will respond promptly. We look forward to
+        hearing from you!
+      </p>
 
-const Contact = () => {
+      <div className="grid grid-cols-2 montserrat-light">
+        <div className="mb-4">
+          <h3 className=" mb-2">Call Center</h3>
+          <p>800 100 975 2234</p>
+          <p>+ (123) 800-245-6678</p>
+        </div>
+
+        <div className="mb-4">
+          <h3 className=" mb-2">Our Location</h3>
+          <p>Liza, New York - 1050</p>
+          <p>5th [Park Avenue ]</p>
+        </div>
+
+        <div className="mb-4">
+          <h3 className=" mb-2">Email</h3>
+          <p>no-reply@mail.co</p>
+        </div>
+
+        <div>
+          <h3 className=" mb-2">Social network</h3>
+          <div className="flex space-x-4">
+            <span>f</span>
+            <span>x</span>
+            <span>in</span>
+            <span>g</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const ContactForm = () => {
   const [formData, setFormData] = useState({
     fullName: "",
-    phone: "",
     email: "",
+    phone: "",
+    // subject: "",
     message: "",
   });
   const [successMessage, setSuccessMessage] = useState(""); // State for success message
+  const [errorMessage, setErrorMessage] = useState(""); // State for error message
   const navigate = useNavigate(); // Initialize useNavigate
 
   const handleChange = (e) => {
@@ -24,6 +70,7 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log(formData);
 
     try {
       const response = await fetch(
@@ -36,7 +83,6 @@ const Contact = () => {
           body: JSON.stringify(formData),
         }
       );
-
       if (!response.ok) {
         throw new Error("Network response was not ok");
       }
@@ -44,20 +90,17 @@ const Contact = () => {
       const data = await response.json();
       console.log("Success:", data);
       setSuccessMessage("Your message has been sent successfully!"); // Set success message
-
-      setTimeout(() => {
-        navigate("/"); // Redirect to home page after a delay
-      }, 3000);
+      setErrorMessage(""); // Clear any previous error messages
     } catch (error) {
       console.error("Error:", error);
-      // Handle error - you can show an error message to the user
+      setErrorMessage("Failed to send message. Please try again later.");
     }
   };
 
   return (
-    <div className="flex flex-col work-sans object-cover pt-32 box-border ">
+    <div className="bg-white px-12 py-32 rounded-sm relative w-full">
       {successMessage && (
-        <div className="bg-green-500 text-white p-4 text-center relative">
+        <div className="bg-green-500 text-white p-4 text-center relative -top-10 montserrat-regular text-sm">
           <span>{successMessage}</span>
           <button
             className="absolute top-1/2 right-4 transform -translate-y-1/2 text-lg"
@@ -67,108 +110,97 @@ const Contact = () => {
           </button>
         </div>
       )}
-      <main className="pl-5  mb-5 ">
-        <div className="w-full py-36 bg-[#1F1F1F] flex flex-col justify-end items-center lg:flex-row px-2  rounded-tl-xl rounded-bl-xl  overflow-hidden">
-          <section className="w-full lg:w-96 flex flex-col text-white ">
-            <div className="my-5">
-              <span className=" block text-base font-semibold text-primary">
-                Contact Us
-              </span>
-              <h2 className="text-[32px] font-bold capitalize  lg:text-[36px] xl:text-[40px]">
-                Let's work together?
-              </h2>
-              <p className="text-base leading-relaxed text-body-color ">
-                We have world-class, flexible support via live chat, email, and
-                phone. We guarantee that you’ll be able to have any issue
-                resolved within 24 hours.
-              </p>
-            </div>
-            <div className="mb-8 w-full max-w-[370px] flex justify-center items-center">
-              <div className=" text-4xl mr-5">
-                <FaMapMarkerAlt />
-              </div>
-              <div className="w-full">
-                <h4 className="mb-1 text-xl font-bold text-dark ">
-                  Our Location
-                </h4>
-                <p className="text-base ">Natun Bazar, Gulshan-2, Dhaka</p>
-              </div>
-            </div>
-
-            <div className="mb-8 w-full max-w-[370px] flex justify-center items-center">
-              <div className=" text-4xl mr-5">
-                <FaPhoneAlt />
-              </div>
-              <div className="w-full">
-                <h4 className="mb-1 text-xl font-bold text-dark ">
-                  Phone Number
-                </h4>
-                <p className="text-base ">(+880) 1788838782</p>
-              </div>
-            </div>
-
-            <div className="mb-8 w-full max-w-[370px] flex justify-center items-center">
-              <div className="text-4xl mr-5">
-                <FaEnvelope />
-              </div>
-              <div className="w-full">
-                <h4 className="mb-1 text-xl font-bold ">Email Address</h4>
-                <p className="text-base ">nexsoitinfo@gmail.com</p>
-              </div>
-            </div>
-          </section>
-
-          <section className=" flex w-1/2 px-32 items-center">
-            <div className="flex flex-col bg-white rounded-2xl px-12 py-12 w-full  border border-gray-600">
-              <form className="flex flex-col space-y-4" onSubmit={handleSubmit}>
-                <label className="font-bold text-lg text-white">
-                  Full Name
-                </label>
-                <input
-                  type="text"
-                  name="fullName"
-                  value={formData.fullName}
-                  onChange={handleChange}
-                  placeholder="Full Name"
-                  className="border rounded-lg py-3 px-3  placeholder-white-500 text-white"
-                />
-                <label className="font-bold text-lg text-white">Phone</label>
-                <input
-                  type="text"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  placeholder="Phone Number"
-                  className="border rounded-lg py-3 px-3  placeholder-white-500 text-white"
-                />
-                <label className="font-bold text-lg text-white">Email</label>
-                <input
-                  type="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  placeholder="Email Address"
-                  className="border rounded-lg py-3 px-3 placeholder-white-500 text-white"
-                />
-                <label className="font-bold text-lg text-white">Message</label>
-                <textarea
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  placeholder="Your Message"
-                  className="border rounded-lg py-3 px-3  placeholder-white-500 text-white"
-                />
-                <button
-                  type="submit"
-                  className="border  text-white rounded-lg py-3 font-semibold"
-                >
-                  Submit
-                </button>
-              </form>
-            </div>
-          </section>
+      {errorMessage && (
+        <div className="bg-red-500 text-white p-4 text-center relative -top-10 montserrat-regular text-sm">
+          <span>{errorMessage}</span>
+          <button
+            className="absolute top-1/2 right-4 transform -translate-y-1/2 text-lg"
+            onClick={() => setErrorMessage("")}
+          >
+            &times;
+          </button>
         </div>
-      </main>
+      )}
+      <div>
+        <h2 className="text-2xl font-bold mb-4 poppins-medium">Get in Touch</h2>
+        <p className="mb-6 work-sans">
+          Define your goals and identify areas where We can add value to your
+          business.
+        </p>
+      </div>
+
+      <form className="montserrat-regular text-sm ">
+        <div className="mb-4">
+          <input
+            type="text"
+            name="fullName"
+            placeholder="Full name"
+            value={formData.fullName}
+            onChange={handleChange}
+            className="w-full px-4 py-2 border-b border-gray-300 focus:outline-none focus:border-black"
+          />
+        </div>
+        <div className="mb-4">
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            value={formData.email}
+            onChange={handleChange}
+            className="w-full px-4 py-2 border-b border-gray-300 focus:outline-none focus:border-black"
+          />
+        </div>
+        <div className="mb-4">
+          <input
+            type="text"
+            name="phone"
+            placeholder="Phone"
+            value={formData.phone}
+            onChange={handleChange}
+            className="w-full px-4 py-2 border-b border-gray-300 focus:outline-none focus:border-black"
+          />
+        </div>
+        {/* <div className="mb-4">
+          <input
+            type="text"
+            name="subject"
+            placeholder="Subject"
+            value={formData.subject}
+            onChange={handleChange}
+            className="w-full px-4 py-2 border-b border-gray-300 focus:outline-none focus:border-black"
+          />
+        </div> */}
+        <div className="mb-6">
+          <textarea
+            name="message"
+            placeholder="Message"
+            value={formData.message}
+            onChange={handleChange}
+            className="w-full px-4 py-2 border-b border-gray-300 focus:outline-none focus:border-black"
+          ></textarea>
+        </div>
+        <button
+          onClick={handleSubmit}
+          className="bg-black text-white px-6 py-2 rounded"
+        >
+          Send a Message
+        </button>
+      </form>
+    </div>
+  );
+};
+
+const ContactPage = () => {
+  return (
+    <div>
+      <div className="flex md:flex-row flex-col justify-center items-center px-3 py-20 bg-black lg:h-screen">
+        <div className="md:w-1/2 w-full">
+          <ContactInfo />
+        </div>
+        <div className="md:w-[30vw] w-full p-0 md:pt-10 ">
+          <ContactForm />
+        </div>
+      </div>
 
       <Subscribe />
       <Footer />
@@ -176,4 +208,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactPage;

@@ -133,28 +133,28 @@ const BannerCarousel = () => {
               <div className="absolute w-full h-full  bg-blue-400 opacity-70"></div>{" "}
               {/* Cyan overlay */}
               <div className="absolute w-full text-center">
-                <div className="lg:w-1/2 mx-auto slide-zoom-effect">
-                  <h2 className="text-2xl lg:text-5xl outfit-bold mb-3 text-white">
+                <div className=" mx-auto slide-zoom-effect">
+                  <h2 className="text-2xl lg:text-4xl michroma-bold mb-3 text-white">
                     {item.title}
                   </h2>
-                  <p className="text-md lg:text-xl mb-3 text-white ">
+                  <p className="text-md lg:text-lg lg:w-1/2 mx-auto noto-sans-light mb-3 text-white ">
                     {item.description}
                   </p>
                 </div>
-                <div className="flex w-full space-x-2 md:space-x-5 px-2 justify-center  pt-5 ">
-                  <button className="capitalize poppins-regular text-sm text-white z-20   bg-green-400  h-12 w-1/2 sm:w-auto sm:px-10  lg:px-14 glow-btn glow-effect">
+                <div className="flex w-full space-x-2 md:space-x-5 px-2 justify-center pt-5 ">
+                  <button className=" text-sm text-white z-20   bg-green-400  h-12 w-1/2 sm:w-auto sm:px-10  lg:px-14 glow-btn glow-effect">
                     <Link
                       to={`/services`}
-                      className="h-full w-full flex justify-center items-center"
+                      className="h-full w-full flex justify-center items-center capitalize montserrat-medium"
                     >
                       view details
                     </Link>
                   </button>
 
-                  <button className="capitalize poppins-regular text-sm text-black z-20   bg-white  h-12 w-1/2 sm:w-auto sm:px-10  lg:px-14 glow-btn">
+                  <button className="text-sm text-black z-20   bg-white  h-12 w-1/2 sm:w-auto sm:px-10  lg:px-14 glow-btn">
                     <Link
                       to={`/contact`}
-                      className="h-full w-full flex justify-center items-center"
+                      className="h-full w-full flex justify-center items-center capitalize montserrat-medium"
                     >
                       Contact Us
                     </Link>
