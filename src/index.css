@@ -663,16 +663,3 @@ html {
                 0 0 30px rgb(0,140,255);
   }
 } */
-@keyframes scaleUpDown {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(0.96);
-  }
-}
-
-.scale-up-down {
-  animation: scaleUpDown 3s infinite;
-
-}
