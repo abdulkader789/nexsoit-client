@@ -18,7 +18,7 @@ const GetService = () => {
         <div className="bubble"></div>
       </div>
 
-      <div className="lg:container mx-auto flex flex-col lg:flex-row items-center my-12 md:my-24">
+      <div className="lg:container mx-auto flex flex-col lg:flex-row items-center my-12 md:my-24 z-10">
         <div className="flex flex-col w-full lg:w-1/2 justify-center items-start p-8">
           <h1 className="text-3xl md:text-5xl michroma-bold capitalize text-yellow-300 tracking-loose mb-5">
             take the first step towards success
