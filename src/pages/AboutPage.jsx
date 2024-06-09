@@ -7,7 +7,7 @@ import Team from "../components/Team/Team";
 import AboutHeader from "../components/About/AboutHeader";
 import Footer from "./../components/Footer/Footer";
 import OurVision from "../components/About/OurVision";
-import Subscribe from "../components/Subscribe/Subscribe";
+import { CreateAccountPromo } from "../components/CreateAccountPromo/CreateAccountPromo";
 
 const AboutPage = () => {
   return (
@@ -16,7 +16,7 @@ const AboutPage = () => {
       <OurVision />
       <OurSpecialist />
       <Team />
-      <Subscribe />
+      <CreateAccountPromo />
       <Footer />
     </div>
   );

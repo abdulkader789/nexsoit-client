@@ -1,12 +1,12 @@
 import React from "react";
 import Testimonial from "../components/Testimonial/Testimonial";
 import BannerCarousel from "../components/BannerCarousel/BannerCarousel";
-import Subscribe from "../components/Subscribe/Subscribe";
 import Footer from "../components/Footer/Footer";
 
 import BlogPost from "./../components/BlogPost/BlogPost";
 import OurApproach from "../components/OurApproach/OurApproach";
 import HeroServices from "../components/Hero/HeroServices";
+import { CreateAccountPromo } from "../components/CreateAccountPromo/CreateAccountPromo";
 
 const HomePage = () => {
   return (
@@ -17,7 +17,7 @@ const HomePage = () => {
       <OurApproach />
       {/* <BlogPost />
       <Testimonial /> */}
-      <Subscribe />
+      <CreateAccountPromo />
       <Footer />
     </div>
   );

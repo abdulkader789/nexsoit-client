@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
-import Subscribe from "../components/Subscribe/Subscribe";
 import Footer from "../components/Footer/Footer";
+import { CreateAccountPromo } from "../components/CreateAccountPromo/CreateAccountPromo";
 const ContactInfo = () => {
   return (
     <div className="text-white">
@@ -192,9 +192,9 @@ const ContactForm = () => {
 
 const ContactPage = () => {
   return (
-    <div>
-      <div className="flex md:flex-row flex-col justify-center items-center px-3 py-20 bg-black lg:h-screen">
-        <div className="md:w-1/2 w-full">
+    <div className="py-10">
+      <div className="flex md:flex-row flex-col justify-center items-center px-3 py-20 bg-black lg:min-h-screen">
+        <div className="md:w-1/2 w-full mb-5 md:mb-0">
           <ContactInfo />
         </div>
         <div className="md:w-1/2 xl:w-[40vw] 2xl:w-[30vw] w-full p-0 md:pt-10 ">
@@ -202,7 +202,7 @@ const ContactPage = () => {
         </div>
       </div>
 
-      <Subscribe />
+      <CreateAccountPromo />
       <Footer />
     </div>
   );

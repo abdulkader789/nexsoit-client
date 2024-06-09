@@ -10,7 +10,7 @@ const ServiceCategorySelection = ({
       {categories.map((category, index) => (
         <button
           key={index}
-          className={`px-4 py-4 flex-1 michroma-regular text-sm ${
+          className={`px-4 py-4 flex-1 michroma-regular capitalize text-sm ${
             selectedCategory === category
               ? "bg-blue-500 text-white"
               : "bg-gray-200 text-gray-800"
