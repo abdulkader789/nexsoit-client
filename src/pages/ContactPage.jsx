@@ -18,20 +18,18 @@ const ContactInfo = () => {
 
       <div className="grid grid-cols-2 montserrat-light">
         <div className="mb-4">
-          <h3 className=" mb-2">Call Center</h3>
-          <p>800 100 975 2234</p>
-          <p>+ (123) 800-245-6678</p>
+          <h3 className="mb-2">Call Center</h3>
+          <p>+880 1788838782</p>
         </div>
 
         <div className="mb-4">
-          <h3 className=" mb-2">Our Location</h3>
-          <p>Liza, New York - 1050</p>
-          <p>5th [Park Avenue ]</p>
+          <h3 className="mb-2">Our Location</h3>
+          <p>Natun Bazar, Gulshan-2</p>
         </div>
 
         <div className="mb-4">
-          <h3 className=" mb-2">Email</h3>
-          <p>no-reply@mail.co</p>
+          <h3 className="mb-2">Email</h3>
+          <p>nexsoitinfo@gmail.com</p>
         </div>
 
         <div>

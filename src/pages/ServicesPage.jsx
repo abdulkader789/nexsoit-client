@@ -1,10 +1,10 @@
 import React from "react";
-import CoSolutions from "../components/CoSolutions/CoSolutions";
 import ServiceList from "../components/OurServices/ServiceList";
 import Footer from "../components/Footer/Footer";
 import ServiceHeader from "../components/OurServices/ServiceHeader";
 import GetService from "../components/OurServices/GetService";
 import { CreateAccountPromo } from "../components/CreateAccountPromo/CreateAccountPromo";
+import VideoSection from "../utils/VideoSection";
 
 const ServicesPage = () => {
   return (
@@ -20,6 +20,7 @@ const ServicesPage = () => {
         <ServiceList />
       </div>
       <GetService />
+      <VideoSection />
       <CreateAccountPromo />
       <Footer />
     </div>

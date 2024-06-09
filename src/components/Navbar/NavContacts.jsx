@@ -1,21 +1,23 @@
 import { FaPhone, FaMapMarkerAlt, FaClock } from "react-icons/fa";
+import { IoMdMail } from "react-icons/io";
 
 const contactDetails = [
   {
     icon: <FaPhone />,
     detail: "+880 1788838782",
-    description: "contactnexsoit@gmail.com",
+  },
+  {
+    icon: <IoMdMail />,
+    detail: "nexsoitinfo@gmail.com",
   },
   {
     icon: <FaMapMarkerAlt />,
     detail: "Natun Bazar, Gulshan-2",
-    description: "Dhaka-1212, Bangladesh",
   },
-  {
-    icon: <FaClock />,
-    detail: "Mon - Fri: 9am - 10pm",
-    description: "Sunday Closed",
-  },
+  // {
+  //   icon: <FaClock />,
+  //   detail: "Mon - Fri: 9am - 10pm",
+  // },
 ];
 
 const NavContacts = () => {

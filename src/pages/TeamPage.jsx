@@ -5,6 +5,9 @@ import {
   FaFacebook,
   FaInstagram,
 } from "react-icons/fa";
+import { CreateAccountPromo } from "../components/CreateAccountPromo/CreateAccountPromo";
+import Footer from "../components/Footer/Footer";
+import TeamOverview from "../components/Team/TeamOverview";
 
 const TeamMemberCard = ({ name, designation, image, socialMediaLinks }) => {
   return (
@@ -147,6 +150,21 @@ const AboutTeamInovation = () => {
     </section>
   );
 };
+
+const TeamHeader = () => {
+  return (
+    <div className="container flex justify-center mx-auto pt-16">
+      <div>
+        <p className="text-gray-500 text-lg text-center font-normal pb-3">
+          BUILDING TEAM
+        </p>
+        <h1 className="xl:text-4xl text-3xl text-center text-gray-800 font-extrabold pb-6 sm:w-4/6 w-5/6 mx-auto">
+          The Talented People Behind the Scenes of the Organization
+        </h1>
+      </div>
+    </div>
+  );
+};
 const TeamPage = () => {
   const teamData = [
     {
@@ -230,34 +248,29 @@ const TeamPage = () => {
     // Add more team members as needed
   ];
   return (
-    <div className="team-section bg-gray-100 ">
-      <div className="container flex justify-center mx-auto pt-16">
-        <div>
-          <p className="text-gray-500 text-lg text-center font-normal pb-3">
-            BUILDING TEAM
-          </p>
-          <h1 className="xl:text-4xl text-3xl text-center text-gray-800 font-extrabold pb-6 sm:w-4/6 w-5/6 mx-auto">
-            The Talented People Behind the Scenes of the Organization
-          </h1>
+    <div className="team-section pt-20">
+      <TeamOverview />
+      {/* <section className=" bg-gray-100">
+        <TeamHeader />
+        <div className="flex items-center justify-center  flex-wrap ">
+          {teamData.map((member, index) => (
+            <TeamMemberCard
+              key={index}
+              name={member.name}
+              designation={member.designation}
+              image={member.image}
+              socialMediaLinks={member.socialMediaLinks}
+            />
+          ))}
         </div>
-      </div>
-      <div className="flex items-center justify-center  flex-wrap ">
-        {teamData.map((member, index) => (
-          <TeamMemberCard
-            key={index}
-            name={member.name}
-            designation={member.designation}
-            image={member.image}
-            socialMediaLinks={member.socialMediaLinks}
-          />
-        ))}
-      </div>
+      </section> */}
       <div>
         <AboutTeam />
-      </div>
-      <div>
+
         <AboutTeamInovation />
       </div>
+      <CreateAccountPromo />
+      <Footer />
     </div>
   );
 };
