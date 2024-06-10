@@ -94,7 +94,7 @@ const BannerCarousel = () => {
   ];
 
   return (
-    <section className="relative  h-[80vh] lg:h-screen">
+    <section className="relative  h-[70vh] lg:h-screen">
       <Swiper
         style={{ zIndex: 1 }}
         spaceBetween={30}
