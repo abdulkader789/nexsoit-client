@@ -94,7 +94,7 @@ const BannerCarousel = () => {
   ];
 
   return (
-    <section className="relative">
+    <section className="relative  h-[80vh] lg:h-screen">
       <Swiper
         style={{ zIndex: 1 }}
         spaceBetween={30}
@@ -105,12 +105,12 @@ const BannerCarousel = () => {
         speed={3000}
         fadeEffect={{ crossFade: true }}
         modules={[EffectFade, Navigation, Autoplay]}
-        className="mySwiper"
+        className="mySwiper h-full"
         simulateTouch={false}
       >
         {bannerSlides.map((item, index) => (
           <SwiperSlide key={index}>
-            <div className="relative w-full h-[100vh]  flex justify-center items-center">
+            <div className="relative w-full h-full flex justify-center items-center">
               <div className="area">
                 <ul className="circles">
                   <li></li>
