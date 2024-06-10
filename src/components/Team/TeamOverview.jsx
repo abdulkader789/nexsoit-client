@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShareNodes } from "@fortawesome/free-solid-svg-icons";
 
-const Team = () => {
+const TeamOverview = () => {
   const TeamData = [
     {
       image:
@@ -67,4 +67,4 @@ const Team = () => {
   );
 };
 
-export default Team;
+export default TeamOverview;

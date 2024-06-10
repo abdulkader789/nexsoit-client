@@ -458,7 +458,7 @@ html {
 
 
 .bg-glassy {
-  background: rgba(38, 112, 248, 0.8); /* Adjust the RGBA value to your preference */
+  background: rgba(29, 31, 36, 0.8); /* Adjust the RGBA value to your preference */
   backdrop-filter: blur(10px); /* Adjust the blur level to your preference */
 }
 
@@ -603,9 +603,9 @@ html {
 
 
 .btn-learn-more {
-  color: rgb(10, 57, 185);
+  color: rgb(255, 255, 255);
   text-decoration: none;
-  border: 2px solid rgb(25, 45, 219);
+  border: 2px solid rgb(250, 250, 250);
   background: transparent;
   position: relative;
   transition: all 1s;
@@ -624,7 +624,7 @@ html {
   top: 0;
   left: -40px;
   transform: skewX(45deg);
-  background-color: rgb(32, 82, 189);
+  background-color: rgb(24, 25, 29);
   z-index: -1;
   transition: all 0.8s;
 }

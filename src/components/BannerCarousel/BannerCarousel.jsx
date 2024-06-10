@@ -110,7 +110,7 @@ const BannerCarousel = () => {
       >
         {bannerSlides.map((item, index) => (
           <SwiperSlide key={index}>
-            <div className="relative w-full h-[50vh] lg:h-[88vh]  flex justify-center items-center">
+            <div className="relative w-full h-[50vh] lg:h-[100vh]  flex justify-center items-center">
               <div className="area">
                 <ul className="circles">
                   <li></li>
@@ -130,7 +130,7 @@ const BannerCarousel = () => {
                 alt={` ${index + 1}`}
                 className="w-full h-full object-cover slide-zoom-effect"
               />
-              <div className="absolute w-full h-full  bg-blue-400 opacity-70"></div>{" "}
+              <div className="absolute w-full h-full  bg-gray-400 opacity-30"></div>{" "}
               {/* Cyan overlay */}
               <div className="absolute w-full text-center">
                 <div className=" mx-auto slide-zoom-effect">

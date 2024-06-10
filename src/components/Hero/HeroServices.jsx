@@ -37,28 +37,9 @@ const servicesData = [
     bgClass: colors[1],
     slug: "design",
     image:
-      "https://images.unsplash.com/photo-1604964432806-254d07c11f32?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZGV2ZWxvcGVyfGVufDB8fDB8fHww",
+      "https://cdn.logojoy.com/wp-content/uploads/20200612115158/AdobeStock_88222430-1-min-scaled.jpeg",
   },
-  {
-    icon: <FaWrench />,
-    heading: "Customization",
-    description:
-      "Provide customized solutions to modify existing systems or develop unique features that align with your specific requirements.",
-    bgClass: colors[2],
-    slug: "customization",
-    image:
-      "https://images.unsplash.com/photo-1604964432806-254d07c11f32?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZGV2ZWxvcGVyfGVufDB8fDB8fHww",
-  },
-  {
-    icon: <FaVideo />,
-    heading: "Editing",
-    description:
-      "Offer professional editing services for video content, ensuring high-quality and compelling visual narratives.",
-    bgClass: colors[3],
-    slug: "editing",
-    image:
-      "https://images.unsplash.com/photo-1604964432806-254d07c11f32?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZGV2ZWxvcGVyfGVufDB8fDB8fHww",
-  },
+
   {
     icon: <FaBullhorn />,
     heading: "Marketing",
@@ -67,17 +48,17 @@ const servicesData = [
     bgClass: colors[4],
     slug: "marketing",
     image:
-      "https://images.unsplash.com/photo-1604964432806-254d07c11f32?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZGV2ZWxvcGVyfGVufDB8fDB8fHww",
+      "https://images.shiksha.com/mediadata/ugcDocuments/images/wordpressImages/2021_03_digital-marketer.jpg",
   },
   {
     icon: <FaTools />,
-    heading: "Support",
+    heading: "Support & Maintanance",
     description:
       "Provide comprehensive IT support, including maintenance, integration, and troubleshooting to ensure your systems run smoothly and efficiently.",
     bgClass: colors[5],
-    slug: "support",
+    slug: "support & maintanance",
     image:
-      "https://images.unsplash.com/photo-1604964432806-254d07c11f32?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZGV2ZWxvcGVyfGVufDB8fDB8fHww",
+      "https://st4.depositphotos.com/1026266/21522/i/450/depositphotos_215224420-stock-photo-business-woman-using-tablet-with.jpg",
   },
 ];
 
@@ -92,24 +73,22 @@ const ServiceCard = ({ icon, heading, description, bgClass, slug, image }) => {
           className="absolute inset-0 bg-cover bg-center z-0"
           style={{ backgroundImage: `url(${image})` }}
         />
-        <div className="flex flex-col justify-center items-center z-10 p-4 bg-black bg-opacity-50 rounded-md">
+        <div className="flex flex-col justify-center text-center p-4 bg-black h-full bg-opacity-50 relative">
           {/* First Div - Icon */}
-          <div className="text-5xl mb-3 flex justify-center text-blue-500">
+          {/* <div className="text-5xl mb-3 flex justify-center text-blue-500">
             {icon}
-          </div>
+          </div> */}
           {/* Second Div - Header and Paragraph */}
-          <div className="flex flex-col justify-center items-center text-center">
-            <h2 className="mb-2 text-sm lg:text-xl poppins-semibold">
-              {heading}
-            </h2>
-            <p className="text-sm work-sans">{description}</p>
-            <div className="flex justify-center py-6">
-              <Link to={`/services`} onClick={() => handleCategoryClick(slug)}>
-                <button className="btn-learn-more z-10 py-2 text-sm px-5 poppins-regular">
-                  Learn More
-                </button>
-              </Link>
-            </div>
+          <h2 className="mb-2 text-sm lg:text-xl poppins-semibold">
+            {heading}
+          </h2>
+          <p className="text-sm work-sans">{description}</p>
+          <div className="flex justify-center py-6">
+            <Link to={`/services`} onClick={() => handleCategoryClick(slug)}>
+              <button className="btn-learn-more z-10 py-2 text-sm px-5 poppins-regular">
+                Learn More
+              </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -124,7 +103,7 @@ const HeroServices = () => {
         {/* <h1 className="marcellus-regular uppercase text-2xl md:text-4xl mb-5 text-center">
           Empowering Digital Solutions
         </h1> */}
-        <section className="grid grid-cols-1 h-full  w-full xl:grid-cols-3 px-32">
+        <section className="grid grid-cols-1 md:grid-cols-2 h-full  w-full xl:grid-cols-4">
           {servicesData.map((item, index) => (
             <ServiceCard
               key={index}

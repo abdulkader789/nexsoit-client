@@ -10,7 +10,7 @@ const ServicesPage = () => {
   return (
     <div>
       <div
-        className="pt-10 min-h-screen lg:pt-32 h-full w-full dark:bg-gray-900"
+        className="pt-10 min-h-screen lg:pt-32 h-full w-full bg-gray-900"
         // style={{
         //   backgroundImage:
         //     "url(https://storage.googleapis.com/moises-cms-music-ai/bg_music_ai_65815bc7f1/bg_music_ai_65815bc7f1.svg)",
