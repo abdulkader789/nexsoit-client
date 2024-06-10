@@ -65,7 +65,7 @@ const servicesData = [
 const ServiceCard = ({ icon, heading, description, bgClass, slug, image }) => {
   const { handleCategoryClick } = useCategoryClick();
   return (
-    <div className="relative overflow-hidden h-[70vh]">
+    <div className="relative overflow-hidden h-[50vh] md:h-[70vh]">
       <div
         className={`flex flex-col justify-center items-center h-full w-full text-white relative overflow-hidden transform transition-transform duration-300 hover:scale-105 ${bgClass}`}
       >
@@ -73,7 +73,7 @@ const ServiceCard = ({ icon, heading, description, bgClass, slug, image }) => {
           className="absolute inset-0 bg-cover bg-center z-0"
           style={{ backgroundImage: `url(${image})` }}
         />
-        <div className="flex flex-col justify-center text-center p-4 bg-black h-full bg-opacity-50 relative">
+        <div className="flex flex-col justify-center text-center px-5 sm:px-10 bg-black h-full bg-opacity-50 relative ">
           {/* First Div - Icon */}
           {/* <div className="text-5xl mb-3 flex justify-center text-blue-500">
             {icon}
@@ -103,7 +103,7 @@ const HeroServices = () => {
         {/* <h1 className="marcellus-regular uppercase text-2xl md:text-4xl mb-5 text-center">
           Empowering Digital Solutions
         </h1> */}
-        <section className="grid grid-cols-1 md:grid-cols-2 h-full  w-full xl:grid-cols-4">
+        <section className="grid grid-cols-1 sm:grid-cols-2 h-full  w-full xl:grid-cols-4">
           {servicesData.map((item, index) => (
             <ServiceCard
               key={index}

@@ -469,7 +469,7 @@ html {
     backdrop-filter: blur(10px); /* Adjust the blur level to your preference */
   }
   .small-screen-bg {
-    background: rgba(38, 112, 248, 0.8); /* Adjust the RGBA value to your preference */
+    background: rgba(29, 31, 36, 0.8); /* Adjust the RGBA value to your preference */
     backdrop-filter: blur(10px); /* Adjust the blur level to your preference */
   }
 }

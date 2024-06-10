@@ -18,11 +18,7 @@ const OurSpecialist = () => {
             </button>
           </div>
           <div className="flex-1 lg:basis-[60%] basis-[50%] relative">
-            <div className="grid grid-cols-2 text-center lg:mb-0 mb-8 uppercase text-white tracking-wide">
-              <p className="flex flex-col max-w-[200px] mx-auto mb-8">
-                <span className="text-4xl font-bold">1790</span>
-                <small className="mt-2">Account Number</small>
-              </p>
+            <div className="grid grid-cols-3 text-center lg:mb-0 mb-8 uppercase text-white tracking-wide">
               <p className="flex flex-col max-w-[200px] mx-auto mb-8">
                 <span className="text-4xl font-bold">491</span>
                 <small className="mt-2">Trusted Advisers</small>
@@ -36,7 +32,7 @@ const OurSpecialist = () => {
                 <small className="mt-2">Finished Projects</small>
               </p>
             </div>
-            <div className="flex gap-4 items-center p-5 max-w-[500px] bg-[#98BF5A] rounded-md lg:absolute lg:mt-7 lg:left-16">
+            <div className="flex gap-4 items-center p-5 lg:p-0 lg:px-12 lg:py-8 max-w-[500px] bg-[#98BF5A] rounded-md lg:absolute lg:mt-20 lg:left-16">
               <img
                 src="./img-specialist.png"
                 className="object-cover max-w-[90px]"
