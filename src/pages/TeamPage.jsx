@@ -92,7 +92,7 @@ const AboutTeam = () => {
         </div>
         <div className="grid grid-cols-2 gap-4 mt-8">
           <img
-            className="w-full rounded-lg"
+            className="w-full rounded-lg "
             src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png"
             alt="office content 1"
           />
