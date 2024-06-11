@@ -21,8 +21,6 @@ const ServicesPage = () => {
       </div>
       <GetService />
       <VideoSection />
-      <CreateAccountPromo />
-      <Footer />
     </div>
   );
 };

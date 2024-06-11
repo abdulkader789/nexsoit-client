@@ -19,8 +19,6 @@ const HomePage = () => {
       <OurApproach />
       {/* <BlogPost />
       <Testimonial /> */}
-      <CreateAccountPromo />
-      <Footer />
     </div>
   );
 };

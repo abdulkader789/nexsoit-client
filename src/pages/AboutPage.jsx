@@ -16,8 +16,6 @@ const AboutPage = () => {
       <OurVision />
       <OurSpecialties />
       {/* <TeamOverview /> */}
-      <CreateAccountPromo />
-      <Footer />
     </div>
   );
 };

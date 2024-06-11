@@ -2,8 +2,8 @@ import React from "react";
 
 const OurSpecialties = () => {
   return (
-    <div className="lg:py-40">
-      <div className="bg-[url('./bg-specialist.jpg')] max-w-full py-2 bg-no-repeat bg-cover bg-center bg-blend-multiply bg-black/70">
+    <div className="lg:pb-32">
+      <div className="bg-[url('./bg-specialist.jpg')] max-w-full py-2 bg-no-repeat bg-cover bg-center bg-blend-multiply bg-black/70 ">
         <div className="max-w-5xl mx-auto flex justify-center items-center lg:flex-row flex-col flex-wrap px-2 pt-14 lg:pb-20 pb-14">
           <div className="flex-1 text-white lg:basis-[40%] basis-[50%] text-center lg:text-left lg:mb-0 mb-10">
             <p className="uppercase">

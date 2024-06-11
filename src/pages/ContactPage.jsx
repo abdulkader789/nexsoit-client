@@ -199,9 +199,6 @@ const ContactPage = () => {
           <ContactForm />
         </div>
       </div>
-
-      <CreateAccountPromo />
-      <Footer />
     </div>
   );
 };
