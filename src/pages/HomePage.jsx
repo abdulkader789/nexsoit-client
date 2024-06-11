@@ -7,12 +7,14 @@ import BlogPost from "./../components/BlogPost/BlogPost";
 import OurApproach from "../components/OurApproach/OurApproach";
 import HeroServices from "../components/Hero/HeroServices";
 import { CreateAccountPromo } from "../components/CreateAccountPromo/CreateAccountPromo";
+import LoaderShape from "../utils/LoaderShape";
 
 const HomePage = () => {
   return (
     <div>
       <BannerCarousel />
       <HeroServices />
+
       {/* <OurServices /> */}
       <OurApproach />
       {/* <BlogPost />

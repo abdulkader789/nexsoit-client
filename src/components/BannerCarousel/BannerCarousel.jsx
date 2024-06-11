@@ -10,6 +10,7 @@ import "swiper/css/pagination";
 // import required modules
 import { EffectFade, Navigation, Pagination, Autoplay } from "swiper/modules";
 import { Link, redirect } from "react-router-dom";
+import LoaderShape from "../../utils/LoaderShape";
 
 const BannerCarousel = () => {
   const bannerSlides = [
@@ -101,7 +102,7 @@ const BannerCarousel = () => {
         effect={"fade"}
         navigation={true}
         // pagination={{ clickable: true }}
-        autoplay={{ delay: 3000 }}
+        autoplay={{ delay: 4000 }}
         speed={3000}
         fadeEffect={{ crossFade: true }}
         modules={[EffectFade, Navigation, Autoplay]}

@@ -1,8 +1,8 @@
 import React from "react";
 
-const OurSpecialist = () => {
+const OurSpecialties = () => {
   return (
-    <div className="mb-20">
+    <div className="lg:py-40">
       <div className="bg-[url('./bg-specialist.jpg')] max-w-full py-2 bg-no-repeat bg-cover bg-center bg-blend-multiply bg-black/70">
         <div className="max-w-5xl mx-auto flex justify-center items-center lg:flex-row flex-col flex-wrap px-2 pt-14 lg:pb-20 pb-14">
           <div className="flex-1 text-white lg:basis-[40%] basis-[50%] text-center lg:text-left lg:mb-0 mb-10">
@@ -17,7 +17,7 @@ const OurSpecialist = () => {
               Book a consultation
             </button>
           </div>
-          <div className="flex-1 lg:basis-[60%] basis-[50%] relative">
+          <div className="flex-1 lg:basis-[60%] basis-[50%] relative lg:py-20">
             <div className="grid grid-cols-3 text-center lg:mb-0 mb-8 uppercase text-white tracking-wide">
               <p className="flex flex-col max-w-[200px] mx-auto mb-8">
                 <span className="text-4xl font-bold">491</span>
@@ -53,4 +53,4 @@ const OurSpecialist = () => {
   );
 };
 
-export default OurSpecialist;
+export default OurSpecialties;
