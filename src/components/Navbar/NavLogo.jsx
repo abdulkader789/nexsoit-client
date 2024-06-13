@@ -4,12 +4,10 @@ import LoaderShape from "../../utils/LoaderShape";
 
 const NavLogo = () => {
   return (
-    <div className="michroma-regular text-white ">
+    <div className="michroma-regular  flex  items-center">
       <Link to="/">
         {/* <p className="text-[12px]">Next Solution IT</p> */}
-        <div className="flex justify-center items-center ">
-          <h1 className="text-xl pl-5 font-extrabold uppercase">Nexsoit</h1>
-        </div>
+          <h1 className="text-xl font-extrabold uppercase">Nexsoit</h1>
       </Link>
     </div>
   );
