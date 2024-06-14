@@ -1,9 +1,9 @@
 import React from "react";
 
-const OurSpecialist = () => {
+const OurSpecialties = () => {
   return (
-    <div className="mb-20">
-      <div className="bg-[url('./bg-specialist.jpg')] max-w-full py-2 bg-no-repeat bg-cover bg-center bg-blend-multiply bg-black/70">
+    <div className="lg:pb-32">
+      <div className="bg-[url('./bg-specialist.jpg')] max-w-full py-2 bg-no-repeat bg-cover bg-center bg-blend-multiply bg-black/70 ">
         <div className="max-w-5xl mx-auto flex justify-center items-center lg:flex-row flex-col flex-wrap px-2 pt-14 lg:pb-20 pb-14">
           <div className="flex-1 text-white lg:basis-[40%] basis-[50%] text-center lg:text-left lg:mb-0 mb-10">
             <p className="uppercase">
@@ -17,12 +17,8 @@ const OurSpecialist = () => {
               Book a consultation
             </button>
           </div>
-          <div className="flex-1 lg:basis-[60%] basis-[50%] relative">
-            <div className="grid grid-cols-2 text-center lg:mb-0 mb-8 uppercase text-white tracking-wide">
-              <p className="flex flex-col max-w-[200px] mx-auto mb-8">
-                <span className="text-4xl font-bold">1790</span>
-                <small className="mt-2">Account Number</small>
-              </p>
+          <div className="flex-1 lg:basis-[60%] basis-[50%] relative lg:py-20">
+            <div className="grid grid-cols-3 text-center lg:mb-0 mb-8 uppercase text-white tracking-wide">
               <p className="flex flex-col max-w-[200px] mx-auto mb-8">
                 <span className="text-4xl font-bold">491</span>
                 <small className="mt-2">Trusted Advisers</small>
@@ -36,7 +32,7 @@ const OurSpecialist = () => {
                 <small className="mt-2">Finished Projects</small>
               </p>
             </div>
-            <div className="flex gap-4 items-center p-5 max-w-[500px] bg-[#98BF5A] rounded-md lg:absolute lg:mt-7 lg:left-16">
+            <div className="flex gap-4 items-center p-5 lg:p-0 lg:px-12 lg:py-8 max-w-[500px] bg-[#98BF5A] rounded-md lg:absolute lg:mt-20 lg:left-16">
               <img
                 src="./img-specialist.png"
                 className="object-cover max-w-[90px]"
@@ -57,4 +53,4 @@ const OurSpecialist = () => {
   );
 };
 
-export default OurSpecialist;
+export default OurSpecialties;

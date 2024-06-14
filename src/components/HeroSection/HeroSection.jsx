@@ -1,6 +1,6 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import "./BannerCarousel.css";
+import "../BannerCarousel/BannerCarousel.css";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-fade";
@@ -12,13 +12,14 @@ import { EffectFade, Navigation, Pagination, Autoplay } from "swiper/modules";
 import { Link, redirect } from "react-router-dom";
 import LoaderShape from "../../utils/LoaderShape";
 
-const BannerCarousel = () => {
+const HeroSection = () => {
+
   const bannerSlides = [
     {
       title: "Innovative Software Solutions",
       description:
         "Discover cutting-edge software solutions tailored to meet the unique needs of your business. Our team of experts delivers innovative and efficient systems that drive productivity and growth",
-      imageURL: "https://www.myhrtoolkit.com/hubfs/strategicvstacticalhr.jpg",
+      imageURL:["https://www.myhrtoolkit.com/hubfs/strategicvstacticalhr.jpg"],
       redirect: "software-service",
     },
     {
@@ -26,7 +27,7 @@ const BannerCarousel = () => {
       description:
         "Transform your business with our digital transformation consulting services. We guide you through the process of adopting new technologies and optimizing your operations for the digital age.",
       imageURL:
-        "https://ica.coop/sites/default/files/styles/full_image/public/news-item-fullimage/ballpen-blur-close-461077-2013101013.jpg?itok=F-Fwb7Lb",
+     [ "https://ica.coop/sites/default/files/styles/full_image/public/news-item-fullimage/ballpen-blur-close-461077-2013101013.jpg?itok=F-Fwb7Lb"],
       redirect: "consultation-service",
     },
     {
@@ -111,7 +112,7 @@ const BannerCarousel = () => {
       >
         {bannerSlides.map((item, index) => (
           <SwiperSlide key={index}>
-            <div className="relative w-full h-full flex justify-center items-center">
+            <div className="relative py-32 w-full h-full flex justify-center items-center ">
               <div className="area">
                 <ul className="circles">
                   <li></li>
@@ -126,42 +127,41 @@ const BannerCarousel = () => {
                   <li></li>
                 </ul>
               </div>
-              <img
-                src={item.imageURL}
-                alt={` ${index + 1}`}
-                className="w-full h-full object-cover slide-zoom-effect"
-              />
-              <div className="absolute w-full h-full  bg-gray-400 opacity-30"></div>{" "}
-              {/* Cyan overlay */}
-              <div className="absolute w-full text-center px-5">
-                <div className=" mx-auto slide-zoom-effect">
-                  <h2 className="text-2xl lg:text-4xl michroma-bold mb-3 text-white">
-                    {item.title}
-                  </h2>
-                  <p className="text-md lg:text-lg lg:w-1/2 mx-auto noto-sans-light mb-3 text-white ">
-                    {item.description}
-                  </p>
-                </div>
-                <div className="flex w-full space-x-2 md:space-x-5 px-2 justify-center pt-5 ">
-                  <button className=" text-sm text-white z-20   bg-green-400  h-12 w-1/2 sm:w-auto sm:px-10  lg:px-14 glow-btn glow-effect">
-                    <Link
-                      to={`/services`}
-                      className="h-full w-full flex justify-center items-center capitalize montserrat-medium"
-                    >
-                      view details
-                    </Link>
-                  </button>
+              
+              <main className="h-[80vh] flex w-full" >
 
-                  <button className="text-sm text-black z-20   bg-white  h-12 w-1/2 sm:w-auto sm:px-10  lg:px-14 glow-btn">
-                    <Link
-                      to={`/contact`}
-                      className="h-full w-full flex justify-center items-center capitalize montserrat-medium"
-                    >
-                      Contact Us
-                    </Link>
-                  </button>
-                </div>
-              </div>
+			<section className="flex flex-col w-1/2 justify-center p-8 relative">
+        <h1 className="text-3xl md:text-5xl p-2 text-yellow-300 tracking-loose">{item.title}</h1>
+			
+				<p className="text-sm md:text-base mb-4">{item.description}</p>
+        <div>
+        <button className="bg-blue-300 px-4 py-2 relative">
+
+Explore Now</button>
+        </div>
+			</section>
+      <section className="p-8 h-full w-1/2  relative flex justify-center items-center">
+              {/* First Div */}
+              <div className="w-[250px] h-[350px] mx-auto  absolute left-10 bottom-10  rotate-12 ">
+        <img src='https://cdn.dribbble.com/users/6881751/screenshots/16979133/agerior_animation.png?resize=400x0' className="h-full w-full rounded-[30px]"/>
+
+        </div>
+                      {/* Second Div */}
+
+          <div className="w-[250px] h-[350px]  absolute top-10 -rotate-[30deg] mx-auto ">
+        <img src='https://cdn.dribbble.com/users/77531/screenshots/15432994/smart_nora_landing_animation_dribbble.png?resize=400x0' className="h-full w-full rounded-[30px]"/>
+
+        </div>
+
+
+
+      </section>
+
+
+		
+
+              </main>
+            
             </div>
           </SwiperSlide>
         ))}
@@ -170,4 +170,4 @@ const BannerCarousel = () => {
   );
 };
 
-export default BannerCarousel;
+export default HeroSection;

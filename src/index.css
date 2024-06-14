@@ -1,7 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Joti+One&family=Michroma&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,800;1,400;1,500;1,600;1,700&family=Roboto:wght@300;400&family=Poppins:wght@300;400;500&display=swap&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap&family=Outfit:wght@100..900&display=swap&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&family=Marcellus&display=swap');
-
-
-
 
 @tailwind base;
 @tailwind components;
@@ -17,274 +13,7 @@ html {
   scroll-behavior: smooth;
 }
 
-.marcellus-regular {
-  font-family: "Marcellus", serif;
-  font-weight: 400;
-  font-style: normal;
-}
 
-.michroma-regular {
-  font-family: "Michroma", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-.michroma-bold {
-  font-family: "Michroma", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-.noto-sans-thin {
-  font-family: 'Noto Sans', sans-serif;
-  font-weight: 100;
-  font-style: normal;
-}
-
-.noto-sans-thin-italic {
-  font-family: 'Noto Sans', sans-serif;
-  font-weight: 100;
-  font-style: italic;
-}
-
-.noto-sans-light {
-  font-family: 'Noto Sans', sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.noto-sans-light-italic {
-  font-family: 'Noto Sans', sans-serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.noto-sans-regular {
-  font-family: 'Noto Sans', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.noto-sans-italic {
-  font-family: 'Noto Sans', sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.noto-sans-medium {
-  font-family: 'Noto Sans', sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.noto-sans-medium-italic {
-  font-family: 'Noto Sans', sans-serif;
-  font-weight: 500;
-  font-style: italic;
-}
-
-.noto-sans-bold {
-  font-family: 'Noto Sans', sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.noto-sans-bold-italic {
-  font-family: 'Noto Sans', sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
-.noto-sans-black {
-  font-family: 'Noto Sans', sans-serif;
-  font-weight: 900;
-  font-style: normal;
-}
-
-.noto-sans-black-italic {
-  font-family: 'Noto Sans', sans-serif;
-  font-weight: 900;
-  font-style: italic;
-}
-
-
-.poppins-thin {
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-}
-
-.poppins-thin-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-style: italic;
-}
-
-.poppins-extralight {
-  font-family: "Poppins", sans-serif;
-  font-weight: 200;
-  font-style: normal;
-}
-
-.poppins-extralight-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 200;
-  font-style: italic;
-}
-
-.poppins-light {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.poppins-light-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.poppins-regular {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.poppins-regular-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.poppins-medium {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.poppins-medium-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: italic;
-}
-
-.poppins-semibold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.poppins-semibold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: italic;
-}
-
-.poppins-bold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.poppins-bold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
-.poppins-extrabold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  font-style: normal;
-}
-
-.poppins-extrabold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  font-style: italic;
-}
-
-.poppins-black {
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-}
-
-.poppins-black-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
-  font-style: italic;
-}
-
-.roboto-thin {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-}
-
-.roboto-thin-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  font-style: italic;
-}
-
-.roboto-light {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.roboto-light-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.roboto-regular {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.roboto-regular-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.roboto-medium {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.roboto-medium-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-style: italic;
-}
-
-.roboto-bold {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.roboto-bold-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
-.roboto-black {
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-}
-
-.roboto-black-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  font-style: italic;
-}
 
 
 .border-box-shadow{
@@ -292,136 +21,6 @@ html {
   color:blue;
 }
 
-
-.work-sans{
-  font-family: "Work Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-.outfit-thin {
-  font-family: "Outfit", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 100;
-  font-style: normal;
-}
-
-.outfit-extra-light {
-  font-family: "Outfit", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 200;
-  font-style: normal;
-}
-
-.outfit-light {
-  font-family: "Outfit", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.outfit-regular {
-  font-family: "Outfit", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.outfit-medium {
-  font-family: "Outfit", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.outfit-semibold {
-  font-family: "Outfit", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.outfit-bold {
-  font-family: "Outfit", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.outfit-extra-bold {
-  font-family: "Outfit", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 800;
-  font-style: normal;
-}
-
-.outfit-black {
-  font-family: "Outfit", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 900;
-  font-style: normal;
-}
-
-.montserrat-thin {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 100;
-    font-style: normal;
-  }
-  
-  .montserrat-thin-italic {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 100;
-    font-style: italic;
-  }
-  
-  .montserrat-extralight {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 200;
-    font-style: normal;
-  }
-  
-  .montserrat-light {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .montserrat-regular {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .montserrat-medium {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  .montserrat-semibold {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-style: normal;
-  }
-  
-  .montserrat-bold {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .montserrat-extrabold {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
-    font-style: normal;
-  }
-  
-  .montserrat-black {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
-    font-style: normal;
-  }
-  
 
 
 
@@ -458,7 +57,7 @@ html {
 
 
 .bg-glassy {
-  background: rgba(38, 112, 248, 0.8); /* Adjust the RGBA value to your preference */
+  background: rgba(29, 31, 36, 0.8); /* Adjust the RGBA value to your preference */
   backdrop-filter: blur(10px); /* Adjust the blur level to your preference */
 }
 
@@ -469,7 +68,7 @@ html {
     backdrop-filter: blur(10px); /* Adjust the blur level to your preference */
   }
   .small-screen-bg {
-    background: rgba(38, 112, 248, 0.8); /* Adjust the RGBA value to your preference */
+    background: rgba(29, 31, 36, 0.8); /* Adjust the RGBA value to your preference */
     backdrop-filter: blur(10px); /* Adjust the blur level to your preference */
   }
 }
@@ -518,7 +117,6 @@ html {
 
 
 .glow-btn {
-
 
 
   background-size: 100%;
@@ -603,9 +201,9 @@ html {
 
 
 .btn-learn-more {
-  color: rgb(10, 57, 185);
+  color: rgb(255, 255, 255);
   text-decoration: none;
-  border: 2px solid rgb(25, 45, 219);
+  border: 2px solid rgb(250, 250, 250);
   background: transparent;
   position: relative;
   transition: all 1s;
@@ -624,7 +222,7 @@ html {
   top: 0;
   left: -40px;
   transform: skewX(45deg);
-  background-color: rgb(32, 82, 189);
+  background-color: rgb(24, 25, 29);
   z-index: -1;
   transition: all 0.8s;
 }

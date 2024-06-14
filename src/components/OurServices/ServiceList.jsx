@@ -18,7 +18,6 @@ import ServiceCard from "./ServiceCard";
 import ServiceCategorySelection from "./ServiceCategorySelection";
 import ServicePagination from "./ServicePagination";
 import { useCategoryClick } from "../../contexts/CategoryClickContext";
-
 const servicesData = [
   // Development
   {
@@ -36,7 +35,7 @@ const servicesData = [
     ],
     image:
       "https://st4.depositphotos.com/12981370/24312/i/450/depositphotos_243120806-stock-photo-programmer-working-software-development-coding.jpg",
-    slug: "custom-software-development",
+    slug: "custom-software-development", // Added slug
   },
   {
     icon: <FaMobileAlt />,
@@ -53,7 +52,7 @@ const servicesData = [
     ],
     image:
       "https://media.istockphoto.com/id/1174690086/photo/software-developer-freelancer-working-at-home.jpg?s=612x612&w=0&k=20&c=loFqul06ggwtkwqSmzZnYfA72Vk7nFQOvDSzAN6YbtQ=",
-    slug: "mobile-app-development",
+    slug: "mobile-app-development", // Added slug
   },
   {
     icon: <FaCode />,
@@ -70,23 +69,24 @@ const servicesData = [
     ],
     image:
       "https://media.istockphoto.com/id/1075599562/photo/programmer-working-with-program-code.jpg?s=612x612&w=0&k=20&c=n3Vw5SMbMCWW1YGG6lnTfrwndNQ8B_R4Vw-BN7LkqpA=",
-    slug: "web-development",
+    slug: "web-development", // Added slug
   },
   {
-    icon: <FaDollarSign />,
-    title: "Payment Gateway Integration",
+    icon: <FaCloud />,
+    title: "API Development and Integration",
     description:
-      "Facilitate secure online transactions with our payment gateway integration services. We provide solutions that enable seamless and secure payment processing for your e-commerce platforms.",
+      "Enhance your software capabilities with our API development and integration services. We create secure and efficient APIs that enable seamless communication between your applications.",
     category: "development",
     list: [
       "Game development",
       "Responsive web design",
-      "PCI compliance",
-      "Payment APIs",
-      "Fraud prevention",
+      "Third-party integration",
+      "RESTful APIs",
+      "GraphQL APIs",
     ],
-    image: "https://example.com/custom-software-development-image.jpg",
-    slug: "payment-gateway-integration",
+    image:
+      "https://cdn.create.vista.com/api/media/small/378111324/stock-photo-cloud-computing-technology-online-data-storage-business-network-concept-computer",
+    slug: "api-development-and-integration", // Added slug
   },
 
   // Design
@@ -104,7 +104,7 @@ const servicesData = [
       "User research",
     ],
     image: "https://example.com/custom-software-development-image.jpg",
-    slug: "user-experience-design",
+    slug: "user-experience-design", // Added slug
   },
   {
     icon: <FaVideo />,
@@ -120,44 +120,7 @@ const servicesData = [
       "Sound editing",
     ],
     image: "https://example.com/custom-software-development-image.jpg",
-    slug: "video-editing",
-  },
-
-  // Customization
-  {
-    icon: <FaWrench />,
-    title: "API Development and Integration",
-    description:
-      "Enhance your software capabilities with our API development and integration services. We create secure and efficient APIs that enable seamless communication between your applications.",
-    category: "customization",
-    list: [
-      "Game development",
-      "Responsive web design",
-      "Third-party integration",
-      "RESTful APIs",
-      "GraphQL APIs",
-    ],
-    image:
-      "https://cdn.create.vista.com/api/media/small/378111324/stock-photo-cloud-computing-technology-online-data-storage-business-network-concept-computer",
-    slug: "api-development-and-integration",
-  },
-
-  // Editing
-  {
-    icon: <FaVideo />,
-    title: "Video Editing",
-    description:
-      "Provide professional video editing services, enhancing visual storytelling with creative and technical expertise.",
-    category: "editing",
-    list: [
-      "Game development",
-      "Responsive web design",
-      "Motion graphics",
-      "Color grading",
-      "Sound editing",
-    ],
-    image: "https://example.com/custom-software-development-image.jpg",
-    slug: "video-editing",
+    slug: "video-editing", // Added slug
   },
 
   // Marketing
@@ -175,16 +138,15 @@ const servicesData = [
       "Social media marketing",
     ],
     image: "https://example.com/custom-software-development-image.jpg",
-    slug: "seo-services",
+    slug: "seo-services", // Added slug
   },
-
   // Support
   {
     icon: <FaTools />,
     title: "IT Support and Maintenance",
     description:
       "Ensure your systems run smoothly with our IT support and maintenance services. Our team provides reliable and timely support to keep your operations uninterrupted.",
-    category: "support",
+    category: "support & maintanance",
     list: [
       "Game development",
       "Responsive web design",
@@ -193,14 +155,14 @@ const servicesData = [
       "Backup and recovery",
     ],
     image: "https://example.com/custom-software-development-image.jpg",
-    slug: "it-support-and-maintenance",
+    slug: "it-support-and-maintenance", // Added slug
   },
   {
     icon: <FaCogs />,
     title: "Quality Assurance and Testing",
     description:
       "Ensure the reliability of your software with our quality assurance and testing services. We conduct thorough testing to identify and resolve issues, delivering high-quality products.",
-    category: "support",
+    category: "support maintanance",
     list: [
       "Game development",
       "Responsive web design",
@@ -209,14 +171,14 @@ const servicesData = [
       "Performance testing",
     ],
     image: "https://example.com/custom-software-development-image.jpg",
-    slug: "quality-assurance-and-testing",
+    slug: "quality-assurance-and-testing", // Added slug
   },
   {
     icon: <FaTachometerAlt />,
     title: "Performance Optimization",
     description:
       "Boost the performance of your software with our optimization services. We analyze and enhance your applications to ensure they run smoothly and efficiently.",
-    category: "support",
+    category: "support & maintanance",
     list: [
       "Game development",
       "Responsive web design",
@@ -225,14 +187,30 @@ const servicesData = [
       "Caching strategies",
     ],
     image: "https://example.com/custom-software-development-image.jpg",
-    slug: "performance-optimization",
+    slug: "performance-optimization", // Added slug
+  },
+  {
+    icon: <FaDollarSign />,
+    title: "Payment Gateway Integration",
+    description:
+      "Facilitate secure online transactions with our payment gateway integration services. We provide solutions that enable seamless and secure payment processing for your e-commerce platforms.",
+    category: "support & maintanance",
+    list: [
+      "Game development",
+      "Responsive web design",
+      "PCI compliance",
+      "Payment APIs",
+      "Fraud prevention",
+    ],
+    image: "https://example.com/custom-software-development-image.jpg",
+    slug: "payment-gateway-integration", // Added slug
   },
   {
     icon: <FaTools />,
     title: "Digital Transformation Consulting",
     description:
       "Transform your business with our digital transformation consulting services. We guide you through the process of adopting new technologies and optimizing your operations for the digital age.",
-    category: "support",
+    category: "support & maintanance",
     list: [
       "Game development",
       "Responsive web design",
@@ -241,7 +219,23 @@ const servicesData = [
       "Digital strategy development",
     ],
     image: "https://example.com/custom-software-development-image.jpg",
-    slug: "digital-transformation-consulting",
+    slug: "digital-transformation-consulting", // Added slug
+  },
+  {
+    icon: <FaLaptopCode />,
+    title: "Innovative Software Solutions",
+    description:
+      "Discover cutting-edge software solutions tailored to meet the unique needs of your business. Our team of experts delivers innovative and efficient systems that drive productivity and growth.",
+    category: "support & maintanance",
+    list: [
+      "Game development",
+      "Responsive web design",
+      "Blockchain development",
+      "AI and machine learning",
+      "IoT solutions",
+    ],
+    image: "https://example.com/custom-software-development-image.jpg",
+    slug: "innovative-software-solutions", // Added slug
   },
 ];
 
@@ -280,10 +274,8 @@ const ServiceList = () => {
             "all",
             "development",
             "design",
-            "customization",
-            "editing",
             "marketing",
-            "support",
+            "support & maintanance",
           ]}
           selectedCategory={selectedCategory}
           onSelectCategory={handleCategoryChange} // Update onSelectCategory

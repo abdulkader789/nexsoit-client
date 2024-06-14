@@ -2,6 +2,7 @@ import * as React from "react";
 import * as ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
+import "./styles/fonts.css";
 import routes from "./routes";
 import AppProviders from "./AppProvider";
 import ScrollToTop from "./utils/ScrollToTop";

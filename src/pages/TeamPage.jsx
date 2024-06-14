@@ -7,6 +7,7 @@ import {
 } from "react-icons/fa";
 import Footer from "../components/Footer/Footer";
 import TeamOverview from "../components/Team/TeamOverview";
+import RectAnimation from "../components/RectAnimation/RectAnimation";
 
 const TeamMemberCard = ({ name, designation, image, socialMediaLinks }) => {
   return (
@@ -91,7 +92,7 @@ const AboutTeam = () => {
         </div>
         <div className="grid grid-cols-2 gap-4 mt-8">
           <img
-            className="w-full rounded-lg"
+            className="w-full rounded-lg "
             src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png"
             alt="office content 1"
           />
@@ -106,8 +107,53 @@ const AboutTeam = () => {
   );
 };
 
+// const AboutTeamInovation = () => {
+//   return (
+//     <section className="bg-white dark:bg-gray-900">
+//       <div className="py-8 px-4 mx-auto max-w-screen-xl flex lg:py-16 lg:px-6">
+//         <section className="w-full lg:w-1/2 text-gray-500 sm:text-lg dark:text-gray-400">
+//           <h2 className="mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-white">
+//             Powering innovation at{" "}
+//             <span className="font-extrabold">200,000+</span> companies worldwide
+//           </h2>
+//           <p className="mb-4 font-light">
+//             Track work across the enterprise through an open, collaborative
+//             platform. Link issues across Jira and ingest data from other
+//             software development tools, so your IT support and operations teams
+//             have richer contextual information to rapidly respond to requests,
+//             incidents, and changes.
+//           </p>
+//         </section>
+//         <section className="w-full lg:w-1/2">
+//           {/* Content */}
+//           <div className="grid w-full gap-5 sm:grid-cols-2 md:grid-cols-3 md:gap-4  text-white">
+//             {/* Item */}
+//             <div className="relative p-8">
+//               <h3 className="mb-4 text-3xl font-bold md:text-5xl">1.5M</h3>
+//               <h3 className="text-sm ">Users Registered</h3>
+//               <div className="absolute right-0 top-[29%] hidden h-2/5 border-r border-gray-300 md:block"></div>
+//             </div>
+//             {/* Item */}
+//             <div className="relative p-8">
+//               <h3 className="mb-4 text-3xl font-bold md:text-5xl">41%</h3>
+//               <h3 className="text-sm">Growth Rate</h3>
+//               <div className="absolute right-0 top-[29%] hidden h-2/5 border-r border-gray-300 md:block"></div>
+//             </div>
+//             {/* Item */}
+//             <div className="p-8 ">
+//               <h3 className="mb-4 text-3xl font-bold md:text-5xl">3657+</h3>
+//               <h3 className="text-sm ">Projects Completed</h3>
+//             </div>
+//           </div>
+//         </section>
+//       </div>
+//     </section>
+//   );
+// };
+
 const AboutTeamInovation = () => {
   return (
+<<<<<<< HEAD
     <section className="">
       <div className="py-8 px-4 mx-auto max-w-screen-xl flex lg:py-16 lg:px-6">
         <section className="w-full lg:w-1/2 text-gray-500 sm:text-lg dark:text-gray-400">
@@ -122,24 +168,34 @@ const AboutTeamInovation = () => {
             have richer contextual information to rapidly respond to requests,
             incidents, and changes.
           </p>
+=======
+    <section className="bg-white dark:bg-gray-900 overflow-hidden py-10">
+      <div className="py-8  mx-auto max-w-screen-xl flex lg:py-16 lg:px-6 flex-col lg:flex-row">
+        <section className="w-full lg:w-1/2 text-gray-500 sm:text-lg dark:text-gray-400 h-[300px] flex justify-center items-center lg:justify-start pl-10">
+          <RectAnimation />
+>>>>>>> 36fbd2489370766c33eecc6aeab7482b2c8e2f0f
         </section>
-        <section className="w-full lg:w-1/2">
+        <section className="w-full lg:w-1/2 py-20">
           {/* Content */}
+<<<<<<< HEAD
           <div className="grid w-full gap-5 sm:grid-cols-2 md:grid-cols-3 md:gap-4 ">
+=======
+          <div className="flex lg:grid w-full   lg:grid-cols-3 lg:gap-4  text-white">
+>>>>>>> 36fbd2489370766c33eecc6aeab7482b2c8e2f0f
             {/* Item */}
-            <div className="relative p-8">
+            <div className="relative p-2">
               <h3 className="mb-4 text-3xl font-bold md:text-5xl">1.5M</h3>
               <h3 className="text-sm ">Users Registered</h3>
               <div className="absolute right-0 top-[29%] hidden h-2/5 border-r border-gray-300 md:block"></div>
             </div>
             {/* Item */}
-            <div className="relative p-8">
+            <div className="relative p-2">
               <h3 className="mb-4 text-3xl font-bold md:text-5xl">41%</h3>
               <h3 className="text-sm">Growth Rate</h3>
               <div className="absolute right-0 top-[29%] hidden h-2/5 border-r border-gray-300 md:block"></div>
             </div>
             {/* Item */}
-            <div className="p-8 ">
+            <div className="p-2">
               <h3 className="mb-4 text-3xl font-bold md:text-5xl">3657+</h3>
               <h3 className="text-sm ">Projects Completed</h3>
             </div>
@@ -268,7 +324,10 @@ const TeamPage = () => {
 
         <AboutTeamInovation />
       </div>
+<<<<<<< HEAD
   
+=======
+>>>>>>> 36fbd2489370766c33eecc6aeab7482b2c8e2f0f
     </div>
   );
 };
