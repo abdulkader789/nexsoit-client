@@ -6,7 +6,6 @@ import OurSpecialist from "../components/OurSpecialist/OurSpecialist";
 import AboutHeader from "../components/About/AboutHeader";
 import Footer from "./../components/Footer/Footer";
 import OurVision from "../components/About/OurVision";
-import { CreateAccountPromo } from "../components/CreateAccountPromo/CreateAccountPromo";
 import TeamOverview from "../components/Team/TeamOverview";
 
 const AboutPage = () => {
@@ -16,8 +15,7 @@ const AboutPage = () => {
       <OurVision />
       <OurSpecialist />
       <TeamOverview />
-      <CreateAccountPromo />
-      <Footer />
+   
     </div>
   );
 };

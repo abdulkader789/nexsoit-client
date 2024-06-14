@@ -5,7 +5,6 @@ import {
   FaFacebook,
   FaInstagram,
 } from "react-icons/fa";
-import { CreateAccountPromo } from "../components/CreateAccountPromo/CreateAccountPromo";
 import Footer from "../components/Footer/Footer";
 import TeamOverview from "../components/Team/TeamOverview";
 
@@ -109,10 +108,10 @@ const AboutTeam = () => {
 
 const AboutTeamInovation = () => {
   return (
-    <section className="bg-white dark:bg-gray-900">
+    <section className="">
       <div className="py-8 px-4 mx-auto max-w-screen-xl flex lg:py-16 lg:px-6">
         <section className="w-full lg:w-1/2 text-gray-500 sm:text-lg dark:text-gray-400">
-          <h2 className="mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-white">
+          <h2 className="mb-4 text-4xl tracking-tight font-bold text-gray-900 ">
             Powering innovation at{" "}
             <span className="font-extrabold">200,000+</span> companies worldwide
           </h2>
@@ -126,7 +125,7 @@ const AboutTeamInovation = () => {
         </section>
         <section className="w-full lg:w-1/2">
           {/* Content */}
-          <div className="grid w-full gap-5 sm:grid-cols-2 md:grid-cols-3 md:gap-4  text-white">
+          <div className="grid w-full gap-5 sm:grid-cols-2 md:grid-cols-3 md:gap-4 ">
             {/* Item */}
             <div className="relative p-8">
               <h3 className="mb-4 text-3xl font-bold md:text-5xl">1.5M</h3>
@@ -269,8 +268,7 @@ const TeamPage = () => {
 
         <AboutTeamInovation />
       </div>
-      <CreateAccountPromo />
-      <Footer />
+  
     </div>
   );
 };
