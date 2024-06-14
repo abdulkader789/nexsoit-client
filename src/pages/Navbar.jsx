@@ -52,7 +52,7 @@ const Navbar = () => {
         <TopNavbar />
       </header>
       <main
-        className={`small-screen-bg w-full px-10 py-2 lg:py-0 lg:w-auto h-[6vh] lg:h-auto flex justify-between items-center ${
+        className={`small-screen-bg text-white w-full px-10 py-2 lg:py-0 lg:w-auto h-[6vh] lg:h-auto flex justify-between items-center ${
           isScrolled ? "bg-glassy" : ""
         } ${
           location.pathname !== "/" && location.pathname !== "/home"

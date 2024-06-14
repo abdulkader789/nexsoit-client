@@ -1,13 +1,13 @@
+import React from "react";
+
 import {
   FaLaptopCode,
+  FaMobileAlt,
+  FaCode,
   FaPencilRuler,
-  FaWrench,
   FaVideo,
-  FaBullhorn,
-  FaTools,
+  FaSearch,
 } from "react-icons/fa";
-import { Link } from "react-router-dom";
-import { useCategoryClick } from "../../contexts/CategoryClickContext";
 
 const colors = [
   "bg-skyBlue",
@@ -20,100 +20,90 @@ const colors = [
 
 const servicesData = [
   {
-    icon: <FaLaptopCode />,
-    heading: "Development",
+    imageURL: <FaLaptopCode />,
+    heading: "Custom Software Development",
     description:
-      "Deliver robust software development services to build scalable and efficient solutions tailored to your business needs.",
+      "Develop tailored software solutions to meet your unique business requirements, ensuring efficiency and scalability.",
     bgClass: colors[0],
-    slug: "development",
-    image:
-      "https://media.licdn.com/dms/image/D4E12AQEnNKiiNUKz9Q/article-cover_image-shrink_720_1280/0/1693476739453?e=2147483647&v=beta&t=vA7q5Jo23C2UXQE4FQ3lTlpB7ugmZa5QZzAfSQ5rQ-A",
   },
   {
-    icon: <FaPencilRuler />,
-    heading: "Design",
+    imageURL: <FaMobileAlt />,
+    heading: "Mobile App Development",
     description:
-      "Craft engaging and visually appealing designs that enhance user experience and reflect your brand's identity.",
+      "Create innovative mobile applications for both iOS and Android platforms, focusing on user engagement and functionality.",
     bgClass: colors[1],
-    slug: "design",
-    image:
-      "https://cdn.logojoy.com/wp-content/uploads/20200612115158/AdobeStock_88222430-1-min-scaled.jpeg",
   },
-
   {
-    icon: <FaBullhorn />,
-    heading: "Marketing",
+    imageURL: <FaCode />,
+    heading: "Web Development",
     description:
-      "Implement strategic marketing solutions to enhance your online presence, drive traffic, and boost conversions.",
+      "Offer comprehensive full-stack development services, from front-end design to back-end integration, for scalable and secure applications.",
+    bgClass: colors[2],
+  },
+  {
+    imageURL: <FaPencilRuler />,
+    heading: "User Experience Design",
+    description:
+      "Design intuitive and engaging user experiences, focusing on usability, accessibility, and user satisfaction.",
+    bgClass: colors[3],
+  },
+  {
+    imageURL: <FaVideo />,
+    heading: "Video Editing",
+    description:
+      "Provide professional video editing services, enhancing visual storytelling with creative and technical expertise.",
     bgClass: colors[4],
-    slug: "marketing",
-    image:
-      "https://images.shiksha.com/mediadata/ugcDocuments/images/wordpressImages/2021_03_digital-marketer.jpg",
   },
   {
-    icon: <FaTools />,
-    heading: "Support & Maintanance",
+    imageURL: <FaSearch />,
+    heading: "SEO Services",
     description:
-      "Provide comprehensive IT support, including maintenance, integration, and troubleshooting to ensure your systems run smoothly and efficiently.",
+      "Enhance your online visibility and drive organic traffic with expert SEO strategies, including keyword research, on-page optimization, and link building.",
+
     bgClass: colors[5],
-    slug: "support & maintanance",
-    image:
-      "https://st4.depositphotos.com/1026266/21522/i/450/depositphotos_215224420-stock-photo-business-woman-using-tablet-with.jpg",
   },
 ];
 
-const ServiceCard = ({ icon, heading, description, bgClass, slug, image }) => {
-  const { handleCategoryClick } = useCategoryClick();
-  return (
-    <div className="relative overflow-hidden h-[50vh] md:h-[70vh]">
-      <div
-        className={`flex flex-col justify-center items-center h-full w-full text-white relative overflow-hidden transform transition-transform duration-300 hover:scale-105 ${bgClass}`}
-      >
-        <div
-          className="absolute inset-0 bg-cover bg-center z-0"
-          style={{ backgroundImage: `url(${image})` }}
-        />
-        <div className="flex flex-col justify-center text-center px-5 sm:px-10 bg-black h-full bg-opacity-50 relative ">
-          {/* First Div - Icon */}
-          {/* <div className="text-5xl mb-3 flex justify-center text-blue-500">
-            {icon}
-          </div> */}
-          {/* Second Div - Header and Paragraph */}
-          <h2 className="mb-2 text-sm lg:text-xl poppins-semibold">
-            {heading}
-          </h2>
-          <p className="text-sm work-sans">{description}</p>
-          <div className="flex justify-center py-6">
-            <Link to={`/services`} onClick={() => handleCategoryClick(slug)}>
-              <button className="btn-learn-more z-10 py-2 text-sm px-5 poppins-regular">
-                Learn More
-              </button>
-            </Link>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
+const HeroCard = () => {
+  return <div></div>;
 };
 
 const HeroServices = () => {
   return (
-    <main className="relative w-full bg-slate-900">
-      <div className="h-full w-full relative shadow-md  rounded-md ">
-        {/* <h1 className="marcellus-regular uppercase text-2xl md:text-4xl mb-5 text-center">
+    <main className="relative z-30 lg:px-20    w-full ">
+      <div className=" h-full w-full relative  lg:-top-40 shadow-md    bg-gray-100 px-2 lg:px-20 py-10 rounded-md">
+        <h1 className="marcellus-regular uppercase text-2xl md:text-4xl mb-5 text-center">
           Empowering Digital Solutions
-        </h1> */}
-        <section className="grid grid-cols-1 sm:grid-cols-2 h-full  w-full xl:grid-cols-4">
+        </h1>
+        <section className="grid grid-cols-1  sm:grid-cols-2  gap-3 w-full xl:grid-cols-3 xl:gap-5  py-5">
           {servicesData.map((item, index) => (
-            <ServiceCard
+            <div
               key={index}
-              icon={item.icon}
-              heading={item.heading}
-              description={item.description}
-              bgClass={item.bgClass}
-              slug={item.slug}
-              image={item.image}
-            />
+              className={`flex p-4 h-72 xl:mx-auto   justify-center items-center  border w-full  bg-white text-black `}
+            >
+              <div className="flex flex-col  lg:p-10 ">
+                {/* First Div - Icon */}
+                <div
+                  className={` text-5xl mb-3 flex justify-center text-blue-500`}
+                >
+                  {item.imageURL}
+                </div>
+                {/* Second Div - Header and Paragraph */}
+                <div className="flex flex-col justify-center">
+                  <h2 className="mb-2 text-sm lg:text-xl  text-center poppins-semibold">
+                    {item.heading}
+                  </h2>
+                  <p className=" text-sm work-sans text-center">
+                    {item.description}
+                  </p>
+                  <div className="flex justify-center py-6">
+                    <button className="btn-learn-more z-10 py-2 text-sm px-5 poppins-regular">
+                      Learn More
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           ))}
         </section>
       </div>
