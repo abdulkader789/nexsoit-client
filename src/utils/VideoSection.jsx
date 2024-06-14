@@ -2,13 +2,8 @@ import React from "react";
 
 const VideoSection = () => {
   return (
-<<<<<<< HEAD
     <div className="flex flex-col p-3 items-center w-full lg:p-10 lg:w-2/3 mx-auto">
       <div className="w-full">
-=======
-    <div className="flex flex-col items-center w-full px-3 py-5 lg:px-0 lg:py-20  xl:w-[90vw] 2xl:w-[80vw] mx-auto">
-      <div className=" w-full">
->>>>>>> 36fbd2489370766c33eecc6aeab7482b2c8e2f0f
         <div className="poppins-bold text-5xl mb-5">
           <h2 className="text-center">Revolutionizing Business Solutions</h2>
         </div>
@@ -22,11 +17,7 @@ const VideoSection = () => {
           </p>
         </div>
       </div>
-<<<<<<< HEAD
       <div className="relative w-full h-[350px] lg:h-[500px]">
-=======
-      <div className="relative w-full h-[400px] md:h-[500px] lg:h-[600px]  ">
->>>>>>> 36fbd2489370766c33eecc6aeab7482b2c8e2f0f
         <iframe
           title="video"
           src="https://www.youtube.com/embed/LB8KwiiUGy0"

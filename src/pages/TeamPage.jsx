@@ -153,7 +153,6 @@ const AboutTeam = () => {
 
 const AboutTeamInovation = () => {
   return (
-<<<<<<< HEAD
     <section className="">
       <div className="py-8 px-4 mx-auto max-w-screen-xl flex lg:py-16 lg:px-6">
         <section className="w-full lg:w-1/2 text-gray-500 sm:text-lg dark:text-gray-400">
@@ -168,20 +167,10 @@ const AboutTeamInovation = () => {
             have richer contextual information to rapidly respond to requests,
             incidents, and changes.
           </p>
-=======
-    <section className="bg-white dark:bg-gray-900 overflow-hidden py-10">
-      <div className="py-8  mx-auto max-w-screen-xl flex lg:py-16 lg:px-6 flex-col lg:flex-row">
-        <section className="w-full lg:w-1/2 text-gray-500 sm:text-lg dark:text-gray-400 h-[300px] flex justify-center items-center lg:justify-start pl-10">
-          <RectAnimation />
->>>>>>> 36fbd2489370766c33eecc6aeab7482b2c8e2f0f
         </section>
         <section className="w-full lg:w-1/2 py-20">
           {/* Content */}
-<<<<<<< HEAD
           <div className="grid w-full gap-5 sm:grid-cols-2 md:grid-cols-3 md:gap-4 ">
-=======
-          <div className="flex lg:grid w-full   lg:grid-cols-3 lg:gap-4  text-white">
->>>>>>> 36fbd2489370766c33eecc6aeab7482b2c8e2f0f
             {/* Item */}
             <div className="relative p-2">
               <h3 className="mb-4 text-3xl font-bold md:text-5xl">1.5M</h3>
@@ -324,10 +313,7 @@ const TeamPage = () => {
 
         <AboutTeamInovation />
       </div>
-<<<<<<< HEAD
   
-=======
->>>>>>> 36fbd2489370766c33eecc6aeab7482b2c8e2f0f
     </div>
   );
 };

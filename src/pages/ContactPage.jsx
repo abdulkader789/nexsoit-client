@@ -198,10 +198,6 @@ const ContactPage = () => {
           <ContactForm />
         </div>
       </div>
-<<<<<<< HEAD
-
-=======
->>>>>>> 36fbd2489370766c33eecc6aeab7482b2c8e2f0f
     </div>
   );
 };

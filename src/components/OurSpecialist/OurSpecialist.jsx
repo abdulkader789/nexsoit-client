@@ -1,6 +1,6 @@
 import React from "react";
 
-const OurSpecialties = () => {
+const OurSpecialist = () => {
   return (
     <div className="lg:pb-32">
       <div className="bg-[url('./bg-specialist.jpg')] max-w-full py-2 bg-no-repeat bg-cover bg-center bg-blend-multiply bg-black/70 ">
@@ -53,4 +53,4 @@ const OurSpecialties = () => {
   );
 };
 
-export default OurSpecialties;
+export default OurSpecialist;
