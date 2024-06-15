@@ -2,6 +2,42 @@
 
 
 
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+.syne-regular {
+    font-family: "Syne", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .syne-medium {
+    font-family: "Syne", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .syne-semibold {
+    font-family: "Syne", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .syne-bold {
+    font-family: "Syne", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .syne-extrabold {
+    font-family: "Syne", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
 
 .marcellus-regular {
   font-family: "Marcellus", serif;

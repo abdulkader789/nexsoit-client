@@ -44,13 +44,13 @@ const Navbar = () => {
       className={`w-full fixed bg-transparent montserrat-regular z-50 top-0  transition-all duration-400 ease-in-out`}
       ref={navRef}
     >
-      <header
+      {/* <header
         className={`text-black relative hidden lg:block bg-white ${
           scrolling ? "lg:hidden" : ""
         }`}
       >
         <TopNavbar />
-      </header>
+      </header> */}
       <main
         className={`small-screen-bg text-white w-full px-10 py-2 lg:py-0 lg:w-auto h-[6vh] lg:h-auto flex justify-between items-center ${
           isScrolled ? "bg-glassy" : ""

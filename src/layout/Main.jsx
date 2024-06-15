@@ -3,12 +3,13 @@ import Navbar from "../pages/Navbar";
 import ScrollToTop from "../utils/ScrollToTop";
 import CreateAccountPromo from "../components/CreateAccountPromo/CreateAccountPromo";
 import Footer from "../components/Footer/Footer";
+import { FeaturedNav } from "../feature/FeaturedHome";
 
 const Main = () => {
   return (
     <div>
       <ScrollToTop />
-      <Navbar />
+      <FeaturedNav/>
       <Outlet />
       <CreateAccountPromo/>
       <Footer/>
