@@ -20,10 +20,10 @@ import blogImage from '../../public/blog-image.jpg'
 // import required modules
 import {Navigation, Pagination, Autoplay, A11y } from "swiper/modules";
 const heroSectionSlides = [
-  {
-    title: "Transform Your Business with Custom ERP Systems",
-    image: websiteImage
-  },
+  // {
+  //   title: "Transform Your Business with Custom ERP Systems",
+  //   image: websiteImage
+  // },
   // {
   //   title: "Optimize Operations with Advanced Inventory Management Software",
   //   image: "https://img.freepik.com/free-vector/flat-design-online-shopping-web-page-template_23-2148528206.jpg?t=st=1718448827~exp=1718452427~hmac=8e3f9f4cc49e011051f3f7c72b3cb7fa1243bcba59197f1af62cc4222197144f&w=740g"
@@ -138,15 +138,15 @@ const BannerCarousel = () => {
                     <li></li>
                   </ul>
                 </div> 
-                <main className='h-full w-full flex justify-center items-center bg-black flex-col lg:flex-row '>
-                  <section className='lg:w-1/2 w-full lg:relative text-center absolute top-10 lg:top-0 z-20'>
-                    <h2 className='syne-bold text-xl text-white w-full'>
+                <main className='h-full w-full flex justify-center items-center bg-black flex-col lg:flex-row md:pt-32 lg:pt-0'>
+                  <section className='pb-5 lg:pb-0  lg:w-1/2 flex justify-center items-center lg:h-full'>
+                    <h2 className='syne-bold text-lg text-white  lg:text-2xl '>
                       <span className=' '>{firstHalf}</span><br /><span className='bg-blue-700 px-2 relative rotate-[-2deg] inline-block'>{secondHalf}</span>
                     </h2>
                   </section>
-                  <section className='lg:w-1/2 w-full h-full z-10 relative lg:h-full lg:top-10  p-2 lg:p-10'>
-                    <div className="w-full h-full flex items-center justify-center relative z-20 ">
-                      <img className='h-full w-full relative   rounded-md ' src={item.image} />
+                  <section className='lg:w-1/2 lg:h-full md:h-[70vh]'>
+                    <div className="w-full h-full flex items-center justify-center ">
+                      <img className='h-full lg:h-auto w-full relative   rounded-md ' src={item.image} />
                     </div>
                   </section>
 
