@@ -143,7 +143,7 @@ const BannerCarousel = () => {
                     <li></li>
                   </ul>
                 </div> 
-                <main className='h-full w-full flex justify-center items-center bg-black flex-col lg:flex-row md:pt-32 lg:pt-0 '>
+                <main className='h-full w-full flex justify-center items-center  flex-col lg:flex-row md:pt-32 lg:pt-0 '>
                   <section className='pb-5 h-20 lg:pb-0  lg:w-1/2 flex justify-center items-center lg:h-full relative'>
                     <h2 className='syne-bold text-lg text-white  lg:text-2xl capitalize'>
                       <span className=' '>{firstHalf}</span><br /><span className='bg-blue-700 px-2 relative rotate-[-2deg] inline-block'>{secondHalf}</span>
@@ -293,7 +293,7 @@ export const FeaturedNav = () => {
 
 const FeaturedHome = ()=>{
     return(
-        <div className='h-screen   relative' >
+        <div className='h-screen  bg-gray-900 relative' >
      
             <div className='h-full'>
             <BannerCarousel/>
