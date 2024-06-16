@@ -114,7 +114,7 @@ const BannerSlider = () => {
          <WaveSVG/>
       <Swiper
                 autoplay={{ delay: 5000 }}
-                speed={2000}
+                speed={1000}
                 modules={[ Autoplay, Navigation,  A11y ]}
                 className="mySwiper h-full w-full relative"
                 simulateTouch={false}
