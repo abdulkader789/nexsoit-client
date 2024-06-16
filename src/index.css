@@ -64,8 +64,7 @@ html {
 
 @media (max-width: 1023px) {
   .sidebar-bg {
-    background: rgba(8, 8, 8, 0.8); /* Adjust the RGBA value to your preference */
-    backdrop-filter: blur(10px); /* Adjust the blur level to your preference */
+    background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);    backdrop-filter: blur(10px); /* Adjust the blur level to your preference */
   }
   .small-screen-bg {
     background: rgba(237, 238, 240, 0.8); /* Adjust the RGBA value to your preference */
