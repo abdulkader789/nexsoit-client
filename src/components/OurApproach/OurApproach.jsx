@@ -33,16 +33,17 @@ const OurApproach = () => {
   ];
 
   return (
-    <div className="bg-[url('./bg-specialist.jpg')] max-w-full py-2 bg-no-repeat bg-cover bg-center bg-blend-multiply bg-black/70 text-white">
+    <div className="bg-[background: radial-gradient(circle at 10% 20%, rgb(254, 255, 165) 0%, rgb(255, 232, 182) 90%);
+] max-w-full py-2 ">
       <section className="py-6">
         <div className="text-center poppins-regular  mb-8">
-          <h4 className="text-sm lg:text-lg text-yellow-200">Our Approach</h4>
-          <h2 className="text-2xl lg:text-3xl font-bold">
+          <h4 className="text-sm lg:text-lg text-yellow-600">Our Approach</h4>
+          <h2 className="text-2xl lg:text-3xl font-bold syne-bold">
             Reasons to Choose Us
           </h2>
         </div>
         <div className="w-full lg:w-2/3 mx-auto">
-          <p className="text-center poppins-regular text-sm lg:text-lg px-3 lg:px-0 text-slate-300">
+          <p className="text-center montserrat-regular text-sm lg:text-lg px-3 lg:px-0 ">
             At Our Company, we take pride in our customer-centric approach. Our
             team of experts is dedicated to understanding your unique needs and
             providing tailored solutions to help you achieve your goals. With a
@@ -69,22 +70,18 @@ const OurApproach = () => {
             </div>
 
             <div
-              className="h-full relative md:w-[45%] shadow-sm flex  flex-col justify-center items-center p-5 lg:px-20"
-              style={{
-                backgroundColor: "rgba(50, 50, 50, 0.5)", // Semi-transparent grayish-black
-                backdropFilter: "blur(10px)", // Blur effect
-                WebkitBackdropFilter: "blur(10px)", // Blur effect for Safari
-              }}
+              className="h-full relative md:w-[45%] shadow-sm flex  flex-col justify-center items-center p-5 lg:px-20 "
+          
             >
-              <h3 className="text-xl lg:text-2xl xl:text-3xl font-semibold mb-2 montserrat-semibold text-orange-200">
+              <h3 className="text-xl lg:text-2xl xl:text-3xl font-semibold mb-2 syne-bold  text-orange-400">
                 {card.title}
               </h3>
-              <p className="work-sans text-sm lg:text-lg text-slate-200">
+              <p className="work-sans text-sm lg:text-lg montserrat-regular">
                 {card.description}
               </p>
 
               <div
-                className={`absolute hidden poppins-bold md:flex top-[45%] h-20 w-20 text-2xl justify-center items-center shadow__btn text-slate-700 rounded-full
+                className={`absolute bg-gray-200 hidden montserrat-semibold md:flex top-[45%] h-20 w-20 text-2xl justify-center items-center shadow__btn text-slate-700 rounded-full
               ${index % 2 === 1 ? "-right-10" : "-left-10"}`}
               >
                 {index + 1}
