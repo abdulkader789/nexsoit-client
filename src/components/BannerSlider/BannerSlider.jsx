@@ -17,6 +17,8 @@ import blogImage from '../../../public/blog-image.jpg'
 // import required modules
 import {Navigation, Pagination, Autoplay, A11y } from "swiper/modules";
 import { SwiperNavButtons } from '../../feature/SwiperNavButtons';
+import AnimatedShape from '../AnimatedShape/AnimatedShape';
+import WaveSVG from '../WaveSVG/WaveSVG';
 const heroSectionSlides = [
   // {
   //   title: "Transform Your Business with Custom ERP Systems",
@@ -109,6 +111,7 @@ const BannerSlider = () => {
 
   return (
     <section className="relative h-screen w-full bg-black">
+         <WaveSVG/>
       <Swiper
                 autoplay={{ delay: 5000 }}
                 speed={2000}
@@ -127,20 +130,9 @@ const BannerSlider = () => {
           return (
             <SwiperSlide key={index} className='h-full w-full relative'>
               <div className="relative w-full h-full flex justify-center items-center">
-                 <div className="area">
-                  <ul className="circles">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                  </ul>
-                </div> 
+
+
+
                 <main className='h-full w-full flex justify-center items-center  flex-col lg:flex-row md:pt-32 lg:pt-0 '>
                   <section className='pb-5 h-20 lg:pb-0  lg:w-1/2 flex justify-center items-center lg:h-full relative'>
                     <h2 className='syne-bold text-lg text-white  lg:text-2xl capitalize'>
@@ -157,17 +149,14 @@ const BannerSlider = () => {
                 </main>
                
               </div>
+
             </SwiperSlide>
+                         
           );
         })}
-      <SwiperNavButtons />
-      <div className='w-full absolute bottom-0 z-20 oveflow-hidden'>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1250 250" >
-  <path fill="#ffffff" fill-opacity="1" d="M0,160L205.7,96L411.4,96L617.1,160L822.9,160L1028.6,192L1234.3,224L1440,288L1440,320L1234.3,320L1028.6,320L822.9,320L617.1,320L411.4,320L205.7,320L0,320Z"></path>
-  
-</svg>
-            </div>
-           
+
+<AnimatedShape/>
+<SwiperNavButtons />
 
       </Swiper>
   
