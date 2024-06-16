@@ -293,9 +293,9 @@ export const FeaturedNav = () => {
 
 const FeaturedHome = ()=>{
     return(
-        <div className='h-screen' >
+        <div className='h-screen   relative' >
      
-            <div className='h-full  relative'>
+            <div className='h-full'>
             <BannerCarousel/>
             </div>
             <div className='w-full absolute bottom-0 z-20 oveflow-hidden'>
