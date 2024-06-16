@@ -5,17 +5,15 @@ import Footer from "../components/Footer/Footer";
 
 import BlogPost from "./../components/BlogPost/BlogPost";
 import OurApproach from "../components/OurApproach/OurApproach";
-import HeroServices from "../components/Hero/HeroServices";
-import FeaturedHome from "../feature/FeaturedHome";
-import FeaturedServices from "../feature/FeaturedServices";
+
+import FeaturedServices from "../components/FeaturedServices/FeaturedServices";
+import BannerSlider from "../components/BannerSlider/BannerSlider";
 
 const HomePage = () => {
   return (
     <div>
-      {/* <BannerCarousel />
-      <HeroServices /> */}
-      <FeaturedHome/>
-      {/* <OurServices /> */}
+      <BannerSlider/>
+
       <FeaturedServices/>
       <OurApproach />
       {/* <BlogPost />
