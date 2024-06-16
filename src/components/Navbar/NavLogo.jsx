@@ -8,7 +8,7 @@ const NavLogo = () => {
       <Link className="h-full flex justify-center items-center" to="/">
         {/* <p className="text-[12px]">Next Solution IT</p> */}
           <img className="h-6" src={navlogo}/>
-                    <h1 className="text-sm lowercase michroma-regular">Nexsoit</h1>
+                    <h1 className="text-sm text-black uppercase michroma-regular">Nexsoit</h1>
 
       </Link>
     </div>

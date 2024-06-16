@@ -110,13 +110,13 @@ const BannerSlider = () => {
 
 
   return (
-    <section className="relative h-screen w-full bg-black">
+    <section className="relative h-screen w-full" style={{backgroundImage: "radial-gradient(circle at 10% 20%, rgb(255, 246, 236) 39.5%, rgba(100, 46, 122, 0.23) 100.2%)"}}>
          <WaveSVG/>
       <Swiper
                 autoplay={{ delay: 5000 }}
                 speed={1000}
                 modules={[ Autoplay, Navigation,  A11y ]}
-                className="mySwiper h-full w-full relative"
+                className="mySwiper h-full w-full"
                 simulateTouch={false}
               // navigation={{
               //   clickable: true,       
@@ -128,15 +128,15 @@ const BannerSlider = () => {
         {heroSectionSlides.map((item, index) => {
           const { firstHalf, secondHalf } = splitTitle(item.title);
           return (
-            <SwiperSlide key={index} className='h-full w-full relative'>
-              <div className="relative w-full h-full flex justify-center items-center">
+            <SwiperSlide key={index} className='h-full w-full'>
+              <div className="w-full h-full flex justify-center items-center">
 
 
 
                 <main className='h-full w-full flex justify-center items-center  flex-col lg:flex-row md:pt-32 lg:pt-0 '>
                   <section className='pb-5 h-20 lg:pb-0  lg:w-1/2 flex justify-center items-center lg:h-full relative'>
-                    <h2 className='syne-bold text-lg text-white  lg:text-2xl capitalize'>
-                      <span className=' '>{firstHalf}</span><br /><span className='bg-blue-700 px-2 relative rotate-[-2deg] inline-block'>{secondHalf}</span>
+                    <h2 className='syne-bold text-lg  lg:text-2xl capitalize'>
+                      <span className=' '>{firstHalf}</span><br /><span className='bg-blue-700 px-2 relative rotate-[-2deg] text-white inline-block'>{secondHalf}</span>
                     </h2>
                   </section>
                   <section className='lg:w-1/2 lg:h-full relative'>

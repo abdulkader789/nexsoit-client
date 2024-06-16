@@ -57,7 +57,7 @@ html {
 
 
 .bg-glassy {
-  background: rgba(56, 110, 245, 0.8); /* Adjust the RGBA value to your preference */
+  background: rgba(237, 238, 240, 0.8); /* Adjust the RGBA value to your preference */
   backdrop-filter: blur(10px); /* Adjust the blur level to your preference */
 }
 
@@ -68,7 +68,7 @@ html {
     backdrop-filter: blur(10px); /* Adjust the blur level to your preference */
   }
   .small-screen-bg {
-    background: rgba(47, 100, 235, 0.8); /* Adjust the RGBA value to your preference */
+    background: rgba(237, 238, 240, 0.8); /* Adjust the RGBA value to your preference */
     backdrop-filter: blur(10px); /* Adjust the blur level to your preference */
   }
 }
@@ -294,9 +294,8 @@ html {
   border: 1px solid;
   outline: none;
   background-color: transparent;
-  color: #fff;
+  color: #010000;
   z-index: 50;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
