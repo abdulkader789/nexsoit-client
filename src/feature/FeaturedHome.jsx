@@ -33,9 +33,17 @@ const heroSectionSlides = [
   //  image: "https://img.freepik.com/free-vector/flat-design-online-shopping-web-page-template_23-2148528206.jpg?t=st=1718448827~exp=1718452427~hmac=8e3f9f4cc49e011051f3f7c72b3cb7fa1243bcba59197f1af62cc4222197144f&w=740g"
   // },
   {
-    title: "Engage Audiences with E-Commerce Websites",
+    title: "launch your business with mern stack e-commerce",
     image: websiteImage
   },
+  {
+    title: "app solutions that fit your goals",
+    image: appImage
+  },
+  // {
+  //   title: "interface design for websites and apps with figma",
+  //   image: appImage
+  // },
   {
     title: "Showcase Your Work with Stunning Portfolio Websites",
     image: portfolioImage
@@ -44,10 +52,7 @@ const heroSectionSlides = [
     title: "Connect with Readers through Personal Blogs",
     image: blogImage
   },
-  {
-    title: "Accelerate Growth with Custom E-Commerce Apps",
-    image: appImage
-  },
+
   // {
   //   title: "Build Communities with Social Networking Apps",
   //   image: "path/to/social-networking-apps-image.jpg"
@@ -107,8 +112,8 @@ const BannerCarousel = () => {
   return (
     <section className="relative h-full w-full ">
       <Swiper
-                autoplay={{ delay: 2000 }}
-                speed={1000}
+                autoplay={{ delay: 5000 }}
+                speed={2000}
                 modules={[ Autoplay, Navigation,  A11y ]}
                 className="mySwiper h-full w-full"
                 simulateTouch={false}
@@ -138,13 +143,13 @@ const BannerCarousel = () => {
                     <li></li>
                   </ul>
                 </div> 
-                <main className='h-full w-full flex justify-center items-center bg-black flex-col lg:flex-row md:pt-32 lg:pt-0'>
-                  <section className='pb-5 lg:pb-0  lg:w-1/2 flex justify-center items-center lg:h-full'>
-                    <h2 className='syne-bold text-lg text-white  lg:text-2xl '>
+                <main className='h-full w-full flex justify-center items-center bg-black flex-col lg:flex-row md:pt-32 lg:pt-0 '>
+                  <section className='pb-5 h-20 lg:pb-0  lg:w-1/2 flex justify-center items-center lg:h-full relative'>
+                    <h2 className='syne-bold text-lg text-white  lg:text-2xl capitalize'>
                       <span className=' '>{firstHalf}</span><br /><span className='bg-blue-700 px-2 relative rotate-[-2deg] inline-block'>{secondHalf}</span>
                     </h2>
                   </section>
-                  <section className='lg:w-1/2 lg:h-full md:h-[70vh]'>
+                  <section className='lg:w-1/2 lg:h-full relative'>
                     <div className="w-full h-full flex items-center justify-center ">
                       <img className='h-full lg:h-auto w-full relative   rounded-md ' src={item.image} />
                     </div>
@@ -293,7 +298,7 @@ const FeaturedHome = ()=>{
             <div className='h-full  relative'>
             <BannerCarousel/>
             </div>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1250 250" className='w-full absolute bottom-0 z-10'>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1250 250" className='w-full absolute bottom-0 z-20'>
   <path fill="#ffffff" fill-opacity="1" d="M0,160L205.7,96L411.4,96L617.1,160L822.9,160L1028.6,192L1234.3,224L1440,288L1440,320L1234.3,320L1028.6,320L822.9,320L617.1,320L411.4,320L205.7,320L0,320Z"></path>
   
 </svg>

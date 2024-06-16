@@ -270,7 +270,6 @@ html {
 
 .image-scroll:hover {
   transform: translateY(calc(-100% + 37rem));
-
 }
 
 .highlighted-text {
@@ -319,4 +318,8 @@ html {
   position: absolute;
   top:50vh;
   right: 0;
+}
+
+.top-index{
+  z-index: 100!important;
 }
