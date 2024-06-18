@@ -72,17 +72,15 @@ const Navbar = () => {
           }`}
         >
           <div className="w-full flex">
-            <section className="h-full w-full flex flex-col lg:flex-row justify-end lg:justify-center items-center montserrat-bold">
+            <section className="h-full w-full flex flex-col lg:flex-row justify-end lg:justify-center items-center ">
               <div className="lg:mb-0 w-full lg:w-auto">
                 <NavLinks />
               </div>
               {/* <NavButton /> */}
-              <div className='w-full items-center py-4 lg:py-0 lg:w-auto px-10 lg:px-0 flex justify-start lg:justify-center lg:absolute lg:right-0'>
-              <NavButton/>
+              <div className="w-full items-center py-4 lg:py-0 lg:w-auto px-10 lg:px-0 flex justify-start lg:justify-center lg:absolute lg:right-0">
+                <NavButton />
               </div>
-           
             </section>
-         
           </div>
         </section>
       </main>

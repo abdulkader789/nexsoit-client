@@ -8,11 +8,13 @@ import OurApproach from "../components/OurApproach/OurApproach";
 
 import FeaturedServices from "../components/FeaturedServices/FeaturedServices";
 import BannerSlider from "../components/BannerSlider/BannerSlider";
+import BannerSection from "../components/BannerSection/BannerSection";
 
 const HomePage = () => {
   return (
     <div>
-      <BannerSlider/>
+      <BannerSection/>
+      {/* <BannerSlider/> */}
 
       <FeaturedServices/>
       <OurApproach />

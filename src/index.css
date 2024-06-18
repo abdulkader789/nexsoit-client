@@ -1,40 +1,32 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
- 
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 html {
   scroll-behavior: smooth;
 }
 
-
-
-
-.border-box-shadow{
-  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-  color:blue;
+.border-box-shadow {
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  color: blue;
 }
-
-
-
-
-
 
 /* styles.css */
 /* styles.css */
 
 .bg-skyBlue {
-  background-color: #87CEEB; /* Sky Blue color */
+  background-color: #87ceeb; /* Sky Blue color */
 }
 
 .bg-darkBlue {
-  background-color: #00008B; /* Dark Blue color */
+  background-color: #00008b; /* Dark Blue color */
 }
 
 .bg-blackShade {
@@ -42,7 +34,7 @@ html {
 }
 
 .bg-lightBlue {
-  background-color: #ADD8E6; /* Light Blue color */
+  background-color: #add8e6; /* Light Blue color */
 }
 
 .bg-navyBlue {
@@ -50,32 +42,38 @@ html {
 }
 
 .bg-charcoalBlack {
-  background-color: #36454F; /* Charcoal Black color */
+  background-color: #36454f; /* Charcoal Black color */
 }
 
-
-
-
 .bg-glassy {
-  background: rgba(237, 238, 240, 0.8); /* Adjust the RGBA value to your preference */
+  background: rgba(
+    237,
+    238,
+    240,
+    0.8
+  ); /* Adjust the RGBA value to your preference */
   backdrop-filter: blur(10px); /* Adjust the blur level to your preference */
 }
 
-
 @media (max-width: 1023px) {
   .sidebar-bg {
-    background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);    backdrop-filter: blur(10px); /* Adjust the blur level to your preference */
+    background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    backdrop-filter: blur(10px); /* Adjust the blur level to your preference */
   }
   .small-screen-bg {
-    background: rgba(237, 238, 240, 0.8); /* Adjust the RGBA value to your preference */
+    background: rgba(
+      237,
+      238,
+      240,
+      0.8
+    ); /* Adjust the RGBA value to your preference */
     backdrop-filter: blur(10px); /* Adjust the blur level to your preference */
   }
 }
 
-
 .contact-us-btn {
   padding: 0.8em 1.8em;
-  border: 2px solid #17C3B2;
+  border: 2px solid #17c3b2;
   position: relative;
   overflow: hidden;
   background-color: transparent;
@@ -85,18 +83,18 @@ html {
   transition: 0.3s;
   z-index: 1;
   font-family: inherit;
-  color: #17C3B2;
+  color: #17c3b2;
 }
 
 .contact-us-btn::before {
-  content: '';
+  content: "";
   width: 0;
   height: 300%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(45deg);
-  background: #17C3B2;
+  background: #17c3b2;
   transition: 0.5s ease;
   display: block;
   z-index: -1;
@@ -110,14 +108,7 @@ html {
   color: #111;
 }
 
-
-
-
-
-
 .glow-btn {
-
-
   background-size: 100%;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.45);
   border: 0;
@@ -127,21 +118,21 @@ html {
   outline: none;
   text-align: center;
 }
-.glow-btn span{
-  z-index:10;
-  position:relative;
+.glow-btn span {
+  z-index: 10;
+  position: relative;
 }
 
 .glow-effect {
-  position:relative;
-  overflow:hidden;
+  position: relative;
+  overflow: hidden;
 }
 
-.glow-effect:before{
-  content:'';
+.glow-effect:before {
+  content: "";
   position: absolute;
   left: -20%;
-  top:-10%;
+  top: -10%;
   width: 0;
   height: 100%;
   transform: rotate(15deg) scale(1, 2);
@@ -161,22 +152,25 @@ html {
   }
 }
 
-
 /* CSS */
 .button-quote {
-  --b: 3px;   /* border thickness */
-  --s: .45em; /* size of the corner */
-  --color: #373B44;
-  
-  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  --b: 3px; /* border thickness */
+  --s: 0.45em; /* size of the corner */
+  --color: #373b44;
+
+  padding: calc(0.5em + var(--s)) calc(0.9em + var(--s));
   color: var(--color);
   --_p: var(--s);
-  background:
-    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
-    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
-  transition: .3s linear, color 0s, background-color 0s;
+  background: conic-gradient(
+      from 90deg at var(--b) var(--b),
+      #0000 90deg,
+      var(--color) 0
+    )
+    var(--_p) var(--_p) / calc(100% - var(--b) - 2 * var(--_p))
+    calc(100% - var(--b) - 2 * var(--_p));
+  transition: 0.3s linear, color 0s, background-color 0s;
   outline: var(--b) solid #0000;
-  outline-offset: .6em;
+  outline-offset: 0.6em;
   font-size: 16px;
 
   border: 0;
@@ -187,17 +181,16 @@ html {
 }
 
 .button-quote:hover,
-.button-quote:focus-visible{
+.button-quote:focus-visible {
   --_p: 0px;
   outline-color: var(--color);
-  outline-offset: .05em;
+  outline-offset: 0.05em;
 }
 
 .button-quote:active {
   background: var(--color);
   color: #fff;
 }
-
 
 .btn-learn-more {
   color: rgb(255, 255, 255);
@@ -214,7 +207,7 @@ html {
 }
 
 .btn-learn-more::before {
-  content: '';
+  content: "";
   position: absolute;
   height: 100%;
   width: 0%;
@@ -229,7 +222,6 @@ html {
 .btn-learn-more:hover::before {
   width: 160%;
 }
-
 
 .shadow__btn {
   border: none;
@@ -275,7 +267,7 @@ html {
 }
 
 .highlighted-text::before {
-  content: '';
+  content: "";
   width: 110%;
   height: 110%;
   background-color: blue;
@@ -283,7 +275,6 @@ html {
   transform: rotate(-3deg);
   left: -5px;
 }
-
 
 .swiper-nav-btns button {
   width: 30px;
@@ -298,7 +289,7 @@ html {
   justify-content: center;
   align-items: center;
 
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .swiper-nav-btns button:hover {
@@ -306,25 +297,25 @@ html {
   cursor: pointer;
 }
 
-.prev-btn{
+.prev-btn {
   position: absolute;
-  top:50vh;
-  left:0;
+  top: 50vh;
+  left: 0;
 }
-.next-btn{
+.next-btn {
   position: absolute;
-  top:50vh;
+  top: 50vh;
   right: 0;
 }
 
-.top-index{
-  z-index: 100!important;
+.top-index {
+  z-index: 100 !important;
 }
 
 .inverted-border-radius::before {
   content: "";
   position: absolute;
-  
+
   background-color: transparent;
   bottom: -50px;
   right: 0;
@@ -333,4 +324,36 @@ html {
   border-top-left-radius: 25px;
   z-index: 10;
   box-shadow: 0 -40px 0 0 rgb(255, 255, 255);
+}
+
+.animated-bg {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: changeBackgroundColor 10s infinite;
+}
+
+@keyframes changeBackgroundColor {
+  0% {
+    --fill-color: #1732ff;
+  }
+  /* 25% {
+    --fill-color: #69f2bf; 
+  }
+  50% {
+    --fill-color: #5412d8; 
+  }
+  75% {
+    --fill-color: #08a8b7; 
+  } */
+  100% {
+    --fill-color: #5f1ee1;
+  }
+}
+
+.animated-bg svg {
+  fill: var(--fill-color);
+  transition: fill 2.5s ease-in-out;
 }

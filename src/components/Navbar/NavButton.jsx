@@ -1,7 +1,7 @@
 import { IoHandLeft } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import { useMobileNav } from "../../contexts/MobileNavContext";
-import { FiArrowRight } from 'react-icons/fi';
+import { FiArrowRight } from "react-icons/fi";
 import { FaArrowRight } from "react-icons/fa";
 
 const NavButton = () => {
@@ -11,9 +11,11 @@ const NavButton = () => {
       <Link
         to="/contact"
         onClick={handleClick}
-        className="montserrat-regular flex justify-center items-center text-[10px] lg:text-[12px] focus:outline-none uppercase inline-block text-center"
+        className="montserrat-regular flex justify-center items-center  focus:outline-none uppercase inline-block text-center"
       >
-        Start A Project <FaArrowRight className="ml-2"/>
+        <button className="bg-indigo-500 inter-medium  text-white text-sm py-2 px-4 rounded hover:bg-green-700 transition duration-300">
+          Get A Quote
+        </button>
       </Link>
     </button>
   );
