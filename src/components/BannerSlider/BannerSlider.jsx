@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -7,18 +7,17 @@ import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import websiteImage from '../../../public/website-image.jpg'
-import portfolioImage from '../../../public/portfolio-image.jpg'
+import websiteImage from "../../../public/website-image.jpg";
+import portfolioImage from "../../../public/portfolio-image.jpg";
 
-import appImage from '../../../public/app-image.jpg'
-import blogImage from '../../../public/blog-image.jpg'
-
+import appImage from "../../../public/app-image.jpg";
+import blogImage from "../../../public/blog-image.jpg";
 
 // import required modules
-import {Navigation, Pagination, Autoplay, A11y } from "swiper/modules";
-import { SwiperNavButtons } from '../../feature/SwiperNavButtons';
-import AnimatedShape from '../AnimatedShape/AnimatedShape';
-import WaveSVG from '../WaveSVG/WaveSVG';
+import { Navigation, Pagination, Autoplay, A11y } from "swiper/modules";
+import SwiperNavButtons from "./SwiperNavButtons";
+import AnimatedShape from "../AnimatedShape/AnimatedShape";
+import WaveSVG from "../WaveSVG/WaveSVG";
 const heroSectionSlides = [
   // {
   //   title: "Transform Your Business with Custom ERP Systems",
@@ -34,11 +33,11 @@ const heroSectionSlides = [
   // },
   {
     title: "launch your business with mern stack e-commerce",
-    image: websiteImage
+    image: websiteImage,
   },
   {
     title: "app solutions that fit your goals",
-    image: appImage
+    image: appImage,
   },
   // {
   //   title: "interface design for websites and apps with figma",
@@ -46,11 +45,11 @@ const heroSectionSlides = [
   // },
   {
     title: "Showcase Your Work with Stunning Portfolio Websites",
-    image: portfolioImage
+    image: portfolioImage,
   },
   {
     title: "Connect with Readers through Personal Blogs",
-    image: blogImage
+    image: blogImage,
   },
 
   // {
@@ -99,67 +98,65 @@ const heroSectionSlides = [
   // }
 ];
 const splitTitle = (title) => {
-  const words = title.split(' ');
+  const words = title.split(" ");
   const middleIndex = Math.ceil(words.length / 2);
-  const firstHalf = words.slice(0, middleIndex).join(' ');
-  const secondHalf = words.slice(middleIndex).join(' ');
+  const firstHalf = words.slice(0, middleIndex).join(" ");
+  const secondHalf = words.slice(middleIndex).join(" ");
   return { firstHalf, secondHalf };
 };
 
 const BannerSlider = () => {
-
-
   return (
-    <section className="relative h-screen w-full" style={{backgroundImage: "radial-gradient(circle at 10% 20%, rgb(255, 246, 236) 39.5%, rgba(100, 46, 122, 0.23) 100.2%)"}}>
-         <WaveSVG/>
+    <section
+      className="relative h-screen w-full"
+      style={{
+        backgroundImage:
+          "radial-gradient(circle at 10% 20%, rgb(255, 246, 236) 39.5%, rgba(100, 46, 122, 0.23) 100.2%)",
+      }}
+    >
+      <WaveSVG />
       <Swiper
-                autoplay={{ delay: 5000 }}
-                speed={1000}
-                modules={[ Autoplay, Navigation,  A11y ]}
-                className="mySwiper h-full w-full"
-                simulateTouch={false}
-              // navigation={{
-              //   clickable: true,       
-              //  }}
-         
-            
-        
+        autoplay={{ delay: 5000 }}
+        speed={1000}
+        modules={[Autoplay, Navigation, A11y]}
+        className="mySwiper h-full w-full"
+        simulateTouch={false}
+        // navigation={{
+        //   clickable: true,
+        //  }}
       >
         {heroSectionSlides.map((item, index) => {
           const { firstHalf, secondHalf } = splitTitle(item.title);
           return (
-            <SwiperSlide key={index} className='h-full w-full'>
+            <SwiperSlide key={index} className="h-full w-full">
               <div className="w-full h-full flex justify-center items-center">
-
-
-
-                <main className='h-full w-full flex justify-center items-center  flex-col lg:flex-row md:pt-32 lg:pt-0 '>
-                  <section className='pb-5 h-20 lg:pb-0  lg:w-1/2 flex justify-center items-center lg:h-full relative'>
-                    <h2 className='syne-bold text-lg  lg:text-2xl capitalize'>
-                      <span className=' '>{firstHalf}</span><br /><span className='bg-blue-700 px-2 relative rotate-[-2deg] text-white inline-block'>{secondHalf}</span>
+                <main className="h-full w-full flex justify-center items-center  flex-col lg:flex-row md:pt-32 lg:pt-0 ">
+                  <section className="pb-5 h-20 lg:pb-0  lg:w-1/2 flex justify-center items-center lg:h-full relative">
+                    <h2 className="syne-bold text-lg  lg:text-2xl capitalize">
+                      <span className=" ">{firstHalf}</span>
+                      <br />
+                      <span className="bg-blue-700 px-2 relative rotate-[-2deg] text-white inline-block">
+                        {secondHalf}
+                      </span>
                     </h2>
                   </section>
-                  <section className='lg:w-1/2 lg:h-full relative'>
+                  <section className="lg:w-1/2 lg:h-full relative">
                     <div className="w-full h-full flex items-center justify-center ">
-                      <img className='h-full lg:h-auto w-full relative   rounded-md ' src={item.image} />
+                      <img
+                        className="h-full lg:h-auto w-full relative   rounded-md "
+                        src={item.image}
+                      />
                     </div>
                   </section>
-
-
                 </main>
-               
               </div>
-
             </SwiperSlide>
-                         
           );
         })}
 
-<AnimatedShape/>
-<SwiperNavButtons />
-
+        <AnimatedShape />
+        <SwiperNavButtons />
       </Swiper>
-  
     </section>
   );
 };

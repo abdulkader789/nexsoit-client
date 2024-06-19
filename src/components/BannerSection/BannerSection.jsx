@@ -6,6 +6,8 @@ import { useInView } from "framer-motion";
 import Lottie from "lottie-react";
 import animationData from "../../../public/Animation - 1718739852610.json";
 import Blob from "./Blob";
+import Button from "../Buttton/Button";
+import WaveSVG from "../WaveSVG/WaveSVG";
 const BannerSection = () => {
   return (
     <div className="lg:h-screen w-full relative flex flex-col lg:items-center lg:flex-row mb-5">
@@ -15,7 +17,7 @@ const BannerSection = () => {
             we are your
           </h1>
           <h1 className="bricolage-grotesque-bold text-3xl lg:text-7xl">
-            Development <br className="hidden lg:block" />& Design
+            Development <br />& Design
           </h1>
           <h1 className="libre-baskerville-italic capitalize text-2xl lg:text-4xl">
             IT Partner
@@ -23,9 +25,16 @@ const BannerSection = () => {
 
           {/* <h1 className='libre-baskerville-italic text-5xl capitalize'>IT agency</h1> */}
           <div className="mt-8 flex w-full">
-            <button className="bg-green-500 inter-medium  text-white text-sm py-2 px-4 rounded hover:bg-green-700 transition duration-300">
+            {/* <button className="bg-green-500 inter-medium  text-white text-sm py-2 px-4 rounded hover:bg-green-700 transition duration-300">
               Start Your Project
-            </button>
+            </button> */}
+            <Button
+              name={"Start A Project"}
+              slug={"contact"}
+              classes={
+                "after:bg-black bg-blue-600 text-white inter-medium hover:bg-blue-700 transition duration-300 rounded-sm after:rounded-sm"
+              }
+            />
           </div>
         </div>
         {/* Buttons */}

@@ -1,4 +1,5 @@
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import WaveSVG from "../WaveSVG/WaveSVG";
 
 const FeaturedServices = () => {
   const servicesData = [
@@ -35,7 +36,7 @@ const FeaturedServices = () => {
   ];
 
   return (
-    <main className="pb-20">
+    <main className="pb-20 relative">
       <div className="mx-auto max-w-screen-xl px-4 md:px-8">
         <h2 className="bricolage-grotesque-regular text-2xl lg:text-5xl pb-5">
           Special neural features <br />

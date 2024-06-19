@@ -32,7 +32,7 @@ const NavLinks = () => {
         >
           <Link
             to={link.path}
-            className="block capitalize bricolage-grotesque-regular text-5xl  lg:text-[18px]  text-blue-800 lg:text-black"
+            className="block capitalize inter-medium  text-md  text-blue-800 lg:text-black"
           >
             {link.title}
           </Link>
