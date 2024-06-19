@@ -14,7 +14,7 @@ const NavButton = () => {
         className="flex justify-center items-center  focus:outline-none uppercase inline-block text-center"
       >
         <button className="bg-indigo-500 inter-medium  text-white text-sm py-2 px-4 rounded hover:bg-indigo-700 transition duration-300">
-          Get A Quote
+          Start Project
         </button>
       </Link>
     </button>

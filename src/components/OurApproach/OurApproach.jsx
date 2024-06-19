@@ -1,5 +1,6 @@
-import React from "react";
-
+import React, { useEffect } from "react";
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 const OurApproach = () => {
   const cardData = [
     {
@@ -33,8 +34,10 @@ const OurApproach = () => {
   ];
 
   return (
-    <div className="bg-[background: radial-gradient(circle at 10% 20%, rgb(254, 255, 165) 0%, rgb(255, 232, 182) 90%);
-] max-w-full py-2 ">
+    <div
+      className="bg-[background: radial-gradient(circle at 10% 20%, rgb(254, 255, 165) 0%, rgb(255, 232, 182) 90%);
+] max-w-full py-2 "
+    >
       <section className="py-6">
         <div className="text-center poppins-regular  mb-8">
           <h4 className="text-sm lg:text-lg text-yellow-600">Our Approach</h4>
@@ -61,18 +64,22 @@ const OurApproach = () => {
               index % 2 === 1 ? "md:flex-row-reverse" : "md:flex-row"
             }`}
           >
-            <div className="md:h-full md:w-[55%] h-60 border">
+            <motion.div
+              className="md:h-full md:w-[55%] h-60 border"
+              initial={{ x: index % 2 === 0 ? -500 : 500 }}
+              animate={{ x: 0 }}
+              transition={{ duration: 3 }}
+              whileInView={{ x: 0 }}
+              viewport={{ once: true, amount: 0.5 }}
+            >
               <img
                 className="h-full w-full object-cover"
                 src={card.imageURL}
                 alt={card.title}
               />
-            </div>
+            </motion.div>
 
-            <div
-              className="h-full relative md:w-[45%] shadow-sm flex  flex-col justify-center items-center p-5 lg:px-20 "
-          
-            >
+            <div className="h-full relative md:w-[45%] shadow-sm flex  flex-col justify-center items-center p-5 lg:px-20 ">
               <h3 className="text-xl lg:text-2xl xl:text-3xl font-semibold mb-2 syne-bold  text-orange-400">
                 {card.title}
               </h3>

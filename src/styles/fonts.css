@@ -1,101 +1,93 @@
-@import url('https://fonts.googleapis.com/css2?family=Joti+One&family=Michroma&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,800;1,400;1,500;1,600;1,700&family=Roboto:wght@300;400&family=Poppins:wght@300;400;500&display=swap&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap&family=Outfit:wght@100..900&display=swap&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&family=Marcellus&display=swap&family=Puritan:ital,wght@0,400;0,700;1,400;1,700&display=swap&family=Cabin:ital,wght@0,400..700;1,400..700&display=swap&family=Syne:wght@400..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Joti+One&family=Michroma&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,800;1,400;1,500;1,600;1,700&family=Roboto:wght@300;400&family=Poppins:wght@300;400;500&display=swap&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap&family=Outfit:wght@100..900&display=swap&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&family=Marcellus&display=swap&family=Puritan:ital,wght@0,400;0,700;1,400;1,700&display=swap&family=Cabin:ital,wght@0,400..700;1,400..700&display=swap&family=Syne:wght@400..800&display=swap");
 
-
-
-
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:wght@100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:wght@100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
 
 /* Bricolage Grotesque */
 .bricolage-grotesque-light {
-    font-family: "Bricolage Grotesque", sans-serif;
-    font-weight: 200;
-    font-style: normal;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 200;
+  font-style: normal;
 }
 
 .bricolage-grotesque-regular {
-    font-family: "Bricolage Grotesque", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .bricolage-grotesque-bold {
-    font-family: "Bricolage Grotesque", sans-serif;
-    font-weight: 800;
-    font-style: normal;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 800;
+  font-style: normal;
 }
 
 /* Inter */
 .inter-thin {
-    font-family: "Inter", sans-serif;
-    font-weight: 100;
-    font-style: normal;
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
+  font-style: normal;
 }
 
 .inter-light {
-    font-family: "Inter", sans-serif;
-    font-weight: 200;
-    font-style: normal;
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  font-style: normal;
 }
 
 .inter-regular {
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .inter-medium {
-    font-family: "Inter", sans-serif;
-    font-weight: 500;
-    font-style: normal;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .inter-semibold {
-    font-family: "Inter", sans-serif;
-    font-weight: 600;
-    font-style: normal;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .inter-bold {
-    font-family: "Inter", sans-serif;
-    font-weight: 700;
-    font-style: normal;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .inter-extrabold {
-    font-family: "Inter", sans-serif;
-    font-weight: 800;
-    font-style: normal;
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  font-style: normal;
 }
 
 .inter-black {
-    font-family: "Inter", sans-serif;
-    font-weight: 900;
-    font-style: normal;
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  font-style: normal;
 }
 
 /* Libre Baskerville */
 .libre-baskerville-regular {
-    font-family: "Libre Baskerville", serif;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .libre-baskerville-bold {
-    font-family: "Libre Baskerville", serif;
-    font-weight: 700;
-    font-style: normal;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .libre-baskerville-italic {
-    font-family: "Libre Baskerville", serif;
-    font-weight: 400;
-    font-style: italic;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: italic;
 }
-
-
-
 
 .puritan-regular {
   font-family: "Puritan", sans-serif;
@@ -146,40 +138,39 @@
 }
 
 .syne-regular {
-    font-family: "Syne", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .syne-medium {
-    font-family: "Syne", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  .syne-semibold {
-    font-family: "Syne", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-  }
-  
-  .syne-bold {
-    font-family: "Syne", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .syne-extrabold {
-    font-family: "Syne", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 800;
-    font-style: normal;
-  }
-  
+  font-family: "Syne", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.syne-medium {
+  font-family: "Syne", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.syne-semibold {
+  font-family: "Syne", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.syne-bold {
+  font-family: "Syne", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.syne-extrabold {
+  font-family: "Syne", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
 
 .marcellus-regular {
   font-family: "Marcellus", serif;
@@ -198,77 +189,76 @@
   font-style: normal;
 }
 .noto-sans-thin {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-weight: 100;
   font-style: normal;
 }
 
 .noto-sans-thin-italic {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-weight: 100;
   font-style: italic;
 }
 
 .noto-sans-light {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-weight: 300;
   font-style: normal;
 }
 
 .noto-sans-light-italic {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-weight: 300;
   font-style: italic;
 }
 
 .noto-sans-regular {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
 .noto-sans-italic {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-weight: 400;
   font-style: italic;
 }
 
 .noto-sans-medium {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-weight: 500;
   font-style: normal;
 }
 
 .noto-sans-medium-italic {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-weight: 500;
   font-style: italic;
 }
 
 .noto-sans-bold {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-weight: 700;
   font-style: normal;
 }
 
 .noto-sans-bold-italic {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-weight: 700;
   font-style: italic;
 }
 
 .noto-sans-black {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-weight: 900;
   font-style: normal;
 }
 
 .noto-sans-black-italic {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-weight: 900;
   font-style: italic;
 }
-
 
 .poppins-thin {
   font-family: "Poppins", sans-serif;
@@ -450,8 +440,7 @@
   font-style: italic;
 }
 
-
-.work-sans{
+.work-sans {
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -521,63 +510,61 @@
 }
 
 .montserrat-thin {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 100;
-    font-style: normal;
-  }
-  
-  .montserrat-thin-italic {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 100;
-    font-style: italic;
-  }
-  
-  .montserrat-extralight {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 200;
-    font-style: normal;
-  }
-  
-  .montserrat-light {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .montserrat-regular {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .montserrat-medium {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  .montserrat-semibold {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-style: normal;
-  }
-  
-  .montserrat-bold {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .montserrat-extrabold {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
-    font-style: normal;
-  }
-  
-  .montserrat-black {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
-    font-style: normal;
-  }
-  
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
 
+.montserrat-thin-italic {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.montserrat-extralight {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.montserrat-light {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.montserrat-regular {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.montserrat-medium {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.montserrat-semibold {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.montserrat-bold {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.montserrat-extrabold {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.montserrat-black {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
