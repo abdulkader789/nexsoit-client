@@ -60,43 +60,42 @@ const FeaturedServices = () => {
         </h2>
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
           {servicesData.map((item) => (
-            <Link to={`services/${item.slug}`}>
-              <div
-                key={item.slug}
-                className="inverted-border-radius group relative flex items-start h-[450px] rounded-xl"
-              >
-                <div className="pointer-events-none absolute inset-0 overflow-hidden rounded-xl">
-                  <img
-                    src={item.image}
-                    loading="lazy"
-                    alt={item.title}
-                    className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
-                  />
+            <div
+              key={item.slug}
+              className="inverted-border-radius group relative flex items-start h-[450px] rounded-xl"
+            >
+              <div className="pointer-events-none absolute inset-0 overflow-hidden rounded-xl">
+                <img
+                  src={item.image}
+                  loading="lazy"
+                  alt={item.title}
+                  className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
+                />
+              </div>
+              <div className="flex flex-col h-full justify-center p-4 hover:bg-white hover:bg-opacity-30 hover:backdrop-filter hover:backdrop-blur-lg rounded-xl">
+                <span className="relative bricolage-grotesque-bold top-0 inline-block text-sm text-white md:text-3xl capitalize montserrat-medium  ">
+                  {item.title}
+                </span>
+                <span className="relative top-4 inline-block text-xs text-white md:text-sm  montserrat-light transform -translate-x-10 opacity-0 transition-transform duration-300 group-hover:translate-x-0 group-hover:opacity-100 mb-5">
+                  {item.description}
+                </span>
+                <div className="flex flex-wrap mt-4">
+                  {item.tools.map((tool, index) => (
+                    <span
+                      key={index}
+                      className="relative text-xs text-white bg-black bg-opacity-50 px-4 py-2 mr-2 mb-2 rounded-md transform -translate-x-10 opacity-0 transition-transform duration-300 group-hover:translate-x-0 group-hover:opacity-100"
+                    >
+                      {tool}
+                    </span>
+                  ))}
                 </div>
-                <div className="flex flex-col h-full justify-center p-4 hover:bg-white hover:bg-opacity-30 hover:backdrop-filter hover:backdrop-blur-lg rounded-xl">
-                  <span className="relative bricolage-grotesque-bold top-0 inline-block text-sm text-white md:text-3xl capitalize montserrat-medium  ">
-                    {item.title}
-                  </span>
-                  <span className="relative top-4 inline-block text-xs text-white md:text-sm  montserrat-light transform -translate-x-10 opacity-0 transition-transform duration-300 group-hover:translate-x-0 group-hover:opacity-100 mb-5">
-                    {item.description}
-                  </span>
-                  <div className="flex flex-wrap mt-4">
-                    {item.tools.map((tool, index) => (
-                      <span
-                        key={index}
-                        className="relative text-xs text-white bg-black bg-opacity-50 px-4 py-2 mr-2 mb-2 rounded-md transform -translate-x-10 opacity-0 transition-transform duration-300 group-hover:translate-x-0 group-hover:opacity-100"
-                      >
-                        {tool}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-
+              </div>
+              <Link to={`services/${item.slug}`}>
                 <div className="h-9 w-9 rounded-full bg-black border absolute -bottom-1 z-20 text-white flex justify-center items-center right-1 cursor-pointer group-hover:bg-opacity-75 ">
                   <FiChevronRight />
                 </div>
-              </div>
-            </Link>
+              </Link>
+            </div>
           ))}
         </div>
       </div>
