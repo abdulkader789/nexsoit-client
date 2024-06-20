@@ -2,12 +2,12 @@ import React from "react";
 
 const VideoSection = () => {
   return (
-    <div className="flex flex-col p-3 items-center w-full lg:p-10 lg:w-2/3 mx-auto">
+    <div className="flex flex-col p-3 items-center w-full lg:p-10 lg:px-20 mx-auto">
       <div className="w-full">
         <div className="poppins-bold text-lg sm:text-4xl md:text-5xl mb-5">
           <h2 className="text-center">Revolutionizing Business Solutions</h2>
         </div>
-        <div className="montserrat-regular text-base sm:text-lg md:text-xl mb-5 text-center xl:px-40">
+        <div className="montserrat-regular text-base sm:text-lg md:text-xl mb-5 text-center ">
           <p>
             At Nexsoit Technologies, we specialize in delivering a wide range of
             innovative software solutions. Our expertise encompasses the

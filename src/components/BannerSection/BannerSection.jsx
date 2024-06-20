@@ -6,7 +6,7 @@ import { useInView } from "framer-motion";
 import Lottie from "lottie-react";
 import animationData from "../../../public/Animation - 1718739852610.json";
 import Blob from "./Blob";
-import Button from "../Buttton/Button";
+import CustomButton from "../CustomButtton/CustomButton";
 import WaveSVG from "../WaveSVG/WaveSVG";
 const BannerSection = () => {
   return (
@@ -23,11 +23,11 @@ const BannerSection = () => {
             {/* <button className="bg-green-500 inter-medium  text-white text-sm py-2 px-4 rounded hover:bg-green-700 transition duration-300">
               Start Your Project
             </button> */}
-            <Button
+            <CustomButton
               name={"Book A Call"}
               slug={"contact"}
               classes={
-                "after:bg-black bg-blue-600 text-white inter-medium hover:bg-blue-700 transition duration-300 rounded-sm after:rounded-sm"
+                "after:bg-black text-base bg-blue-600 text-white inter-regular hover:bg-blue-700 transition duration-300 rounded-sm after:rounded-sm px-7 py-[7px] lg:px-10 py-[10px]"
               }
             />
           </div>

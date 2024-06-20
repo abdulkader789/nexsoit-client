@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-
+import "./OurApproach.css";
 const ApproachCard = ({ title, description, imageURL, index }) => {
   const imageVariants = {
     visible: { opacity: 1, transition: { duration: 3 } },
@@ -36,7 +36,7 @@ const ApproachCard = ({ title, description, imageURL, index }) => {
 
   return (
     <div
-      className={`w-full relative flex flex-col md:flex-row mb-5 md:mb-10 md:h-[450px] custom-boxShadow
+      className={`w-full relative flex flex-col md:flex-row mb-5 md:mb-10 md:h-[450px] custom-boxShadow border-blue-500 hover:border approach-card
         ${index % 2 === 0 ? "md:flex-row-reverse" : "md:flex-row"}`}
     >
       <motion.div
@@ -54,14 +54,14 @@ const ApproachCard = ({ title, description, imageURL, index }) => {
       </motion.div>
 
       <motion.div
-        className="h-full relative md:w-[45%] shadow-sm flex flex-col justify-center items-center p-5 lg:px-20 border-blue-500 border"
+        className="h-full relative md:w-[45%] shadow-sm flex flex-col justify-center items-center p-5 lg:px-20 "
         ref={textRef}
         animate={textControls}
         initial="hidden"
         variants={textVariants}
       >
         <div>
-          <h3 className="text-xl lg:text-2xl xl:text-3xl font-semibold mb-2 syne-bold text-orange-400">
+          <h3 className="text-xl lg:text-2xl xl:text-3xl font-semibold mb-2 syne-bold text-blue-700">
             {title}
           </h3>
           <p className="work-sans text-sm lg:text-lg montserrat-regular">
