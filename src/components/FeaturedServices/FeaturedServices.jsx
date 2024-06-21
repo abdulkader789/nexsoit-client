@@ -1,8 +1,30 @@
-import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
-import WaveSVG from "../WaveSVG/WaveSVG";
+import { motion, useAnimation } from "framer-motion";
+import { FiChevronRight } from "react-icons/fi";
 import { Link } from "react-router-dom";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 
 const FeaturedServices = () => {
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+  const itemVariants = {
+    hidden: { scale: 0.9 },
+    visible: {
+      scale: 1,
+      transition: {
+        duration: 0.5,
+        ease: "easeInOut",
+      },
+    },
+  };
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    } else {
+      controls.start("hidden");
+    }
+  }, [controls, inView]);
   const servicesData = [
     {
       image:
@@ -60,9 +82,13 @@ const FeaturedServices = () => {
         </h2>
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
           {servicesData.map((item) => (
-            <div
+            <motion.div
               key={item.slug}
               className="inverted-border-radius group relative flex items-start h-[450px] rounded-xl"
+              ref={ref}
+              variants={itemVariants}
+              initial="hidden"
+              animate={controls}
             >
               <div className="pointer-events-none absolute inset-0 overflow-hidden rounded-xl">
                 <img
@@ -95,7 +121,7 @@ const FeaturedServices = () => {
                   <FiChevronRight />
                 </div>
               </Link>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
