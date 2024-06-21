@@ -1,22 +1,31 @@
 import React, { useEffect } from "react";
-import { useAnimation, motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import "./OurApproach.css";
+
 const ApproachCard = ({ title, description, imageURL, index }) => {
   const imageVariants = {
-    visible: { opacity: 1, transition: { duration: 3 } },
+    visible: { opacity: 1, transition: { duration: 1 } },
     hidden: { opacity: 0 },
   };
 
   const textVariants = {
-    visible: { opacity: 1, transition: { duration: 2 } },
+    visible: { opacity: 1, transition: { duration: 1 } },
     hidden: { opacity: 0 },
+  };
+
+  const sectionVariants = {
+    visible: { x: 0, transition: { duration: 0.5 } },
+    hidden: { x: -500 },
   };
 
   const imageControls = useAnimation();
   const textControls = useAnimation();
+  const sectionControls = useAnimation();
+
   const [imageRef, imageInView] = useInView();
   const [textRef, textInView] = useInView();
+  const [sectionRef, sectionInView] = useInView();
 
   useEffect(() => {
     if (imageInView) {
@@ -34,17 +43,29 @@ const ApproachCard = ({ title, description, imageURL, index }) => {
     }
   }, [textControls, textInView]);
 
+  useEffect(() => {
+    if (sectionInView) {
+      sectionControls.start("visible");
+    } else {
+      sectionControls.start("hidden");
+    }
+  }, [sectionControls, sectionInView]);
+
   return (
-    <div
+    <motion.section
       className={`w-full relative flex flex-col md:flex-row mb-5 md:mb-10 md:h-[450px] custom-boxShadow border-blue-500 hover:border approach-card
         ${index % 2 === 0 ? "md:flex-row-reverse" : "md:flex-row"}`}
+      ref={sectionRef}
+      animate={sectionControls}
+      initial="hidden"
+      variants={sectionVariants}
     >
       <motion.div
         className="md:h-full md:w-[55%] h-60  "
-        ref={imageRef}
-        animate={imageControls}
-        initial="hidden"
-        variants={imageVariants}
+        // ref={imageRef}
+        // animate={imageControls}
+        // initial="hidden"
+        // variants={imageVariants}
       >
         <img
           className="h-full w-full object-cover"
@@ -55,10 +76,10 @@ const ApproachCard = ({ title, description, imageURL, index }) => {
 
       <motion.div
         className="h-full relative md:w-[45%] shadow-sm flex flex-col justify-center items-center p-5 lg:px-20 "
-        ref={textRef}
-        animate={textControls}
-        initial="hidden"
-        variants={textVariants}
+        // ref={textRef}
+        // animate={textControls}
+        // initial="hidden"
+        // variants={textVariants}
       >
         <div>
           <h3 className="text-xl lg:text-2xl xl:text-3xl font-semibold mb-2 syne-bold text-blue-700">
@@ -77,7 +98,7 @@ const ApproachCard = ({ title, description, imageURL, index }) => {
           {index + 1}
         </div>
       </motion.div>
-    </div>
+    </motion.section>
   );
 };
 
