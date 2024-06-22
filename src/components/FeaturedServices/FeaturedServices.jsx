@@ -85,10 +85,10 @@ const FeaturedServices = () => {
             <motion.div
               key={item.slug}
               className="inverted-border-radius group relative flex items-start h-[450px] rounded-xl"
-              ref={ref}
-              variants={itemVariants}
-              initial="hidden"
-              animate={controls}
+              // ref={ref}
+              // variants={itemVariants}
+              // initial="hidden"
+              // animate={controls}
             >
               <div className="pointer-events-none absolute inset-0 overflow-hidden rounded-xl">
                 <img
