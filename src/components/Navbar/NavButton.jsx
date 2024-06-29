@@ -1,19 +1,23 @@
 import { IoHandLeft } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import { useMobileNav } from "../../contexts/MobileNavContext";
+import { FiArrowRight } from "react-icons/fi";
+import { FaArrowRight } from "react-icons/fa";
 
 const NavButton = () => {
   const { handleClick } = useMobileNav();
   return (
-    <div className="px-4 py-2 uppercase text-[10px] border lg:text-[12px] text-white hover:bg-white hover:text-black rounded-sm">
+    <button className="rounded-sm relative">
       <Link
         to="/contact"
         onClick={handleClick}
-        className=" michroma-regular   focus:outline-none inline-block text-center"
+        className="flex justify-center items-center  focus:outline-none uppercase inline-block text-center"
       >
-        Start A Project
+        <button className="bg-indigo-500 inter-medium  text-white text-sm py-2 px-4 rounded hover:bg-indigo-700 transition duration-300">
+          Start Project
+        </button>
       </Link>
-    </div>
+    </button>
   );
 };
 

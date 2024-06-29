@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
 import Footer from "../components/Footer/Footer";
-import { CreateAccountPromo } from "../components/CreateAccountPromo/CreateAccountPromo";
 const ContactInfo = () => {
   return (
     <div className="text-white">

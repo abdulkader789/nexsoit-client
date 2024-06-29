@@ -27,10 +27,13 @@ const NavLinks = () => {
       {navLinks.map((link, index) => (
         <li
           key={index}
-          className="flex-1 px-10 lg:px-5 michroma-regular text-[10px] lg:text-[12px] py-4 border-b-[1px] border-gray-200 lg:border-none "
+          className="flex-1 px-10 lg:px-5   py-4 border-b-[1px] border-gray-200 lg:border-none "
           onClick={handleClick}
         >
-          <Link to={link.path} className="block uppercase">
+          <Link
+            to={link.path}
+            className="block capitalize inter-medium  text-md  text-blue-800 lg:text-black"
+          >
             {link.title}
           </Link>
         </li>

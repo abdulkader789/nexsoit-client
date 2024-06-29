@@ -1,0 +1,29 @@
+.approach-card {
+  /* font-size: 16px; */
+  /* letter-spacing: 1px; */
+  /* padding: 8px 14px 8px; */
+  /* outline: 0; */
+  /* border: 1px solid black; */
+  cursor: pointer;
+  position: relative;
+  background: radial-gradient(
+    621px at 25.3% 13.8%,
+    rgb(255, 255, 255) 0%,
+    rgb(246, 247, 255) 90%
+  );
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.approach-card:after {
+  content: "";
+  background-color: #000000;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
