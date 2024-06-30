@@ -14,7 +14,7 @@ const themes = [
     id: 1,
     texts: [
       {
-        text: "Design and develop",
+        text: "Design & develop",
         className: "bricolage-grotesque-bold mb-2 text-indigo-600",
       },
       {
@@ -32,11 +32,11 @@ const themes = [
         className: "bricolage-grotesque-bold mb-2 text-pink-500",
       },
       {
-        text: "solutions for",
+        text: "design solution",
         className: "montserrat-alternates-medium mb-2",
       },
       {
-        text: "user experience",
+        text: "for interactivity",
         className: "bricolage-grotesque-bold",
       },
     ],
@@ -45,15 +45,15 @@ const themes = [
     id: 3,
     texts: [
       {
-        text: "Build eCommerce",
+        text: "Fast eCommerce",
         className: "bricolage-grotesque-bold mb-2 text-orange-400",
       },
       {
-        text: "with frameworks",
+        text: "for businesses",
         className: "montserrat-alternates-medium mb-2",
       },
       {
-        text: "for businesses",
+        text: "with frameworks",
         className: "bricolage-grotesque-bold",
       },
     ],
@@ -70,11 +70,10 @@ const BannerSection = () => {
       setCurrentThemeIndex((prevIndex) =>
         prevIndex === themes.length - 1 ? 0 : prevIndex + 1
       );
-    }, 4000); // Change theme every 5 seconds (adjust as needed)
+    }, 4000); // Change theme every 4 seconds
 
     return () => clearInterval(interval);
   }, []);
-
   return (
     <div className="lg:h-screen w-full relative flex flex-col lg:items-center lg:flex-row mb-5 banner-section overflow-hidden">
       <section className="w-full flex flex-col justify-start lg:justify-center items-center  pt-20 lg:pt-0  lg:w-1/2">
@@ -100,7 +99,7 @@ const BannerSection = () => {
               ))}
             </motion.div>
           ))}
-          <div className="mt-8 flex w-full">
+          <div className="mt-8 flex w-full ">
             {/* <button className="bg-green-500 inter-medium  text-white text-sm py-2 px-4 rounded hover:bg-green-700 transition duration-300">
               Start Your Project
             </button> */}
@@ -108,7 +107,7 @@ const BannerSection = () => {
               name={"Learn More"}
               slug={"contact"}
               classes={
-                "after:bg-black bricolage-grotesque-regular mr-8 uppercase text-base bg-blue-600 font-button text-white  hover:bg-blue-700 transition duration-300 rounded-sm after:rounded-sm px-7 py-[7px] lg:px-10 lg:py-[10px]"
+                "after:bg-black bricolage-grotesque-regular mr-4  sm:mr-8 uppercase text-base bg-blue-600 font-button text-white  hover:bg-blue-700 transition duration-300 rounded-sm after:rounded-sm px-7 py-[7px] lg:px-10 lg:py-[10px]"
               }
             />
             <CustomButton
