@@ -36,7 +36,7 @@ const themes = [
         className: "montserrat-alternates-medium mb-2",
       },
       {
-        text: "better experience",
+        text: "user experience",
         className: "bricolage-grotesque-bold",
       },
     ],
@@ -53,7 +53,7 @@ const themes = [
         className: "montserrat-alternates-medium mb-2",
       },
       {
-        text: "for businesse",
+        text: "for businesses",
         className: "bricolage-grotesque-bold",
       },
     ],
@@ -105,10 +105,17 @@ const BannerSection = () => {
               Start Your Project
             </button> */}
             <CustomButton
-              name={"Book A Call"}
+              name={"Learn More"}
               slug={"contact"}
               classes={
-                "after:bg-black text-base bg-blue-600 text-white inter-regular hover:bg-blue-700 transition duration-300 rounded-sm after:rounded-sm px-7 py-[7px] lg:px-10 py-[10px]"
+                "after:bg-black bricolage-grotesque-regular mr-8 uppercase text-base bg-blue-600 font-button text-white  hover:bg-blue-700 transition duration-300 rounded-sm after:rounded-sm px-7 py-[7px] lg:px-10 lg:py-[10px]"
+              }
+            />
+            <CustomButton
+              name={"Start Project"}
+              slug={"contact"}
+              classes={
+                "after:bg-black text-base bricolage-grotesque-regular uppercase bg-green-500 font-button text-white  hover:bg-green-700 transition duration-300 rounded-sm after:rounded-sm px-7 py-[7px] lg:px-10 lg:py-[10px]"
               }
             />
           </div>
