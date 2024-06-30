@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import website from "../../../public/website-3d.png";
-import mobile from "../../../public/mobile-3d.png";
+import mobile from "/mobile-3d.png";
 import { useInView } from "framer-motion";
 import Lottie from "lottie-react";
 import animationData from "../../../public/Animation - 1718739852610.json";
@@ -125,7 +125,7 @@ const BannerSection = () => {
           />
           <div className="h-full w-full flex items-center absolute z-20 ">
             <img
-              className="h-40 lg:h-96  w-auto absolute right-0 bottom-0"
+              className="h-40 lg:h-1/2  w-auto absolute right-0 bottom-0"
               src={mobile}
             />
           </div>

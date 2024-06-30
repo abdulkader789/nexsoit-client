@@ -71,17 +71,15 @@ const Navbar = () => {
             isActive ? "-translate-x-0" : "-translate-x-full"
           }`}
         >
-          <div className="w-full flex">
-            <section className="h-full w-full flex flex-col lg:flex-row justify-end lg:justify-center items-center ">
-              <div className="lg:mb-0 w-full lg:w-auto">
-                <NavLinks />
-              </div>
-              {/* <NavButton /> */}
-              <div className="absolute right-0 ">
-                <NavButton />
-              </div>
-            </section>
-          </div>
+          <section className="h-full w-full flex flex-col pt-10 lg:pt-0 lg:justify-center lg:flex-row   items-center">
+            <div className="">
+              <NavLinks />
+            </div>
+            {/* <NavButton /> */}
+            <div className="lg:absolute lg:right-0 mt-5 lg:mt-0">
+              <NavButton />
+            </div>
+          </section>
         </section>
       </main>
     </nav>

@@ -96,6 +96,7 @@ const NavLinks = () => {
             <Link
               to={link.path}
               className="block   text-blue-900 lg:text-blue-900"
+              onClick={handleClick}
             >
               {link.title}
             </Link>

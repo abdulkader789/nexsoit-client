@@ -7,11 +7,11 @@ import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import websiteImage from "../../../public/website-image.jpg";
-import portfolioImage from "../../../public/portfolio-image.jpg";
+import websiteImage from "/website-image.jpg";
+import portfolioImage from "/portfolio-image.jpg";
 
-import appImage from "../../../public/app-image.jpg";
-import blogImage from "../../../public/blog-image.jpg";
+import appImage from "/public/app-image.jpg";
+import blogImage from "/public/blog-image.jpg";
 
 // import required modules
 import { Navigation, Pagination, Autoplay, A11y } from "swiper/modules";
