@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import website from "../../../public/website-3d.png";
 import mobile from "../../../public/mobile-3d.png";
@@ -8,17 +8,132 @@ import animationData from "../../../public/Animation - 1718739852610.json";
 import Blob from "./Blob";
 import CustomButton from "../CustomButtton/CustomButton";
 import WaveSVG from "../WaveSVG/WaveSVG";
+import MouseEffect from "../MouseEffect/MouseEffect";
+const themes = [
+  {
+    id: 1,
+    texts: [
+      {
+        text: "Design and develop",
+        className: "bricolage-grotesque-bold mb-2 text-blue-700",
+      },
+      {
+        text: "applications for",
+        className: "montserrat-alternates-medium mb-2",
+      },
+      { text: "web and mobile", className: "bricolage-grotesque-bold" },
+    ],
+  },
+  {
+    id: 2,
+    texts: [
+      {
+        text: "UI/UX design",
+        className: "bricolage-grotesque-bold mb-2 text-orange-500",
+      },
+      {
+        text: "for interactivity",
+        className: "montserrat-alternates-medium mb-2",
+      },
+      {
+        text: "with Figma",
+        className: "bricolage-grotesque-bold",
+      },
+    ],
+  },
+  {
+    id: 3,
+    texts: [
+      {
+        text: "Build eCommerce",
+        className: "bricolage-grotesque-bold mb-2 text-green-500",
+      },
+      {
+        text: "solutions using",
+        className: "montserrat-alternates-medium mb-2",
+      },
+      {
+        text: "modern frameworks",
+        className: "bricolage-grotesque-bold",
+      },
+    ],
+  },
+  {
+    id: 4,
+    texts: [
+      {
+        text: "Craft interactive",
+        className: "bricolage-grotesque-bold mb-2 text-yellow-500",
+      },
+      {
+        text: "education platforms",
+        className: "montserrat-alternates-medium mb-2",
+      },
+      {
+        text: "for learning",
+        className: "bricolage-grotesque-bold",
+      },
+    ],
+  },
+  {
+    id: 5,
+    texts: [
+      {
+        text: "Healthcare solutions",
+        className: "bricolage-grotesque-bold mb-2 text-cyan-500",
+      },
+      {
+        text: "made easy",
+        className: "montserrat-alternates-medium mb-2",
+      },
+      {
+        text: "with technology",
+        className: "bricolage-grotesque-bold",
+      },
+    ],
+  },
+
+  // Add more themes as needed
+];
+
 const BannerSection = () => {
+  const [currentThemeIndex, setCurrentThemeIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentThemeIndex((prevIndex) =>
+        prevIndex === themes.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 5000); // Change theme every 5 seconds (adjust as needed)
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <div className="lg:h-screen w-full relative flex flex-col lg:items-center lg:flex-row mb-5">
+    <div className="lg:h-screen w-full relative flex flex-col lg:items-center lg:flex-row mb-5 banner-section overflow-hidden">
       <section className="w-full flex flex-col justify-start lg:justify-center items-center  pt-20 lg:pt-0  lg:w-1/2">
         <div className="w-full lg:w-auto pl-10 text-3xl lg:text-7xl">
-          <h1 className="bricolage-grotesque-bold ">
-            Designing and developing
-          </h1>
-          <h1 className="libre-baskerville-italic">web and mobile</h1>
-          <h1 className="bricolage-grotesque-bold ">applications</h1>
-          {/* <h1 className='libre-baskerville-italic text-5xl capitalize'>IT agency</h1> */}
+          {themes.map((theme, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              animate={
+                index === currentThemeIndex
+                  ? { opacity: 1, y: 0 }
+                  : { opacity: 0, y: -50 }
+              }
+              transition={{ duration: 0.8 }}
+              style={{
+                display: index === currentThemeIndex ? "block" : "none",
+              }}
+            >
+              {theme.texts.map((item, idx) => (
+                <motion.h1 key={idx} className={item.className}>
+                  {item.text}
+                </motion.h1>
+              ))}
+            </motion.div>
+          ))}
           <div className="mt-8 flex w-full">
             {/* <button className="bg-green-500 inter-medium  text-white text-sm py-2 px-4 rounded hover:bg-green-700 transition duration-300">
               Start Your Project

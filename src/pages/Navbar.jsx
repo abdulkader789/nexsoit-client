@@ -60,7 +60,7 @@ const Navbar = () => {
             : ""
         }`}
       >
-        <div className="w-40">
+        <div className="">
           <NavLogo />
         </div>
         <div className="flex justify-center h-full items-center lg:hidden">
