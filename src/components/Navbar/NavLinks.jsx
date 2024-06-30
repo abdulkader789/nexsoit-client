@@ -10,7 +10,12 @@ const navLinks = [
     title: "Services",
     path: "/services",
     dropdown: true,
-    submenu: ["web development", "app development", "ui/ux design"],
+    submenu: [
+      "web development",
+      "app development",
+      "ui/ux design",
+      "digital marketing",
+    ],
   },
   { title: "Team", path: "/team" },
   { title: "Contact", path: "/contact" },
@@ -51,7 +56,7 @@ const NavLinks = () => {
   }, [showDropdown]);
   return (
     <ul
-      className="flex flex-col lg:flex-row relative z-50 w-full lg:w-auto"
+      className="flex flex-col lg:flex-row relative z-50 w-full lg:w-auto text-xl capitalize bricolage-grotesque-regular"
       ref={dropdownRef}
     >
       {navLinks.map((link, index) => (
@@ -62,7 +67,7 @@ const NavLinks = () => {
           {link.dropdown ? (
             <>
               <span
-                className="uppercase flex bricolage-grotesque-medium text-[18px] text-blue-800 lg:text-black cursor-pointer"
+                className="flex  text-blue-900 lg:text-blue-900 cursor-pointer"
                 onClick={toggleDropdown}
               >
                 {link.title}{" "}
@@ -73,16 +78,13 @@ const NavLinks = () => {
                   {link.submenu.map((item, idx) => (
                     <li
                       key={idx}
-                      className=" text-gray-800 hover:text-blue-500 cursor-pointer py-5 lg:text-white lg:hover:text-blue-200 border-b-[1px] border-gray-200 lg:border-none"
+                      className=" text-blue-900 hover:text-blue-500 cursor-pointer py-5 lg:text-white lg:hover:text-blue-200 border-b-[1px] border-gray-200 lg:border-none"
                       onClick={() => {
                         handleClick(); // Close mobile nav
                         closeDropdown(); // Close dropdown
                       }}
                     >
-                      <Link
-                        to={"/services"}
-                        className=" uppercase bricolage-grotesque-medium"
-                      >
+                      <Link to={"/services"} className=" ">
                         {item}
                       </Link>
                     </li>
@@ -93,7 +95,7 @@ const NavLinks = () => {
           ) : (
             <Link
               to={link.path}
-              className="block uppercase bricolage-grotesque-medium text-[18px] text-blue-800 lg:text-black"
+              className="block   text-blue-900 lg:text-blue-900"
             >
               {link.title}
             </Link>

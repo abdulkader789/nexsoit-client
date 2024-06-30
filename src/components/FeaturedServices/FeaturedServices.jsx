@@ -75,7 +75,7 @@ const FeaturedServices = () => {
 
   return (
     <main className="pb-20 relative">
-      <div className="mx-auto max-w-screen-xl px-4 md:px-8">
+      <div className="mx-auto container px-4 md:px-8">
         <h2 className="bricolage-grotesque-regular text-2xl lg:text-6xl pb-5">
           Our special features <br />
           for your services
@@ -84,7 +84,7 @@ const FeaturedServices = () => {
           {servicesData.map((item) => (
             <motion.div
               key={item.slug}
-              className="inverted-border-radius group relative flex items-start h-[450px] rounded-xl"
+              className="inverted-border-radius group relative flex items-start h-[550px] rounded-xl"
               // ref={ref}
               // variants={itemVariants}
               // initial="hidden"

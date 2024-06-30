@@ -339,17 +339,13 @@ html {
   0% {
     --fill-color: #1732ff;
   }
-  /* 25% {
-    --fill-color: #69f2bf; 
-  }
+
   50% {
-    --fill-color: #5412d8; 
+    --fill-color: #5817ee;
   }
-  75% {
-    --fill-color: #08a8b7; 
-  } */
+
   100% {
-    --fill-color: #5f1ee1;
+    --fill-color: #3306d6;
   }
 }
 

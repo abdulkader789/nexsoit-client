@@ -67,7 +67,7 @@ const Navbar = () => {
           <FaBars />
         </div>
         <section
-          className={`h-[94vh] w-full sidebar-bg left-0 lg:h-auto lg:-translate-x-0 w-full absolute lg:relative top-[6vh] lg:top-0 z-20 transition-all duration-500 ease-in-out ${
+          className={`h-[94vh] w-full sidebar-bg left-0 lg:h-auto lg:-translate-x-0  absolute lg:relative top-[6vh] lg:top-0 z-20 transition-all duration-500 ease-in-out ${
             isActive ? "-translate-x-0" : "-translate-x-full"
           }`}
         >
@@ -77,7 +77,7 @@ const Navbar = () => {
                 <NavLinks />
               </div>
               {/* <NavButton /> */}
-              <div className="w-full items-center py-4 lg:py-0 lg:w-auto px-10 lg:px-0 flex justify-start lg:justify-center lg:absolute lg:right-0">
+              <div className="absolute right-0 ">
                 <NavButton />
               </div>
             </section>

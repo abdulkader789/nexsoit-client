@@ -15,7 +15,7 @@ const themes = [
     texts: [
       {
         text: "Design and develop",
-        className: "bricolage-grotesque-bold mb-2 text-blue-700",
+        className: "bricolage-grotesque-bold mb-2 text-indigo-600",
       },
       {
         text: "applications for",
@@ -28,15 +28,15 @@ const themes = [
     id: 2,
     texts: [
       {
-        text: "UI/UX design",
-        className: "bricolage-grotesque-bold mb-2 text-orange-500",
+        text: "Creative UI/UX",
+        className: "bricolage-grotesque-bold mb-2 text-pink-500",
       },
       {
-        text: "for interactivity",
+        text: "solutions for",
         className: "montserrat-alternates-medium mb-2",
       },
       {
-        text: "with Figma",
+        text: "better experience",
         className: "bricolage-grotesque-bold",
       },
     ],
@@ -46,48 +46,14 @@ const themes = [
     texts: [
       {
         text: "Build eCommerce",
-        className: "bricolage-grotesque-bold mb-2 text-green-500",
+        className: "bricolage-grotesque-bold mb-2 text-orange-400",
       },
       {
-        text: "solutions using",
+        text: "with frameworks",
         className: "montserrat-alternates-medium mb-2",
       },
       {
-        text: "modern frameworks",
-        className: "bricolage-grotesque-bold",
-      },
-    ],
-  },
-  {
-    id: 4,
-    texts: [
-      {
-        text: "Craft interactive",
-        className: "bricolage-grotesque-bold mb-2 text-yellow-500",
-      },
-      {
-        text: "education platforms",
-        className: "montserrat-alternates-medium mb-2",
-      },
-      {
-        text: "for learning",
-        className: "bricolage-grotesque-bold",
-      },
-    ],
-  },
-  {
-    id: 5,
-    texts: [
-      {
-        text: "Healthcare solutions",
-        className: "bricolage-grotesque-bold mb-2 text-cyan-500",
-      },
-      {
-        text: "made easy",
-        className: "montserrat-alternates-medium mb-2",
-      },
-      {
-        text: "with technology",
+        text: "for businesse",
         className: "bricolage-grotesque-bold",
       },
     ],
@@ -104,7 +70,7 @@ const BannerSection = () => {
       setCurrentThemeIndex((prevIndex) =>
         prevIndex === themes.length - 1 ? 0 : prevIndex + 1
       );
-    }, 5000); // Change theme every 5 seconds (adjust as needed)
+    }, 4000); // Change theme every 5 seconds (adjust as needed)
 
     return () => clearInterval(interval);
   }, []);
@@ -112,7 +78,7 @@ const BannerSection = () => {
   return (
     <div className="lg:h-screen w-full relative flex flex-col lg:items-center lg:flex-row mb-5 banner-section overflow-hidden">
       <section className="w-full flex flex-col justify-start lg:justify-center items-center  pt-20 lg:pt-0  lg:w-1/2">
-        <div className="w-full lg:w-auto pl-10 text-3xl lg:text-7xl">
+        <div className="w-full lg:w-auto pl-5 pt-5 lg:pt-0 text-4xl lg:text-7xl">
           {themes.map((theme, index) => (
             <motion.div
               key={index}
