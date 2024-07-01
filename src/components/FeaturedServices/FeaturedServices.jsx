@@ -42,7 +42,7 @@ const FeaturedServices = () => {
       slug: "design-solutions",
       description:
         "We specialize in creating visually captivating and intuitive design solutions that elevate user interaction, engagement, and brand experience.",
-      tools: ["Figma"],
+      tools: ["Figma", "Framer"],
     },
     {
       image:
@@ -90,7 +90,7 @@ const FeaturedServices = () => {
               // initial="hidden"
               // animate={controls}
             >
-              <div className="pointer-events-none absolute inset-0 overflow-hidden rounded-xl">
+              <div className="pointer-events-none absolute inset-0 overflow-hidden  rounded-xl">
                 <img
                   src={item.image}
                   loading="lazy"
@@ -98,7 +98,7 @@ const FeaturedServices = () => {
                   className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
                 />
               </div>
-              <div className="flex flex-col h-full justify-center p-4 hover:bg-white hover:bg-opacity-30 hover:backdrop-filter hover:backdrop-blur-lg rounded-xl">
+              <div className="flex flex-col h-full justify-center p-4 w-full hover:bg-white hover:bg-opacity-30 hover:backdrop-filter hover:backdrop-blur-lg rounded-xl">
                 <span className="relative bricolage-grotesque-bold top-0 inline-block text-sm text-white md:text-3xl capitalize montserrat-medium  ">
                   {item.title}
                 </span>

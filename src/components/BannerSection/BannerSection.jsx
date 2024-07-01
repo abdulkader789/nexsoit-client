@@ -15,13 +15,11 @@ const themes = [
     texts: [
       {
         text: "Design & develop",
-        className: "bricolage-grotesque-bold mb-2 text-indigo-600",
       },
       {
         text: "applications for",
-        className: "montserrat-alternates-medium mb-2",
       },
-      { text: "web and mobile", className: "bricolage-grotesque-bold" },
+      { text: "web and mobile" },
     ],
   },
   {
@@ -29,15 +27,12 @@ const themes = [
     texts: [
       {
         text: "Creative UI/UX",
-        className: "bricolage-grotesque-bold mb-2 text-pink-500",
       },
       {
         text: "design solution",
-        className: "montserrat-alternates-medium mb-2",
       },
       {
         text: "for interactivity",
-        className: "bricolage-grotesque-bold",
       },
     ],
   },
@@ -46,15 +41,12 @@ const themes = [
     texts: [
       {
         text: "Fast eCommerce",
-        className: "bricolage-grotesque-bold mb-2 text-orange-400",
       },
       {
         text: "for businesses",
-        className: "montserrat-alternates-medium mb-2",
       },
       {
         text: "with frameworks",
-        className: "bricolage-grotesque-bold",
       },
     ],
   },
@@ -77,7 +69,7 @@ const BannerSection = () => {
   return (
     <div className="lg:h-screen w-full relative flex flex-col lg:items-center lg:flex-row mb-5 banner-section overflow-hidden">
       <section className="w-full flex flex-col justify-start lg:justify-center items-center  pt-20 lg:pt-0  lg:w-1/2">
-        <div className="w-full lg:w-auto pl-5 pt-5 lg:pt-0 text-4xl lg:text-7xl">
+        <div className="w-full lg:w-auto pl-5 pt-5 lg:pt-0 ">
           {themes.map((theme, index) => (
             <motion.div
               key={index}
@@ -92,11 +84,15 @@ const BannerSection = () => {
                 display: index === currentThemeIndex ? "block" : "none",
               }}
             >
-              {theme.texts.map((item, idx) => (
-                <motion.h1 key={idx} className={item.className}>
-                  {item.text}
-                </motion.h1>
-              ))}
+              <h1 className="bricolage-grotesque-bold mb-2 text-4xl lg:text-7xl">
+                {theme.texts[0].text}
+              </h1>
+              <h1 className="montserrat-alternates-medium mb-2 text-4xl lg:text-6xl">
+                {theme.texts[1].text}
+              </h1>
+              <h1 className="bricolage-grotesque-bold text-4xl lg:text-7xl">
+                {theme.texts[2].text}
+              </h1>
             </motion.div>
           ))}
           <div className="mt-8 flex w-full ">
